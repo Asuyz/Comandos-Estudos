@@ -1,4 +1,4 @@
-**Esse repositório se propõe a ser uma anotação de todos os meus e conhecimentos que estou adquirindo na FIAP e também como vivencia no mundo da programação**. ☁  **
+**Esse repositório se propõe a ser uma anotação de todos os meus e conhecimentos que estou adquirindo na FIAP e também como vivencia no mundo da programação**. ☁  
 
 **📚 AS ANOTAÇÕES ESTARÃO LOCALIZADAS DE FORMA SEPARADA ENTRE**: 
 
