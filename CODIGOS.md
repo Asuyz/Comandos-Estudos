@@ -57,7 +57,13 @@ init.defaultBranch (Para mudar a Branch, a mais "padrão" sendo a main
 
 -git checkout (nome do arquivo) - para voltar as alterações do ultimo estagio salvo do arquivo trabalhado
 
--git checkout -b - cria uma nova Branch
+-git checkout -b - (+ nome) cria uma nova Branch
+
+-git brach -m (+ novo nome) - muda o nome da branch case necessário 
+
+-git branch - lista as branchs locais
+
+-git add . - Adiciona todos os arquivos untracked (adiciona os arquivos na branch que está trabalhando)
 
 -git checkout (mais o nome da branch) - para navegação entre as branchs
 
