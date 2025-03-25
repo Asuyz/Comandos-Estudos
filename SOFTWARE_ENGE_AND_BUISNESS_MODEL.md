@@ -73,6 +73,48 @@
 
 ° Utilize inteligência artificial para **ESTUDO** e para uma maior eficiência no **TRABALHO** (Não utilize como uma forma de substituição e sim como **complemento**) e **sempre consulte as informações antes de utiliza-las.**
 
+° **Prompt** é uma parte fundamental para uma utilização efetiva de IA'S como o **Chat GPT**.
+» Podemos utilizar o prompt como uma forma de obter logs (informações) do usuário. 
+» Também podemos definir configurações customizadas (pré configuradas) para maior efetividade de uso de IA'S.
+
+----------------------------------------------------------------
+
+• **UX - User Experience**
+
+° User Experiencie é a experiência que um usuário/pessoa tem ao interagir com um serviço ou produto, o estudo dessa questão tem como foco melhorar de forma objetiva e significativa.
+° A experiência de usuário existe além do **digital**.
+
+» **UX:**
+
+° Facilidade de navegação 
+° Clareza da informação
+° Design Visual
+° Usabilidade 
+° Adapatação para outras plataformas
+° Facilidade com o pós venda
+
+» User Experience **(UX)** e User interface **(UI)** são conceitos complementares.
+» O UI também pode ser referido como **FRONT END**.
+
+° Podemos monitorar o User Experience através de indices como:
+
+» Retenção do usuário (tempo ou quantidade de usuários ativos).
+» Quantidade de acessos.
+» Benchmark/ Visão de mercado (Trazer recursos que funcionam de outras plataformas ou concorrentes).
+» Agilidade (para a implementação de melhorias).
+
+° A criação de **algoritimos** pode ser uma forma de atender o UX, podendo atender por exemplo:
+» Criação de um feed personalizado.
+» Recomendação de produtos.
+
+° **NPS (Net Promoter Score)**
+
+» É uma métrica utilizada para medir a satisfação e retenção dos usuários/clientes.
+» Utilizada para a resoluções de conflitos.
+⌞ Os conflitos vem de usuários que chamamos de **defratores**, onde eles acabam puxando o NPS para baixo (diminuindo o score), para a resolução desse conflito precisamos entender os problemas e as causas (diferenciar problemas pessoas e gerais).
+
+
+
 
 
 
