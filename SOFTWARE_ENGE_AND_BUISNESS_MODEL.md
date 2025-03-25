@@ -107,11 +107,24 @@
 » Criação de um feed personalizado.
 » Recomendação de produtos.
 
+° **WEB 1.0 - WEB 3.0**
+» As evoluções do **WWW** (**World Wide Web**) são fundamentais para a introdução do **user experience**.
+» **Web 1.0** - foi a primeira fase da internet onde se predominava sites com estatística e com pouco nível de interação.
+
+» **Web 2.0** - introduziu a interatividade que conhecemos hoje, tornou o usuário um colaborador (o **user experience** se tornou crucial).
+
+» **Web 3.0** - foca na descentralização e usa tecnologias como **blockchain** e **IA'S** com o objetivo de criar uma web mais inteligente e personalizada, onde os dados são controlados pelos usuários e não centralizados em grandes empresas, garantindo uma segurança melhor.
+
 ° **NPS (Net Promoter Score)**
 
 » É uma métrica utilizada para medir a satisfação e retenção dos usuários/clientes.
 » Utilizada para a resoluções de conflitos.
 ⌞ Os conflitos vem de usuários que chamamos de **defratores**, onde eles acabam puxando o NPS para baixo (diminuindo o score), para a resolução desse conflito precisamos entender os problemas e as causas (diferenciar problemas pessoas e gerais).
+
+° **Leads**
+» São associados com o **UX** pois são oportunidades/fechamento de negócios, pois um projeto com um **user experience** mal trabalhado trás poucas conversões de leads.
+
+
 
 
 
