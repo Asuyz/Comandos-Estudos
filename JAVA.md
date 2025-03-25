@@ -42,13 +42,28 @@
 
 » Toda Classe Primitiva tem uma Classe não primitiva **Oposta**.
 
-° **Sequência de Escape:**
+° **Sequência de Escape (Caracteres  Especiais):**
 
-![[Pasted image 20250324160059.png]]
+\b » Backspace
+\f » Form Feed
+\n » Nova Linha
+\r » Retorno
+\t » Tabulação 
+\ " » Aspas
+\ '  » Apostrofo
+\ \ » Barra Invertida
 
 ° **Funções matemáticas com java:**
 
-![[Pasted image 20250324160407.png]]
+Adição » +
+Subtração » - 
+Multiplicação » *
+Divisão » /
+Resto da divisão inteira » %
+Sinal negativo » - (-x)
+Sinal positivo » + (+x)
+Incremento unitário » ++ (x++)
+Decremento unitário » -- (x--)
 
 --------------------------------------------------------------------
 
