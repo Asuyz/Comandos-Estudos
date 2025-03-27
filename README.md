@@ -5,9 +5,9 @@
 
 **Codigos.md** 📁 » GitBash.
 
-**Java.md** 📁 » Java.
+**Java.md** e **LogicaJava.md📁 » Java.
 
-**Python.md** 📁 » Python.
+**Python.md** e **LogicaPython.md** 📁 » Python.
 
 **Database.md** 📁 » Oracle.
 

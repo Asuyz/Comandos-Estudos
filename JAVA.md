@@ -73,6 +73,65 @@ Decremento unitário » -- (x--)
 
 » Não escrevemos a linha de código completa programando em java e sim completamos a linha com o **TAB**.
 
+-------------------------------------------------------------------------------
+
+• **CLASSES EM JAVA**
+
+° Classe é um molde, ao se definir uma classe podem ser criados **diversos** objetos a partir dela
+
+» Uma classe é composta por seu **Nome, seus atributos e métodos**
+° Nomes de classes se iniciam com letra maiúscula e cada nova primeira palavra se usa também letra maiúscula
+° Nomes de atributos e dos métodos se iniciam com letra minúscula e cada nova palavra a primeira letra é maiúscula.
+
+° **Modificador**
+» Indica o modo de acesso por outras classes, define a sua **visibilidade**.
+
+° Para **Classes**:
+° **Public** » a classe pode ser acessada por qualquer outra rede.
+° **Default** » a classe pode ser acessada por outras classes no mesmo pacote, esse modificador é utilizado quando não se especifica um modificador. 
+
+° **Para atributos e métodos**:
+° **Public** ( No diagrama o public é representado por um +).
+° **Private** » Só pode ser acessado pela pessoa que a criou. (Representado por um - no diagrama).
+° **Default**
+° **Protected*** » O código somente é acessado no mesmo pacote e por subclasses. (Representado por um # no diagrama).
+
+° Os tipos de **atributos e métodos** são os mesmos das **variáveis**.
+» Atributo faz parte da classe (se comporta como uma variável).
+
+• **Métodos** (Pode ser considerado um mini programa).
+» É um bloco de código que só é executado quando é chamado (usado).
+
+° Podemos ter métodos onde é possível passar dados (valores), chamado de parâmetros (passagem dos parâmetros são opcionais).
+» Utilizamos métodos para **reutilizar** códigos (definir o código apenas uma vez e usa-lo diversas vezes).
+
+° **Tipos de métodos**
+
+° Métodos com **retorno**
+» Retorna a informação digitada (Geralmente atribuída a alguma variável), e o programa principal continua. 
+
+° Métodos sem **retorno**
+» Não retorna o valor, apenas sinaliza e o programa continua.
+
+• **SINTAXE DE UM MÉTODOS**
+
+° **Com retorno**
+» **modificador** **tipo** nomeDoMetodo (lista-de-parâmetros (opcional)) { 
+código do corpo
+
+**return** valor-de-retorno (tem que ser o mesmo valor do mesmo **TIPO**)
+
+}
+
+° **Sem retorno**
+
+» **modificador** **void** nomeDoMetodo (lista-de-parâmetros) { 
+
+código do corpo
+}
+ 
+-------------------------------------------------------------------------------
+
 
 °»
 
