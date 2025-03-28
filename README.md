@@ -15,6 +15,7 @@
 
 **HTML.md** 📁 » Html.
 
+**CSS.md** 📁 » Css.
 
 **Os arquivos terão anotações e alguns exercícios/códigos de exemplo para estudos**.
 
