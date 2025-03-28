@@ -1,4 +1,4 @@
-• **Hyper Text Markup Language
+• **Hyper Text Markup Language**
 
 » Html é uma linguagem para **formatação de textos, inserir imagens e ligações de hipertexto**. Não é possível programar em html pois é uma linguagem de marcação (uso de tags). 
 Os navegadores apenas fazem o processo de identificação e executar o que foi especificado pelas marcações. 
@@ -30,7 +30,7 @@ Os navegadores apenas fazem o processo de identificação e executar o que foi e
 
 » < body > : Define o corpo da página, onde ficam os elementos visíveis pelo usuário, como textos, imagens e botões
 
-• **EXEMPLO DE COMO FICARIA A ESTRUTURA BÁSICA DO DOCUMENTO HTML**
+• **EXEMPLO DE COMO FICARIA A ESTRUTURA BÁSICA DO DOCUMENTO HTML:**
 
 < !DOCTYPE html >
 
@@ -59,9 +59,11 @@ Os navegadores apenas fazem o processo de identificação e executar o que foi e
 ° As tags essenciais do HTML são as tags mais utilizadas no desenvolvimento de um documento
 
 » **Cabeçalhos** ( < h1 > a < h6 >).
+
 ° Os cabeçalhos < h1 > a < h6 >) são usados para estruturar o conteúdo de uma página. (< h1 >) é o mais importante e geralmente representa o título principal da página. Os demais são usados para subdividir o conteúdo hierarquicamente.
 
 **° Ex: 
+
 < h1 > titulo </ h1 >
 
 < h2 > Subtitulo </ h2 >**
@@ -76,7 +78,7 @@ Os navegadores apenas fazem o processo de identificação e executar o que foi e
 » **Âncoras**
 ° A tag < a > criar links para outras páginas, arquivos ou seções dentro da mesma página. O atributo href define o destino do link. (**UMA DAS PRINCIPAIS TAGS PARA A ORGANIZAÇÃO DO SITE**).
 
-° **Ex:
+° **Ex:**
 
 **< a href="https://www.exemplo.com">Visite o Exemplo </a >**
 
@@ -84,7 +86,7 @@ ou para arquivos dentro do documento:
 
 **< a href=" ./assets/sobre/sobre.html> Sobre </a >**
 
-» **Obs*
+» **Obs**
 ° Para navegar entre as pastas utilizamos o (../), a quantidade de vezes que utilizamos os dois pontos e a barra depende de onde queremos navegar.
 
 » **Imagem**
@@ -94,10 +96,11 @@ ou para arquivos dentro do documento:
 
 **< img src=“./img/imagem.png“ alt=“Descrição da imagem.” >**
 
-»**Listas (< ol >, < li >, < ul >)**
+» **Listas (< ol >, < li >, < ul >)**
+
 ° As tags de listas podem ser ordenadas (< ol >, com número) ou não ordenadas (< ul >,com marcadores). Os item da lista são definidos pela tag **< li  >**.
 
-° **Ex:** **< ul >
+° **Ex:** **< ul >**
 
 < li > item não ordenado 1< /li >
 
@@ -105,7 +108,7 @@ ou para arquivos dentro do documento:
 
 **< /ul >**
 
-**< ol >
+**< ol >**
 
 < li > item ordenado 1< /li >
 
@@ -114,6 +117,7 @@ ou para arquivos dentro do documento:
 **< /ol >**
 
 »**Tabelas** **(< table >, < tr >, < td >, < th >)**
+
 ° A tag < table > cria tabelas. < tr > define uma linha, < th > representa células de cabeçalho e < td > define células de dados.
 
 ° **Ex:**< table >
@@ -202,7 +206,7 @@ associa um rótulo ao campo, < textarea > cria uma área de texto e < button > e
 
 ° < p style="color: red;" >< /p >
 
-» **Dados extras no html **
+» **Dados extras no html**
 
 ° Atributo personalizado para armazenar dados extras no HTML, acessíveis via JavaScript.
 
@@ -246,11 +250,11 @@ associa um rótulo ao campo, < textarea > cria uma área de texto e < button > e
 
 < ul>
 
-< li><a href="#home">Início</a></li >
+< li> < a  href = "#home"> Início< /a >< /li >
 
-< li><a href="#sobre">Sobre</a></li >
+< li>< a href="#sobre" >Sobre < /a> </li >
 
-< li><a href="#contato">Contato</a></li >
+< li>< a  href = "#contato ">Contato< /a ></li >
 
 < /ul >
 
@@ -260,5 +264,4 @@ associa um rótulo ao campo, < textarea > cria uma área de texto e < button > e
 
 < button aria-label="Fechar janela">X</button >
 
-
-°»
+-------------------------------------------------------------------------------
