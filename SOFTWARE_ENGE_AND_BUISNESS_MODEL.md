@@ -1,4 +1,5 @@
 **DESIGN THINKING**
+
 • Forma de pensar, estruturação de raciocínio. (3 Pilares principais pilares: Entender o Cliente, Empatia e Experimentação)
 
 ° Usamos de empatia, experimentações e pessoas, para criação de **SOLUÇÕES** com foco no **PROBLEMA** para atingir o cliente.

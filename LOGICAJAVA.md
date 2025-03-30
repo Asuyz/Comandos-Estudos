@@ -4,30 +4,39 @@
 ° **Criação de classes
 » Primeiro criamos os atributos (por exemplo: volume e estação):
 
-**// Atributos**
+**// Atributos**.
+
 public (visibilidade) int (Ler números inteiros) volume;
 
 public float (leitura de numero não inteiros) estacao;
 
 
 **//Metodos**
+
 public void (vazio) aumentarVolume() { 
 
 |
+
 |
+
 }
 public void diminuirVolume() {
 
 |
+
 |
+
 }
 publlic void trocarEstacao (float frequencia)  {
 
 |
+
 |
+
 }
 
 ° **Testando a Classe**
+
 » Para testar a classe precisamos primeiro criar um objeto.
 
 **//método main para criar um botão para rodar o código**//Digite apenas "main e complete com o TAB"
