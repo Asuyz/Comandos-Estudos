@@ -2,73 +2,55 @@
 
 
 ° **Criação de classes
-» Primeiro criamos os atributos (por exemplo: volume e estação):
 
-**// Atributos**.
-
-public (visibilidade) int (Ler números inteiros) volume;
-
-public float (leitura de numero não inteiros) estacao;
+» **Primeiro criamos os atributos (por exemplo: volume e estação):**
 
 
-**//Metodos**
-
-public void (vazio) aumentarVolume() { 
-
-|
-
-|
-
-}
-public void diminuirVolume() {
-
-|
-
-|
-
-}
-publlic void trocarEstacao (float frequencia)  {
-
-|
-
-|
-
+```
+package br.com.fiap;  
+  
+public class Radio {  
+      //atributos  
+    public int volume;  
+    public float estacao;  
+    //metodos  
+    public void aumentarVolume() {  
+        volume++;  
+    }  
+    public void diminuirVolume() {  
+        volume--;  
+    }  
+    public void trocarEstacao (float frequencia) {  
+        estacao = frequencia;  
+    }  
+  
 }
 
-° **Testando a Classe**
+```
 
-» Para testar a classe precisamos primeiro criar um objeto.
+» **Criação do objeto para testes (No caso objeto RADIO)**:
 
-**//método main para criar um botão para rodar o código**//Digite apenas "main e complete com o TAB"
-public static void main(String[] args) { 
-
-   Radio radio; //declaração do objeto radio
-   
-   radio = new Radio(); //instanciação do objeto
-   
-  radio.estacao = 89.1f (colocar o f para o java não confundir com um double)
+```
+package br.com.fiap;  
   
-
-  radio.volume = 5;
+public class TesteRadio {  
   
-  radio.trocarEstacao (frequencia 92.5f);
+    public static void main(String[] args) {  
+        //para testar a classe precisamos criar um objeto  
+        Radio radio; //declaracao do objeto radio  
+        radio = new Radio(); //instanciacao do objeto (usamos new)  
+        radio.estacao = 89.1f;  
   
-  radio.aumentarVolume();
+        radio.volume = 5;  
+        radio.trocarEstacao(192.5f);  
+        radio.aumentarVolume();  
+        radio.aumentarVolume();  
   
-  radio.aumentarVolume();
+        System.out.println("Volume atual: " + radio.volume + "\nEstacao Atual: " + radio.estacao);  
+    }  
   
-
-System.out.println("Volume atual: " + radio.volume + "\nEstacao Atual: " + radio.estacao);
-
-  //System out para mostrar o valor no console e /n para separar a linha.
-  
-
-
-
-
-
-
-
+}
+```
 
 
 
