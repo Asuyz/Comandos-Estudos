@@ -267,8 +267,156 @@ Exemplos de componentes Swing mais usados:
 
 ° **PrintF e PrintLn
  
-» PrintF é necessário passar dois paramentos nesse print.
+» **PrintF** é necessário passar dois paramentos nesse print.
 
-» PrintLn é necessário apenas um parametro (vai printar uma nova linha de texto no console).
+» **PrintLn** é necessário apenas um parametro (vai printar uma nova linha de texto no console).
+
+----------------------------------------------------------------
+
+° **Exemplo de Utilização de um Método dentro de outro Método**:
+
+```
+package br.com.fiap.bean;  
+  
+public class DespesaFamiliar {  
+    //Atributos  
+    public double rendaFamiliar; // Total que a familia recebe  
+    public int numeroDeMoradores; // Total de moradores  
+    public double gastoComLuz; // Gasto Mensal com Luz  
+    public double gastoComAgua; // Gasto Mensal com Agua  
+    public double gastoComInternet; // Gasto Mensal com Internet  
+    public double valorMensalidadeDaAcademia; // Valor da mensalidade da academia (multiplicar pelo numero de membros)  
+  
+  
+    //Metodos: calcularTotalDeDespesas e calcularRendaFamiliarLiquida  
+    public double calcularTotalDeDespesas(){  
+        double resultado1, resultado2;  
+  
+        resultado1 = gastoComAgua + gastoComInternet + gastoComLuz;  
+        resultado2 = numeroDeMoradores * valorMensalidadeDaAcademia;  
+  
+        return resultado1 + resultado2;  
+  
+    }  
+    public double calcularRendaFamiliarLiquida(){  
+        double despesasTotais = calcularTotalDeDespesas(); //Trouxe o metodo calcularTotalDespesas dentro desse metodo  
+  
+        return rendaFamiliar - despesasTotais;  
+  
+  
+    }  
+  
+}
+```
+
+» **Execução do Objeto**:
+
+```
+package br.com.fiap.main;  
+  
+import br.com.fiap.bean.DespesaFamiliar;  
+  
+import java.util.Scanner;  
+  
+public class DespesaFamiliarMain {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in); //System In = System Input (Para gravar os dados digitados)  
+        DespesaFamiliar despesa = new DespesaFamiliar();  
+  
+  
+        try {  
+  
+            System.out.println("Digite a sua renda familiar Total: ");  
+            despesa.rendaFamiliar = scanner.nextDouble();  
+  
+            System.out.println("Digite o numero de membros da familia: ");  
+            despesa.numeroDeMoradores = scanner.nextInt();  
+  
+            System.out.println("Digite o valor da academia: ");  
+            despesa.valorMensalidadeDaAcademia = scanner.nextDouble();  
+  
+            System.out.println("Digite o valor do gasto de agua: ");  
+            despesa.gastoComAgua = scanner.nextDouble();  
+  
+            System.out.println("Digite o valor do gasto de Luz: ");  
+            despesa.gastoComLuz = scanner.nextDouble();  
+  
+            System.out.println("Digite o valor do gasto de internet: ");  
+            despesa.gastoComInternet = scanner.nextDouble();  
+  
+            double rendaFamiliar = despesa.rendaFamiliar;  
+            System.out.printf("Renda da familia: R$ %.3f%n" , rendaFamiliar);  
+  
+            double rendaLiquida = despesa.calcularRendaFamiliarLiquida();  
+            System.out.printf("Renda familiar líquida: R$ %.3f%n", rendaLiquida);  
+  
+            double totalDespesas = despesa.calcularTotalDeDespesas();  
+            System.out.printf("Despesas totais: R$ %.3f%n", totalDespesas);  
+  
+  
+        } catch (Exception e) {  
+            System.out.println("ERRO AO CALCULAR");  
+        }        finally {  
+            scanner.close();  
+    }   } }
+
+```
+
+° **Exemplo do mesmo código criando variáveis e passar o valor da variável ao objeto: **
+
+```
+package br.com.fiap.main;  
+  
+import br.com.fiap.bean.DespesaFamiliar;  
+  
+import java.util.Scanner;  
+  
+public class Main {  
+    public static void main(String[] args) {  
+        DespesaFamiliar despesaFamiliar = new DespesaFamiliar();  
+        double rendaFamiliar, gastoComLuz, gastoComAgua, gastoComInternet, valorMensalidadeDaAcademia;  
+        int numeroDeMoradores;  
+        Scanner scanner = new Scanner(System.in);  
+  
+        try {  
+            System.out.print("Digite o valor da renda familiar: ");  
+            rendaFamiliar = scanner.nextDouble();  
+  
+            System.out.print("Digite o número de moradores: ");  
+            numeroDeMoradores = scanner.nextInt();  
+  
+            System.out.print("Digite o valor do gasto com luz: ");  
+            gastoComLuz = scanner.nextDouble();  
+  
+            System.out.print("Digite o valor do gasto com água: ");  
+            gastoComAgua = scanner.nextDouble();  
+  
+            System.out.print("Digite o valor do gasto com internet: ");  
+            gastoComInternet = scanner.nextDouble();  
+  
+            System.out.print("Digite o valor da mensalidade da academia: ");  
+            valorMensalidadeDaAcademia = scanner.nextDouble();  
+  
+            despesaFamiliar.rendaFamiliar = rendaFamiliar;  
+            despesaFamiliar.numeroDeMoradores = numeroDeMoradores;  
+            despesaFamiliar.gastoComLuz = gastoComLuz;  
+            despesaFamiliar.gastoComAgua = gastoComAgua;  
+            despesaFamiliar.gastoComInternet = gastoComInternet;  
+            despesaFamiliar.valorMensalidadeDaAcademia = valorMensalidadeDaAcademia;  
+  
+            System.out.printf("Registros:\nRenda familiar: R$ %.3f\nTotal de gastos com despesas: R$ %.3f\nRenda familiar líquida: R$ %.3f", despesaFamiliar.rendaFamiliar, despesaFamiliar.calcularTotalDeDespesas(), despesaFamiliar.calcularRendaFamiliarLiquida());  
+        } catch (Exception e) {  
+            System.out.println("Informe as credencias corretas!");  
+        }  
+    }  
+}
+```
+
+
+
+
+
+
+
 
 °»
