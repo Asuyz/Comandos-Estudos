@@ -52,11 +52,223 @@ public class TesteRadio {
 }
 ```
 
+° **Scanner**
 
+» A classe `Scanner` permite capturar entradas de texto, números inteiros, números de ponto flutuante, entre outros. Segue exemplos:
 
+» Primeiro criamos a classe com os atributos e métodos:
 
+```
+package br.com.fiap.bean;  //Separamos os pacotes das classes entre bean e main
+  
+public class FolhaDePagamento {  
+    public double salarioBruto;  
+    public int numeroDeDependentes;  
+    public double descontoINSS;  
+    public double valorPlanoDeSaude;  
+    
+    // Atributos - A variavel sempre será descrita no diagrama (Double, Int, Float etc)
+  
+    // Metodos - Procure dividir o problema para uma maior facilidade de racicinio (desconto1 e desconto2)
+    
+    public double calcularSalarioliquid(){  
+        double desconto1, desconto2, salarioLiquido; //Dividindo o problema (calcular salario liquido) em pequenas solucoes  
+  
+        desconto1 = salarioBruto * (descontoINSS / 100 );  
+        desconto2 = valorPlanoDeSaude * (numeroDeDependentes + 1 );  
+        salarioLiquido = salarioBruto - (desconto1 + desconto2);  
+  
+  
+        return salarioLiquido;  
+    }  
+  
+}
 
+```
 
+» Depois criamos o método main para testar (rodar) a classe criada:
 
+```
+package br.com.fiap.main;  
+  
+import br.com.fiap.bean.FolhaDePagamento; // O import acontece quando declaramos o objeto 
+  
+public class FolhaDePagamentoMain {  
+  
+        public static void main(String[] args) {  
+            FolhaDePagamento folha = new FolhaDePagamento();  
+            // Declaração do objeto // Instanciação do objeto  
+            folha.salarioBruto = 10000;  
+            folha.descontoINSS = 15;  
+            folha.numeroDeDependentes = 3;  
+            folha.valorPlanoDeSaude = 500.0;  
+  
+            System.out.printf(  
+                    "Salario bruto: R$ %.2f\n" +  
+                            "Dependentes: %d\n" +  
+                            "INSS: %.1f%%\n" + // O "%%" é para exibir o símbolo de porcentagem  
+                            "Valor Plano de Saúde: R$ %.2f\n" +  
+                            "Salário líquido: R$ %.2f\n", // Formatação para o salário líquido  
+                    folha.salarioBruto, folha.numeroDeDependentes, folha.descontoINSS,  
+                    folha.valorPlanoDeSaude, folha.calcularSalarioliquid());  
+        }  
+    }
+
+```
+
+» Agora para a classe scanner:
+
+```
+package br.com.fiap.main;  
+  
+import br.com.fiap.bean.FolhaDePagamento; 
+  
+import java.util.Scanner; // Import do scanner 
+  
+public class MainScanner {  
+    public static void main(String[] args) {  
+        FolhaDePagamento folha = new FolhaDePagamento();  
+        Scanner scanner = new Scanner(System.in); //Declaração e instanciação dos dois imports
+         try {  
+  
+  
+             System.out.println("Digite o salario bruto:");  
+             folha.salarioBruto = scanner.nextDouble(); // scanner e a variavel para armazernar a opção digitada (console)
+  
+             System.out.println("Digite o valor do plano de saude:");  
+             folha.valorPlanoDeSaude = scanner.nextDouble();  
+  
+             System.out.println("Digite o N de Dependentes:");  
+             folha.numeroDeDependentes = scanner.nextInt();  
+  
+             System.out.println("Digite o Desconto INSS:");  
+             folha.descontoINSS = scanner.nextDouble();  
+  
+             System.out.println("Salario Liquido: %2.f" + folha.calcularSalarioliquid());  
+  
+  
+         } catch (Exception e) { //Try e catch para analizar os erros (exceções dos atributos) 
+             System.out.println("Formato de Numero Incorreto");  
+         }  
+        finally { //finally para rodar o scanner.close independente de erros
+             scanner.close(); // Boa pratica sempre realizar o fechamento do scanner para evitar vazamentos de mémoria 
+         }  
+    }  
+}
+```
+
+° Embora seja possível colocar os atributos diretamente no código `main`, a abordagem correta seria tratá-los através de métodos `setter` e `getter` (Aprendizagem futura), seguindo os princípios de **encapsulamento** da programação orientada a objetos. Isso torna o código mais modular, reutilizável e fácil de manter.
+
+```
+package br.com.fiap.main;  
+  
+import br.com.fiap.bean.FolhaDePagamento;  
+  
+import java.util.Scanner;  
+  
+public class MainScanner {  
+    public static void main(String[] args) {  
+        FolhaDePagamento folha = new FolhaDePagamento();  
+        Scanner scanner = new Scanner(System.in);  
+        double salarioBruto;  
+        int numeroDeDependentes;  
+        double descontoINSS;  
+        double valorPlanoDeSaude;
+```
+
+**° JOptionPane:**
+
+» A função **`JOptionPane.showInputDialog`** é usada para capturar as entradas do usuário. Cada vez que o programa pede um valor, ele exibe uma caixa de diálogo onde o usuário pode digitar o valor.
+
+» Como o valor recebido do `JOptionPane` é sempre uma string, usamos **`Double.parseDouble`** para converter as entradas de texto em valores numéricos (`double` ou `int` conforme o tipo necessário).
+
+° Como irá funcionar:
+
+» Ao executar o programa, ele vai pedindo os valores ao usuário por meio de caixas de entrada (caixas de diálogo) do **`JOptionPane`**.
+
+» Após o preenchimento dos campos, o cálculo do salário líquido é realizado e o resultado é mostrado em uma nova caixa de mensagem.
+
+» Se o usuário inserir dados inválidos (como texto quando é esperado um número), o programa mostra uma mensagem de erro.
+
+```
+import br.com.fiap.bean.FolhaDePagamento;
+import javax.swing.*;
+
+public class MainJOptionPane {
+    public static void main(String[] args) {
+        try {
+            // Solicitar o salário bruto
+            String salarioBrutoStr = JOptionPane.showInputDialog(null, "Digite o Salário Bruto:");
+            double salarioBruto = Double.parseDouble(salarioBrutoStr);  // Converte a entrada para double
+
+            // Solicitar o valor do plano de saúde
+            String valorPlanoSaudeStr = JOptionPane.showInputDialog(null, "Digite o valor do plano de saúde:");
+            double valorPlanoSaude = Double.parseDouble(valorPlanoSaudeStr);
+
+            // Solicitar o número de dependentes
+            String numeroDependentesStr = JOptionPane.showInputDialog(null, "Digite o número de dependentes:");
+            int numeroDeDependentes = Integer.parseInt(numeroDependentesStr);
+
+            // Solicitar o desconto INSS
+            String descontoINSSStr = JOptionPane.showInputDialog(null, "Digite o desconto INSS (em %):");
+            double descontoINSS = Double.parseDouble(descontoINSSStr);
+
+            // Criar a instância da classe FolhaDePagamento e calcular o salário líquido
+            FolhaDePagamento folha = new FolhaDePagamento();
+            folha.salarioBruto = salarioBruto;
+            folha.valorPlanoDeSaude = valorPlanoSaude;
+            folha.numeroDeDependentes = numeroDeDependentes;
+            folha.descontoINSS = descontoINSS;
+
+            // Calcular o salário líquido
+            double salarioLiquido = folha.calcularSalarioliquid();
+
+            // Exibir o resultado em um JOptionPane
+            JOptionPane.showMessageDialog(null, String.format("Salário Líquido: R$ %.2f", salarioLiquido));
+
+        } catch (NumberFormatException ex) {
+            // Caso ocorra um erro de formatação (entrada inválida), mostrar uma mensagem de erro
+            JOptionPane.showMessageDialog(null, "Erro: Por favor, insira valores numéricos válidos.", "Erro", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+}
+```
+
+°**Javax.swing:**
+
+» **`import javax.swing.*;`** importa **todas** as classes e interfaces do pacote **`javax.swing`**, permitindo que você use os componentes gráficos que essa biblioteca oferece, sem precisar importar cada classe individualmente.
+
+» O asterisco (`*`) é um **curinga** que significa "todos os componentes" dentro do pacote.
+
+Exemplos de componentes Swing mais usados:
+
+» **`JFrame`:** A janela principal da aplicação gráfica.
+
+» **`JButton`:** Um botão clicável.
+
+» **`JLabel`:** Um rótulo de texto.
+
+»  **`JTextField`:** Um campo de entrada de texto.
+ 
+» **`JOptionPane`:** Uma caixa de diálogo simples (muito útil para mostrar mensagens ou capturar 
+ entradas do usuário).
+ 
+» **`JCheckBox`:** Uma caixa de seleção.
+ 
+ » **`JRadioButton`:** Botões de opção (radio buttons).
+
+» **`JPanel`:** Um painel para organizar outros componentes na tela.
+
+» **`import javax.swing.*;`** importa todas as classes da biblioteca Swing.
+
+» Com isso, você pode criar interfaces gráficas ricas e interativas em Java, como janelas, botões, caixas de texto, menus, etc.
+
+» **Swing** é amplamente utilizado em Java para criar aplicações desktop com interfaces gráficas.
+
+° **PrintF e PrintLn
+ 
+» PrintF é necessário passar dois paramentos nesse print.
+
+» PrintLn é necessário apenas um parametro (vai printar uma nova linha de texto no console).
 
 °»
