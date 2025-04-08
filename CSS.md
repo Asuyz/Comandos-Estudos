@@ -1,4 +1,4 @@
-• **Cascading Style Sheets  (CSS)*
+• **Cascading Style Sheets  (CSS)**
 
 -------------------------------------------------------------------------------
 
@@ -32,35 +32,35 @@
 
 • **3 Tipos de CSS**:
 
-° Inline.
+**° Inline.**
 
-° Interno.
+**° Interno.**
 
-° Externo.
+**° Externo.**
 
-» Inline:
+**» Inline:**
 
 ° As modificações de estilo (cor, tamanho de fonte, entre outras) é realizada no meio da estrutura do HTML (nas tags). (NÃO UTILIZAR)
 
-» Interno:
+**» Interno:**
 
 ° Aplica as modificações dentro da tag **< head >>**. (Evite utilizar).
 
-» Externo:
+**» Externo:**
 
 ° Cria uma parte externa para a aplicação do CSS, deixando o código mais limpo e podendo realizar mudanças no design de forma mais efetiva.
 
 ° Todas as tags são **SELETORES** e podem ser usadas com exceção das:
 
-» Head.
+**» Head.**
 
-» Meta.
+**» Meta.**
 
-» Title.
+**» Title.**
 
-» Link.
+**» Link.**
 
-» Style.
+**» Style.**
 
 ° Para o apontamento de arquivos, é preciso direcionar com: **(./) ou (../)**.
 
@@ -91,7 +91,7 @@ color: rgb 255,255,255
 }
 ```
 
-• **Propriedade Shorthand**
+• **Propriedade Shorthand**:
 
 ° É uma forma de escrever várias propriedades CSS **em uma única linha**.
 
