@@ -125,10 +125,55 @@
 ° **Leads**
 » São associados com o **UX** pois são oportunidades/fechamento de negócios, pois um projeto com um **user experience** mal trabalhado trás poucas conversões de leads.
 
+-------------------------------------------------------------------------------
 
+• **Pitch**
 
+» É um discurso que se propõe em ser: 
 
+° **Claro (clareza)**.
+° **Convincente.**
+° **Interessante**.
+° **Objetivo**.
+° **Direcionado**.
+° **Valor (Agregar valor para sua ideia ou produto)**.
 
+» É uma apresentação de ideias com todos esses parâmetros para atrair **investidores** para sua ideia ou produto. (Uma variação mais rápida dessa discurso é o **ELEVATOR PITCH**).
 
+» Estude: (O produto e O publico) - Estar bem preparado para a maior eficácia do discurso.
 
+» **Persuadir** - Tenha um bom gancho para convencer o seu alvo (**cliente, investidor ou parceiros**)
 
+° **Gerar valor**
+
+° **Criar e atender a necessidade**
+
+° **Ter um bom gancho de comunicação**.
+
+» Sempre começando pelo problema (**o foco no problema é fundamental**).
+
+° **CTA - Call to action**
+
+» "Amarrar" a pessoa (dar um gancho para a oportunidade, vender o seu produto ou ideia).
+
+-------------------------------------------------------------------------------
+
+• **Diagrama de atividade (Diagrama UML)**
+
+» É uma representação visual de como o processo da aplicação (produto). O passo a passo e os possíveis finais.
+
+° Um diagrama comportamental.
+
+° Trata como as ações vão ocorrer.
+
+° Representa os fluxos conduzidos por processamento.
+
+° **NÃO É UM FLUXOGRAMA**.
+
+» Cada parte do diagrama deve estar conectada entre si para uma visualização 100% clara.
+
+• **Ferramentas para a criação dos Diagramas**:
+
+° Whimsical - possui uma ferramenta de IA.
+
+° Draw.io e Fork.
