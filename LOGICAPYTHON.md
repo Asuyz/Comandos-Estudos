@@ -132,3 +132,119 @@ janela_1.title("janela")
 
 janela_1.mainloop()
 ```
+
+-------------------------------------------------------------------------------
+• **Execução com repetição
+
+° **While**:
+
+» Mantém o código em execução continua enquanto uma condição for atendida dentro do código.
+
+° **Exemplos:**
+
+```
+print("Oi tudo bem? (S/N"))
+resposta = input()
+
+while (ENQUANTO) resposta == "S"
+print("Oi, bom dia tudo bom?)
+print("Deseja ver a mensagem novamente?)
+resposta == input()
+
+if reposta == "N"
+print("Certo, tenho um bom dia. Encerrando.)
+
+```
+
+° **Calculadora com Menu**:
+``
+```
+em_execucao = True
+
+  
+
+while em_execucao == True:
+
+    print("Deseja usar a calculadora? (S ou N)")
+
+    resposta = input()
+
+  
+
+    if resposta == "S":
+
+        print("Escolha um operador (+,-,*,%)")
+
+        operador = input()
+
+        print("Digite um número")
+
+        num1 = float(input())
+
+        print("Digite outro número")
+
+        num2 = float(input())
+
+  
+
+        if operador == "+":
+
+            print(num1 + num2)
+
+  
+
+        elif operador == "-":
+
+            print(num1 - num2)
+
+  
+
+        elif operador == "*":
+
+            print(num1 * num2)
+
+  
+
+        elif operador == "%":
+
+            if num2 != 0:
+
+                print(num1 % num2)
+
+            else:
+
+                print("Não se pode dividir por zero")
+
+  
+
+        else:
+
+            print("Operador inválido")
+
+  
+
+    elif resposta == "N":
+
+        print("Encerrando a calculadora")
+
+        em_execucao = False
+
+  
+
+    else:
+
+        print("Resposta inválida, digite apenas: (S ou N)")
+```
+
+° O uso "**padrão**" do comando while:
+
+» Inicialização da variável.
+
+» **While** (e a condição envolvendo a variável)
+° Tarefa envolvendo a variável.
+° Atualização da variável (igual nos exemplos acima).
+
+» A atualização da variável no fim do código garante deixar a logica do mesmo mais simples e limpa.
+
+
+°»
