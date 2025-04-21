@@ -43,7 +43,7 @@
 » Toda Classe Primitiva tem uma Classe não primitiva **Oposta**.
 
 ° **Sequência de Escape (Caracteres  Especiais):**
-
+```
 \b » Backspace
 \f » Form Feed
 \n » Nova Linha
@@ -52,9 +52,11 @@
 \ " » Aspas
 \ '  » Apostrofo
 \ \ » Barra Invertida
+```
 
-° **Funções matemáticas com java:**
+**Funções matemáticas com java:**
 
+```
 Adição » +
 Subtração » - 
 Multiplicação » *
@@ -64,7 +66,7 @@ Sinal negativo » - (-x)
 Sinal positivo » + (+x)
 Incremento unitário » ++ (x++)
 Decremento unitário » -- (x--)
-
+```
 --------------------------------------------------------------------
 
 ° **INTELLIJ - Plataforma para a programação em Java utilizada.** 
@@ -131,6 +133,163 @@ código do corpo
 }
  
 -------------------------------------------------------------------------------
+• **ENCAPSULAMENTO**.
+
+° Encapsulamento ou **data hidding** é mais um dos conceitos da programação orientada a objetos. Trata-se de um mecanismo que possibilita restringir o acesso a atributos e métodos. Esses conteúdos encapsulados (privados) podem ser acessados pelo **get** e **set**.
+
+» **Método Get**
+
+° Seu objetivo: Obter (ler) o valor de atributo privado.
+» Exemplo: e você tem um atributo `nome`, o método `getNome()` vai retornar o valor dele.
+
+```
+public class Pessoa {
+    private String nome;
+
+    public String getNome() {
+        return nome;
+    }
+}
+```
+
+» **Método Set**
+
+° Seu objetivo: Definir (alterar) o valor de um atributo privado.
+» Exemplo: Se quiser mudar o valor de `nome`, você usa `setNome("Novo Nome")`.
+
+```
+public class Pessoa {
+    private String nome;
+
+    public void setNome(String novoNome) {
+        this.nome = novoNome;
+    }
+}
+```
+
+» Usamos os métodos **get e set** para o **encapsulamento** (que se trata da ação de proteger os dados internos da classe). Também para a **validação** (validar valores antes de definir. Ex: não permitir `idade` negativa ) e por ultimo para o **controle** (evitar modificações diretas que podem causar bugs no código).
+
+» Visualização de ambos no código:
+
+```
+public void setNomeDoAtributo (tipo_do_atributo nomeDoAtributo) {
+	this.nomeDoAtributo = nomeDoAtributo;
+
+}
+public tipo_do_atributo getNomeDoAtributo (){
+	return nomeDoAtributo;
+
+}
+```
+• **OPERADORES RELACIONAIS E LÓGICOS**.
+
+» Os operadores relacionais em Java permitem a comparação entre dois valores ou expressões, retornando um resultado logico (verdadeiro ou falso).
+
+» Os operadores lógicos em Java permitem a analise entre os resultados de duas ou mais valores ou expressões.
+
+```
+Operadores Relacionais:
+
+° Igual (==)
+° Diferente (!=)
+° Maior que (>)
+° Maior ou igual a (>=)
+° Menor (<)
+° Menor ou igual a (<=)
+
+Operadores Lógicos:
+
+° E lógico ou AND (&&)
+° Ou lógico ou OR (||)
+° Negação lógico ou NOT (!)
+```
+
+• **ESTRUTURA DE DECISÃO**
+
+° Em Java podemos utilizar a estrutura de decisão **if - else/else if (sem elif como python)** para permitir o programa analisar uma certa condição e escolher  a linha de código que será executada com base no resultado da condição 
+
+° O comando **if - else** funciona da seguinte forma: o programa analisa a condição (parênteses do comando if) e se esta retorna verdadeiro ele executará o bloco de comandos logo abaixo. Caso a condição retorne valor falso, o bloco de comandos a ser executado é o que fica logo abaixo do comando else.
+
+° Sintaxe:
+
+```
+if (condicao) {
+    // código se a condição for verdadeira
+} else if (outraCondicao) {
+    // código se a outra condição for verdadeira
+} else {
+    // código se nenhuma das condições acima for verdadeira
+}
+```
+
+° Exemplo com valores:
+
+```
+int idade = 18;
+
+if (idade < 18) {
+    System.out.println("Menor de idade");
+} else if (idade == 18) {
+    System.out.println("Tem exatamente 18 anos");
+} else {
+    System.out.println("Maior de idade");
+}
+```
+
+° **PONTOS IMPORTANTES DO IF-ELSE:**
+
+» As condições vão entre **parênteses `( )`**.
+
+» Os blocos de código vão entre **chaves `{ }`**.
+
+» Pode comparar com `==`, `!=`, `<`, `>`, `<=`, `>=`. (Operadores Relacionais)
+
+» Para condições compostas, dá pra usar `&&` (E) e `||` (OU). (Operadores Lógicos)
+
+• **TRY - CATCH**
+
+° Quando executamos códigos em Java, diversos erros podem acontecer: erros de codificação por parte do programador, erros devidos a entrada de valores incorretos entre outras possibilidades. Quando erros ocorrem o Java normalmente irá interromper a execução do programa e exibir alguma mensagem de erro. O termo técnico para isso é: o Java irá “jogar uma exceção” (throw an exception).
+
+° O comando **try** permite definir um bloco de comandos que terá o proposito de buscar erros enquanto o programa testado é executado.
+
+° O comando catch permite definir um bloco de comandos a ser executado quando um erro é encontrado. O comando try e catch “andam sempre juntos”.
+
+° Ambos os comandos "andam juntos"
+
+» Sintaxe:
+
+```
+try {
+    // código que pode lançar uma exceção
+} catch (TipoDaExcecao nomeVariavel) {
+    // tratamento da exceção
+}
+```
+
+° Exemplo com valores:
+
+```
+public class ExemploTryCatch {
+    public static void main(String[] args) {
+        try {
+            int resultado = 10 / 0; // isso vai causar uma exceção
+            System.out.println("Resultado: " + resultado);
+        } catch (ArithmeticException e) {
+            System.out.println("Erro: divisão por zero!");
+        }
+    }
+}
+```
+
+° **ALGUNS PONTOS DO TRY - CATCH:**
+
+» O código dentro do `try` é **tentado**.
+
+» Se der erro, o `catch` **captura** a exceção e executa o que estiver dentro dele.
+
+» Você pode usar vários `catch` se quiser tratar tipos diferentes de erro.
+
+» Dá pra usar `finally {}` se quiser um bloco que **sempre execute**, com ou sem erro (opcional).
 
 
 °»
