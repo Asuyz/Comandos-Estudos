@@ -291,7 +291,191 @@ public class ExemploTryCatch {
 
 » Dá pra usar `finally {}` se quiser um bloco que **sempre execute**, com ou sem erro (opcional).
 
+-------------------------------------------------------------------------------------------------------------
 
-°»
+• **Manipulação de Strings**
+
+° Métodos com String:
+
+» A classe **String** possui diversos métodos que permite a manipulação de seus valores, os métodos são: 
+
+° ```.lenght() - Retorna a quantidade de caracteres que a string possui.```
+
+° ```.toUpperCase() - Retorna a string com todos os seus caracteres convertidos para maiúsculo```
+
+° ```.toLowerCase() - Retorna a string com todos seus caracteres convertidos em minusculo``` 
+
+° ```.substring (Índice atual, índice final) - Retorna a copia de uma string a partir dos índices especificados, para essa copia estar correta o índice deve ser especificado um caractere a mais além do ultimo caractere.```
+
+» ```"Lero Lero" - .substring;(5,8) = "Ler"/ "Lero lero" - .substring;(5,9) = "Lero"```
+
+° ```.replace ( atual, substituto ) - Substitui um caractere de uma string por outro.```
+
+» Observação do funcionamento desses métodos:
+
+```public class ManipulaString {
+    public static void main(String[] args) {
+        String frase = "O rato roeu a roupa do rei de Roma";
+        JOptionPane.showMessageDialog(null, frase);
+        
+        // Exibindo a quantidade de caracteres
+        int qtChar = frase.length();
+        JOptionPane.showMessageDialog(null, qtChar);
+        
+        // Exibindo a frase em maiúscula
+        String maiuscula = frase.toUpperCase();
+        JOptionPane.showMessageDialog(null, maiuscula);
+        
+        // Exibindo a frase em minúscula
+        String minuscula = frase.toLowerCase();
+        JOptionPane.showMessageDialog(null, minuscula);
+        
+        // Obtendo e exibindo a palavra Roma
+        String palavra = frase.substring(30, 34);
+        JOptionPane.showMessageDialog(null, palavra);
+        
+        // Substituindo a palavra roupa por parede
+        String frase2 = frase.replace("roupa", "parede");
+        JOptionPane.showMessageDialog(null, frase2);
+    }
+}
+```
+
+• **Comparacao de Strings**
+
+° Para comparar uma **string** com outra podemos utilizar os métodos:
+
+° ```.equals(string) - compara as strings e retorna true caso sejam idênticas (esse método faz diferenciação entre maiúsculas e minúsculas). Caso não serem idênticas retorna false.```
+
+° ```.equalIgonreCase(string) - compara as strings e retorna true em caso de serem iguais (não faz diferenciação entre maiúsculas e minúsculas). Caso não sejam iguais retorna falso.```
+
+» Vale Lembrar que os dois métodos apresentados retornam valores lógicos (**true e false**) dependendo do resultado de sua analise.
+
+» Observação do funcionamento desses métodos:
+
+```public class ComparaString {
+    public static void main(String[] args) {
+        String senha;
+        senha = JOptionPane.showInputDialog("Digite sua senha");
+        
+        // diferenciando minúscula e maiúsculas
+        if (senha.equals("P4ssw0rD")) {
+            JOptionPane.showMessageDialog(null, "Teste 1: Acesso autorizado!");
+        } else {
+            JOptionPane.showMessageDialog(null, "Teste 1: Acesso negado!");
+        }
+        
+        // sem diferenciação de minúscula e maiúsculas
+        if (senha.equalsIgnoreCase("P4ssw0rD")) {
+            JOptionPane.showMessageDialog(null, "Teste 2: Acesso concedido!");
+        } else {
+            JOptionPane.showMessageDialog(null, "Teste 2: Acesso impedido!");
+        }
+    }
+}
+```
+
+• **Manipulação de Datas**
+
+° A classe **Period** pode ser usada para obter um período de tempo entre das fornecidas a partir desses métodos: 
+
+° .between(período 1, período 2) - Retorna o tempo entre as datas fornecidas.
+
+° .getYears() - Retorna a quantidade de anos decorridos do período.
+
+° .getMonths - Retorna a quantidade de meses decorridos do período 
+
+° .getDays - Retorna a quantidade de dias decorridos do período.
+
+» **Formatação de Datas
+
+° Utilizamos a **classe "DateTimeFormater"** e o **metodo "ofPattern()"** e podemos definir o padrão desejado de como as datas serão exibidas.
+
+» Exemplo dos formatos: 
+
+```Formato yyyy-MM-dd
+
+Exemplo:"1988-09-29"
+Explicação:
+yyyy → Ano com 4 dígitos (`1988`)
+MM → Mês com 2 dígitos (`09`)
+dd → Dia com 2 dígitos (`29`)     
+Observação: É o formato padrão ISO (muito usado em bancos de dados e APIs).
+
+Formato dd/MM/yyyy
+
+Exemplo:"29/09/1988"
+Explicação:- dd → Dia
+MM → Mês
+yyyy → Ano    
+Observação: Formato mais comum no Brasil e em outros países que usam o padrão dia/mês/ano.
+
+Formato dd-MMM-yyyy
+
+Exemplo:"29-Sep-1988"
+Explicação:
+dd → Dia
+MMM → Abreviação do mês em **letras** (em inglês: `Sep` para Setembro)
+yyyy → Ano 
+   
+Observação: Usado quando queremos **mostrar o mês por extenso (abreviado).
+
+
+Formato E, MMM dd yyyy
+"Thu, Sep 29 1988"`
+Explicação:
+E → Dia da semana abreviado (`Thu` = Thursday = Quinta-feira)
+MMM` → Mês abreviado
+dd → Dia
+yyyy → Ano
+
+Observação: Ideal para exibir **datas completas** com o dia da semana.
+```
+
+» **Classes:**
+
+° **LocalDate** permite trabalhar com datas (ano-mês-dia).
+
+° **LocalTime** permite trabalhar com horas (hora-minuto-segundo).
+
+° **LocalDateTime** permite trabalhar com datas e horas.
+
+» **Métodos:**
+
+° .now() permite obter do sistema a data e hora atual.
+
+° .parse() permite definir uma data ou hora para o objeto.
+
+° .format() aplica o formato especificado.
+
+° .isAfter() permite comparar se a data selecionada é depois de uma
+data específica.
+
+° .isBefore() permite comparar se a data selecionada é antes de uma
+data específica.
+
+» Observação do funcionamento:
+
+```public static void main(String[] args) {
+    LocalDate dataAtual = LocalDate.now();
+    LocalDate fimDosTempos = LocalDate.parse("2012-12-21");
+
+    // Obtendo período de tempo entre as duas datas
+    Period periodo = Period.between(fimDosTempos, dataAtual);
+    String tempoBonus = String.format("Desde o fim dos tempos, passaram:\n%d anos \n%d meses \n%d dias",
+            periodo.getYears(), periodo.getMonths(), periodo.getDays());
+    JOptionPane.showMessageDialog(null, tempoBonus);
+
+    // formatando a data no padrão dia-mês-ano
+    DateTimeFormatter dft = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+    String dataFormatada = fimDosTempos.format(dft);
+    JOptionPane.showMessageDialog(null, dataFormatada);
+}
+```
+
+-------------------------------------------------------------------------------
+
+
+•°»
 
 
