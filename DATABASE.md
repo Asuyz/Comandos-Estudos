@@ -38,10 +38,12 @@
 ° Cada empresa possui um **padrão** de definição de atributos (nomenclatura/escrita), para uma melhor organização.
 
 ° Atributos podem ou não serem obrigatórios e eles são diferidos entre:
+
 » ° Bolinha - Atributo opcional.
 » * - Atributo obrigatório. 
 
 ° Os atributos podem ser divididos entre tipos de dados diferentes:
+
 **» Domínio
 » Lógico
 » Distinto
@@ -52,8 +54,8 @@
 
 » **Numérico** -  Para o armazenamento de números, onde os bytes representam as casas decimais e a vírgula é representada pela escala (caso for necessário um número que não seja inteiro).
 
-**Exemplo:
-**
+° **Exemplo:**
+
 » Se em um banco de dados estivermos armazenando o atributo **atura** precisamos de alocar três bytes de espaço (3 casas decimais) e duas casas de espaço na parte de **scale** (números depois da vírgula). Então ficara algo como: 1,80 (metros) = 3 bytes (3 casas) e 2 scale (2 números depois da vírgula). **Obs » uma melhor representação dessa situação seria medir a altura em centímetros pois usaríamos apenas 3 bytes de espaço (economizando a memória no disco e na nuvem).**
 
 » **Varchar** - Aloca uma quantia de bytes (que você pode definir) para o armazenamento de informações (caracteres) e os bytes não utilizados são apenas liberados no disco **físico** e não na nuvem (na nuvem a quantidade estabelecida de bytes será a quantidade definida).
@@ -65,11 +67,30 @@
 • **Chaves**
 
 ° **Chave primária**
+
 » A implementação da chave primeira na **entidade** garante a unicidade dos dados 
 
 ° **Chave estrangeira**
+
 » Trás informações para outra **entidade** são representadas por um F (chaves estrangeiras garantem uma melhor organização do banco de dados).
 
+-------------------------------------------------------------------------------
+
+• **Entidade Associativa:**
+
+° Criamos uma entidade associativa para garantir a integridade referencial dos dados em uma relacao N:N (Muitos para Muitos existentes). Podemos nomear essa entidade com a soma dos dois nomes das entidades que farão relação com essa entidade associativa.
+
+» A entidade associativa sempre terão as chaves estrangeiras das entidades que ela esta fazendo relação e essas chaves sempre serão primarias.
+
+° **Ex:** As Entidades Professor e Alunos formam a entidade associativa Professor-Aluno.
+
+• **Diferença entre as linhas no Oracle Data Modeler**
+
+° As linhas (relações) podem ter dois tipos de condições:
+
+» Linha cheia - As chaves estrangeiras irão fazer parte da chave primaria. 
+
+» Linha tracejada - As chaves estrangeiras não irão fazer parte da chave primaria.
 
 
 
@@ -83,4 +104,6 @@
 
 
 
-°»
+
+
+•°»
