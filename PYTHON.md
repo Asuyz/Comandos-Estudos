@@ -69,7 +69,7 @@ else:
 
 ---
 
-•  **Resumo Rápido em Tabela**
+•  **Resumo Rápido em Tabela**:
 
 | Conceito            | Função usada / Exemplo       |
 | ------------------- | ---------------------------- |
@@ -81,3 +81,52 @@ else:
 
 ---
 
+• **Execução com repetição (While)**
+
+° While é o comando que mantém o código rodando enquanto uma condição estabelecida estiver sendo atendida.
+
+» Exemplo:
+
+```
+print ("oi tudo bem? (S/N)")
+resposta = input()
+
+while resposta == "S"
+	print ("Bom dia")
+	print ("Deseja ver a mensagem novamente?")
+	resposta = input().upper
+
+if reposta == "N"
+	print("tchau)
+```
+
+» O uso **"padrão"** do while vem da seguinte forma:
+
+° 1 - Inicialização da variável.
+
+° 2 - While (Condição envolvendo a variável).
+
+» Tarefa envolvendo a variável.
+
+» Atualização da variável.  
+
+° A atualização da logica da variável fica no fim do código isso deixa a logica mais simples e limpa.
+
+ • **COMO SAIR DO `while`**
+
+° Se a variável não for atualizada dentro do `while`, o código ficará preso em um **loop infinito**, repetindo para sempre.
+
+» **Exemplo de loop infinito:**
+
+```
+while True:
+    print("Isso nunca vai parar sozinho!")
+```
+
+° O `while True:` é uma condição que **sempre será verdadeira**, gerando um loop eterno até ser interrompido manualmente.
+
+° Em resumo utilizamos o `while` quando **não sabemos quantas vezes** o bloco de código precisa ser repetido. A repetição continua **enquanto a condição for verdadeira**.
+
+
+
+»°•
