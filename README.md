@@ -2,7 +2,7 @@
 
 **📚 AS ANOTAÇÕES ESTARÃO LOCALIZADAS DE FORMA SEPARADA ENTRE 📁**: 
 
-| Matéria                                   | Arquivo(s)                   |
+| Matéria(s)                                | Arquivo(s)                   |
 | ----------------------------------------- | ---------------------------- |
 | ⊳ GitBash                                 | Codigos.md                   |
 | ⊳ Java                                    | Java.md \| LogicaJava.md     |
@@ -10,8 +10,8 @@
 | ⊳ Oracle                                  | Database.md                  |
 | ⊳ Software Engeneering and Business Model | SEABM.md                     |
 | ⊳ Html (**HyperText Markup Language**)    | HTML.md                      |
-| ⊳ Css (Cascading Style Sheet)             | CSS.md                       |
-| ⊳ Figma (Alura)                           | FIGMA.md                     |
+| ⊳ Css (**Cascading Style Sheet**)         | CSS.md                       |
+| ⊳ Figma (**Alura**)                       | FIGMA.md                     |
 |                                           |                              |
 
 » **Os arquivos terão anotações e alguns exercícios/códigos de exemplo para estudos**.

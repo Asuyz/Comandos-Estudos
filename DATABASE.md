@@ -2,7 +2,7 @@
 
 » Criação de um banco de dados.
 
-**OBS » Para transformar o banco de dados em linha de código devemos sempre clicar na setinha azul no ORACLE DATA MODELER, depois no inferior da janela clicar em "engenharia" (A entidade azul ficará amarela), depois na opção chamada GENERATE DDL**..
+**OBS » Para transformar o banco de dados em linha de código devemos sempre clicar na setinha azul no ORACLE DATA MODELER, depois no inferior da janela clicar em "engenharia" (A entidade azul ficará amarela), depois na opção chamada GENERATE DDL**.
 
 ° Primeiramente começamos criando as **entidades** (quadrados no **Oracle Data Modeler**) para o armazenamento e correlação de informações.
 
