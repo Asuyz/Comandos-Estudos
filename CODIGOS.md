@@ -1,83 +1,63 @@
-• **Anotações de codigos do Git Bash, para consulta ou estudo**.
+### 📁 Anotações de códigos do Git Bash
 
- • **Ciclo de vida/estado dos arquivos**.
+#### » Ciclo de Vida/Estado dos Arquivos:
 
-° Untracked (Não rastreados)
-» Arquivos criados mas que ainda não são rastreados pelo git, para começar o rastreio (-git add)
+|Estado|Descrição|
+|---|---|
+|Untracked|Arquivos criados mas ainda não rastreados pelo Git. Use `git add` para começar a rastrear.|
+|Unmodified|Arquivos rastreados, mas sem modificações.|
+|Modified|Arquivos com modificações, mas ainda não adicionados à área de stage.|
+|Staged|Arquivos prontos para serem comitados com `git commit`.|
 
-°Unmodified (sem modificações)
-» Arquivos rastreados pelo git mas ainda sem alterações.
+---
 
--Modified (modificado)
-» Arquivos modificados (com alterações) mas não enviados para a área de stage.
+#### » Comandos para Modificação de Estágios:
 
--Staged (preparado)
-» Arquivos prontos para serem comitados (-git commit).
+|Comando|Transição|Descrição|
+|---|---|---|
+|`git add`|Untracked → Staged|Começa a rastrear arquivos.|
+|`git commit`|Staged → Unmodified|Salva o estado atual no log (commit).|
+|`git commit -am "msg"`|Modified → Commit direto|Adiciona e comita de uma vez, apenas para arquivos já rastreados.|
 
-• **Comandos para modificação de estagios de arquivo**
+---
 
-» Git Add (De Untracked para Unmodified)> use esse comando para começar a rastrear o arquivo.
-é possivel dar o add mais o commit com git -am "mensagem para o log".
+#### » Comandos Git Bash:
 
-» Git commit (De Staged para Unmodified)> Use esse comando para salvar o estado atual do arquivo (salvar alterações no log). 
+|Comando|Descrição|
+|---|---|
+|`git config user.name`|Define o nome do usuário do Git|
+|`git config user.email`|Define o email do usuário|
+|`git config init.defaultBranch`|Altera o nome da branch padrão (ex: main)|
+|`mkdir <nome>`|Cria um diretório|
+|`cd <nome>`|Entra em um diretório|
+|`cd ..`|Volta um nível na navegação|
+|`git init`|Inicia um repositório Git|
+|`ls`|Lista os arquivos do diretório|
+|`touch <arquivo.ext>`|Cria um novo arquivo|
+|`pwd`|Mostra o diretório atual|
+|`rm <arquivo>`|Remove o arquivo especificado|
+|`rmdir <diretório>`|Remove o diretório especificado|
+|`git diff`|Mostra as diferenças entre arquivos modificados|
+|`git clone <URL>`|Clona um repositório remoto|
+|`git remote -v`|Mostra as URLs dos repositórios remotos configurados|
+|`git push -u origin <branch>`|Envia as alterações para o repositório remoto|
+|`git checkout <arquivo>`|Descarta alterações no arquivo|
+|`git checkout -b <nome>`|Cria uma nova branch e muda para ela|
+|`git branch -m <novo>`|Renomeia a branch atual|
+|`git branch`|Lista as branches locais|
+|`git add .`|Adiciona todos os arquivos modificados/untracked à área de stage|
+|`git checkout <branch>`|Muda para outra branch|
+|`git merge <branch>`|Mescla a branch especificada com a branch atual|
 
-• **Comandos para o git bash**
+---
 
-» git config (os mais usados).
+####  » Resets:
 
-» user.name + Usuario do git.
+|Comando|Efeito|
+|---|---|
+|`git reset`|Retira arquivos da área de stage (volta ao estado modified)|
+|`git reset --soft <hash>`|Volta para commit anterior, mantendo arquivos na área de stage|
+|`git reset --mixed <hash>`|Volta para commit anterior, removendo arquivos da área de stage|
+|`git reset --hard <hash>`|Volta para commit anterior e descarta todas as modificações|
 
-» user.email + Email do usuario.
-
-» init.defaultBranch (Para mudar a Branch, a mais "padrão" sendo a main.
-
-» mkdir - para fazer um diretório (pasta).
-
-» cd (nome do diretorio/pasta) - para navegar no terminal.
-
-» cd (..) - para voltar um nível de navegação. 
-
-» git init - iniciar um repositório. 
-
-» ls - listar o contéudo do diretório.
-
-» touch (mais a terminação do arquivo) - para criar um arquivo dentro do diretório.
-
-» pwd - grava o diretório sendo trabalhado no momento.
-
-» rm (mais o nome do arquivo) - remove o arquivo mencionado.
-
-» rmdir (mais o nome do diretorio) - remove o diretorio mencionado.
-
-» git diff - para visualizar as mudanças feitas no arquivo (comparar).
-
-» git clone (mais a url) - para trazer o repositório da nuvem.
-
-» git remote -v - verifica a url para realizar push ou fetch.
-
-» git push -u (origem e branch) - para upload no github.
-
-» git checkout (nome do arquivo) - para voltar as alterações do ultimo estagio salvo do arquivo trabalhado.
-
-» git checkout -b - (+ nome) cria uma nova Branch.
-
-» git brach -m (+ novo nome) - muda o nome da branch case necessário.
-
-» git branch - lista as branchs locais.
-
-» git add . - Adiciona todos os arquivos untracked (adiciona os arquivos na branch que está trabalhando).
-
-» git checkout (mais o nome da branch) - para navegação entre as branchs.
-
-» git merge - junta os arquivos de diferentes branchs na branch em que você está no momento (ex: Juntar os arquivos da branch1 e branch2 para main).
-
-• **Resets**
-
-» git reset - volta o arquivo de ser mandado para o Staged.
-
-» git reset --soft (hash) - volta o commit, porém mantem os arquivos prontos para commit.
-
-» git reset --mixed (hash) - volta o commit, porém os arquivos saem da área de staged. 
-
-» git reset ---hard (hash) - volta o commit e exclui todas as alterações.
-*Hash é o commit que queremos retornar*.
+> **Nota:** _hash_ refere-se ao identificador único do commit que se deseja voltar.
