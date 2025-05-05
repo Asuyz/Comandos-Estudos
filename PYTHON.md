@@ -1,4 +1,4 @@
-• **COMPUTACIONAL THINKING USING PYTHON**
+## • **COMPUTACIONAL THINKING USING PYTHON**
 
 ° Finalidade dessa matéria é desenvolver o pensamento computacional (logica funcional base para outras linguagens) usando Python.
 
@@ -10,13 +10,13 @@
 
 --------------------------------------------------------------------------------
 
-• **Entrada e  Saída de Dados**
+## • **Entrada e  Saída de Dados**
 
 ° **Entrada**: Usamos a função `input()` para receber dados do usuário.  
 
 ° **Saída**: Usamos a função `print()` para exibir mensagens na tela. 
 
-```
+```python
 nome = input("Digite seu nome: ")
 #Entrada de dados
 
@@ -25,13 +25,13 @@ print("Olá,", nome)
 ```
 ---
 
-•  **Variáveis: Criação e Modificação**
+## •  **Variáveis: Criação e Modificação**
 
 ° **Criar uma variável** é só **atribuir** um valor a ela.  
 
 ° **Modificar** é **atribuir um novo valor**.
 
-``` 
+```python
 #Criação de variáveis
 
 idade = 20
@@ -49,11 +49,11 @@ print("Cidade:", cidade)
 
 ---
 
-•  **Execução Condicional: `if`, `else`**
+## •  **Execução Condicional: `if`, `else`**
 
 ° Permite **executar diferentes blocos de código** dependendo de uma condição verdadeira ou falsa.
 
-```
+```python
 #Execução condicional
 nota = float(input("Digite sua nota: "))
 
@@ -69,7 +69,7 @@ else:
 
 ---
 
-•  **Resumo Rápido em Tabela**:
+## •  **Resumo Rápido em Tabela**:
 
 | Conceito            | Função usada / Exemplo       |
 | ------------------- | ---------------------------- |
@@ -81,13 +81,13 @@ else:
 
 ---
 
-• **Execução com repetição (While)**
+## • **Execução com repetição (While)**
 
 ° While é o comando que mantém o código rodando enquanto uma condição estabelecida estiver sendo atendida.
 
 » Exemplo:
 
-```
+```python
 print ("oi tudo bem? (S/N)")
 resposta = input()
 
@@ -116,9 +116,9 @@ if reposta == "N"
 
 ° Se a variável não for atualizada dentro do `while`, o código ficará preso em um **loop infinito**, repetindo para sempre.
 
-» **Exemplo de loop infinito:**
+#### » **Exemplo de loop infinito:**
 
-```
+```python
 while True:
     print("Isso nunca vai parar sozinho!")
 ```

@@ -1,4 +1,4 @@
-° **Utilização de if, elif e else**:
+## ° **Utilização de if, elif e else**:
 
 » **If, elif e else** são estruturas condicionais. Estruturas condicionais são seções onde definem condições para a execução de determinados blocos de comandos (ao invés de executa-los todos de uma o programa para e decide qual caminho seguir baseada na condição do momento).
 
@@ -6,9 +6,9 @@
 
 » O **elif** é uma estrutura intermediária dentro da seção if-else no python e deve vir como um complemento a ambos. Quando você já tem um IF e um ELSE, mas precisa de uma condição para especificar outra regra, pode usar o elif.
 
-° **Exemplos**:
+## ° **Exemplos**:
 
-```
+```python
 """
 Com base na idade permitir ou não a coleta de sangue. (o código pode se tornar mais complexo pois existe a exceção de pessoas cadastradas antes dos 60 anos poderem doar sangue mesmo não cumprindo a idade maxima dos mesmos 60 anos).
 
@@ -56,7 +56,7 @@ else:
    
 ```
 
-```
+```python
 #calculadora que seleciona os operadores (Apenas no terminal).
 
   
@@ -111,9 +111,9 @@ else:
 
 ```
 
-° **Base de um programa com JANELA**:
+## ° **Base de um programa com JANELA**:
 
-```
+```python
 #criacao de uma interface (sem programa, apenas a janela).
 
 import requests #Import de biblioteca no https://pypi.org
@@ -134,15 +134,15 @@ janela_1.mainloop()
 ```
 
 -------------------------------------------------------------------------------
-• **Execução com repetição
+## • **Execução com repetição
 
-° **While**:
+#### ° **While**:
 
 » Mantém o código em execução continua enquanto uma condição for atendida dentro do código.
 
 ° **Exemplos:**
 
-```
+```python
 print("Oi tudo bem? (S/N"))
 resposta = input()
 
@@ -156,9 +156,9 @@ print("Certo, tenho um bom dia. Encerrando.)
 
 ```
 
-° **Calculadora com Menu**:
+#### ° **Calculadora com Menu**:
 ``
-```
+```python
 em_execucao = True
 
   
