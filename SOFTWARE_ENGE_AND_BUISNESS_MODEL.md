@@ -1,4 +1,4 @@
-**DESIGN THINKING**
+## • **DESIGN THINKING**
 
 • Forma de pensar, estruturação de raciocínio. (3 Pilares principais pilares: Entender o Cliente, Empatia e Experimentação)
 
@@ -62,7 +62,7 @@
 
 --------------------------------------------------------------------
 
-• **FERRAMENTAS PARA AUXILIAR NO DESIGN THINKING**
+## • **FERRAMENTAS PARA AUXILIAR NO DESIGN THINKING**
 
 ° Podemos utilizar IA'S para o auxilio na formação das ideias para tratar a **INFORMAÇÃO**
 
@@ -80,7 +80,7 @@
 
 ----------------------------------------------------------------
 
-• **UX - User Experience**
+## • **UX - User Experience**
 
 ° User Experiencie é a experiência que um usuário/pessoa tem ao interagir com um serviço ou produto, o estudo dessa questão tem como foco melhorar de forma objetiva e significativa.
 ° A experiência de usuário existe além do **digital**.
@@ -127,7 +127,7 @@
 
 -------------------------------------------------------------------------------
 
-• **Pitch**
+## • **Pitch**
 
 » É um discurso que se propõe em ser: 
 
@@ -158,7 +158,7 @@
 
 -------------------------------------------------------------------------------
 
-• **Diagrama de atividade (Diagrama UML)**
+## • **Diagrama de atividade (Diagrama UML)**
 
 » É uma representação visual de como o processo da aplicação (produto). O passo a passo e os possíveis finais.
 
