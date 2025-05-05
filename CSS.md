@@ -1,8 +1,8 @@
-• **Cascading Style Sheets (CSS)**
+## • **Cascading Style Sheets (CSS)**
 
 -------------------------------------------------------------------------------
 
-•  **IMPORTANTE SEMPRE ZERAR OS VALORES DE CSS DO NAVEGADOR**
+## •  **IMPORTANTE SEMPRE ZERAR OS VALORES DE CSS DO NAVEGADOR**
 
 ```
 * {
@@ -24,13 +24,13 @@
 
 -------------------------------------------------------------------------------
 
-**» Css é a parte de apresentação de aplicações (visual).**
+## » **Css é a parte de apresentação de aplicações (visual).**
 
 ° Para o desenvolvimento de aplicações em **HTML e CSS3** utilizamos os sites **W3C e MDM** para consulta de informações envolvendo ambas.
 
 ° Para a validação de arquivos utilizamos o site do **W3C** (Validator W3C) conforme os padrões para a criação e a interpretação de conteúdos para a Web.
 
-• **3 Tipos de CSS**:
+#### • **3 Tipos de CSS**:
 
 **° Inline.**
 
@@ -42,11 +42,11 @@
 
 ° As modificações de estilo (cor, tamanho de fonte, entre outras) é realizada no meio da estrutura do HTML (nas tags). (NÃO UTILIZAR)
 
-**» Interno:**
+#### **» Interno:**
 
 ° Aplica as modificações dentro da tag **< head >>**. (Evite utilizar).
 
-**» Externo:**
+#### **» Externo:**
 
 ° Cria uma parte externa para a aplicação do CSS, deixando o código mais limpo e podendo realizar mudanças no design de forma mais efetiva.
 
@@ -64,11 +64,11 @@
 
 ° Para o apontamento de arquivos, é preciso direcionar com: **(./) ou (../)**.
 
-• **Regra para a personalização do CSS**
+## • **Regra para a personalização do CSS**
 
 ° Para personalizar os elementos do **HTML**  com o **CSS** devemos seguir esse padrão:
 
-```
+```css
 p {color #f00; font-size :20px}
 
 ° P - é o seletor (tag).
@@ -78,7 +78,7 @@ p {color #f00; font-size :20px}
 
 ° Para usar os **IDS** no **CSS**:
 
-```
+```css
 #(id escolhido){
 
 }
@@ -91,13 +91,13 @@ color: rgb 255,255,255
 }
 ```
 
-• **Propriedade Shorthand**:
+#### • **Propriedade Shorthand**:
 
 ° É uma forma de escrever várias propriedades CSS **em uma única linha**.
 
 ° Ao invés de escrever várias regras separadas, você usa **uma linha compacta** pra economizar código e deixar mais limpo.
 
-```
+```css
 /* Forma longa (longhand) */
 margin-top: 10px;
 margin-right: 20px;
@@ -109,14 +109,14 @@ margin: 10px 20px;
 Onde o primeiro valor representa o eixo Y e o segundo o eixo X.
 ```
 
-• **Class**:
+#### • **Class**:
 
 ° Uma **classe** em CSS é uma forma de dar estilo a elementos HTML.  
 Você declara ela no CSS com um `.` (ponto), e no HTML você usa `class="nome-da-classe"`.
 
-° **Exemplo de uso de classe:**
+#### ° **Exemplo de uso de classe:**
 
-```
+```css
 <a href="#home" class="nav-link">Home</a>
     <a href="#sobre" class="nav-link">Sobre</a>
     <a href="#servicos" class="nav-link">Serviços</a>
