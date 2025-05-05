@@ -1,4 +1,4 @@
-• **Building Relational Data base**
+## • **Building Relational Data base**
 
 » Criação de um banco de dados.
 
@@ -8,7 +8,7 @@
 
 ° Podemos dar **relações** (Linhas que se conectam entre as entidades) e atributos (Informações) para as nossas **entidades** e definir a **cardinalidade** entre elas.
 
-• **Relações** 
+#### • **Relações** 
 
 » Uma relação no Oracle Data Modeler é uma conexão entre duas ou mais entidades que define como os dados estão interligados. Ela representa a associação entre tabelas no banco de dados, permitindo que você especifique como os dados de uma tabela se relacionam com os dados de outra. As relações podem ser de diferentes tipos, como um-para-um, um-para-muitos ou muitos-para-muitos, e são fundamentais para a estruturação e organização do modelo de dados, ajudando a garantir a integridade referencial e a eficiência nas consultas.
 
@@ -31,7 +31,7 @@
 
 -------------------------------------------------------------------------------
 
-• **Atributos**
+## • **Atributos**
 
 » Utilizamos para a definição de características das nossas **entidades**.
 
@@ -76,7 +76,7 @@
 
 -------------------------------------------------------------------------------
 
-• **Entidade Associativa:**
+## • **Entidade Associativa:**
 
 ° Criamos uma entidade associativa para garantir a integridade referencial dos dados em uma relacao N:N (Muitos para Muitos existentes). Podemos nomear essa entidade com a soma dos dois nomes das entidades que farão relação com essa entidade associativa.
 
