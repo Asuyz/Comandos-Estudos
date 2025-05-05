@@ -449,7 +449,7 @@ yyyy → Ano
 Observação: Ideal para exibir **datas completas** com o dia da semana.
 ```
 
-## • **Classes:**
+## » **Classes:**
 
 ° **LocalDate** permite trabalhar com datas (ano-mês-dia).
 

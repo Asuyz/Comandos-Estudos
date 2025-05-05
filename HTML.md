@@ -7,7 +7,7 @@ Os navegadores apenas fazem o processo de identificação e executar o que foi e
 
 ° Um aspecto **MUITO** importante no **html** é a indentação correta das linhas de tag propostas.
 
-```html
+```
 <tag> ... </tag>(toda tag de fechamento apresenta essa barra).
 ```
 

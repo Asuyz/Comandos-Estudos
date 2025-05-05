@@ -1,9 +1,4 @@
-
 ## •  **Introdução do Figma**
-
-» Figma é uma plataforma para construção de interfaces e protótipos. Com essa ferramenta podemos construir o design de produtos digitais (sites e aplicativos de dispositivos móveis) ou até para pequenas telas.
-
-» Trabalhamos com Frame Works (que são resoluções do dispositivo(s) que queremos trabalhar).
 
 ## ° **Sobre os botões do software:**
 

@@ -1,4 +1,4 @@
-## • **Logica de programação em JAVA (lembretes, bons modos e explicação de funcionalidades de código).**
+## • **Logica de programação em JAVA (lembretes, bons modos e explicação de funcionalidades de código).
 
 ## ° **Criação de classes
 
@@ -271,7 +271,7 @@ Exemplos de componentes Swing mais usados:
 
 ----------------------------------------------------------------
 
-## ° **Encadeamento de Métodos: Uso de um Método Dentro de Outro:**
+## ° **Encadeamento de Métodos: Uso de um Método Dentro de Outro**
 
 ° **Exemplo de Utilização de um Método dentro de outro Método**:
 
