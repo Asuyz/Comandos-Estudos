@@ -1,4 +1,4 @@
-• **Domain Design Driven Using Java**
+ ## • **Domain Design Driven Using Java**
 
 ° **Programação orientada a objetos** »  Identificar os objetos e destrincha-las podendo utilizar a abstração como um dos meios(imaginar as propriedades do objetos. Ex: Navio {Tripulação, Carga, Capacidade). Abstração pode ser correta dependendo da sua ***aplicação.**
 
@@ -19,22 +19,36 @@
 » **Sobrescrita** » ocorre quando uma classe filha redefine um método da classe pai, implementando um comportamento específico para aquela classe.
 
 --------------------------------------------------------------------
-° **Tipos de variáveis em Java**
-    ⌞ Java é uma linguagem fortemente tipada.
+
+## • **Tipos de variáveis em Java**
+
+⌞ Java é uma linguagem fortemente tipada.
 
 ° Variáveis ficam armazenadas na memória primaria (memória ram).
+
 ⌞ Tipos de variáveis **primitivas:
-     ─ Char = 16 Bits
-     ─ Byte = 8 Bits
-     ─ Int = 32 Bits 
-     ─ Short = 16 Bits
-     ─ Long =  64 Bits
-     ─ Float = 32 Bits
-     ─ Double = 64 Bits
-     ─ Boolean = 8 Bits (True or False)**
-⌞ Tipos de variaveis não **primitivas:
-     ─ String = O número de bits dependera da sua extensão (Cadeira de caracteres use aspas dentro do parênteses )**.
-⌞ As variáveis **BYTE, INT, SHORT E LONG SÃO UTILIZADAS PARA NÚMEROS INTEIROS, SUA DISTINÇÃO ENTRE ELES É A SUA QUANTIDADE DE ARMAZENTAMENTO (QUANTO MAIS BITS MAIOR SUA CAPACIDADE).**
+
+**─ Char = 16 Bits
+
+**─ Byte = 8 Bits
+
+**─ Int = 32 Bits 
+
+**─ Short = 16 Bits
+
+**─ Long =  64 Bits
+
+**─ Float = 32 Bits
+
+**─ Double = 64 Bits
+
+**─ Boolean = 8 Bits (True or False)**
+
+⌞ Tipos de variaveis não **primitivas**
+
+─ String = **O número de bits dependera da sua extensão (Cadeira de caracteres use aspas dentro do parênteses) **.
+
+⌞ **As variáveis BYTE, INT, SHORT E LONG SÃO UTILIZADAS PARA NÚMEROS INTEIROS, SUA DISTINÇÃO ENTRE ELES É A SUA QUANTIDADE DE ARMAZENTAMENTO (QUANTO MAIS BITS MAIOR SUA CAPACIDADE).**
 
 ⌞ As variáveis **FLOAT E DOUBLE SÃO UTILIZADAS PARA NÚMERO REAIS.
 
@@ -77,7 +91,7 @@ Decremento unitário » -- (x--)
 
 -------------------------------------------------------------------------------
 
-• **CLASSES EM JAVA**
+## • **CLASSES EM JAVA**
 
 ° Classe é um molde, ao se definir uma classe podem ser criados **diversos** objetos a partir dela
 
@@ -107,7 +121,7 @@ Decremento unitário » -- (x--)
 ° Podemos ter métodos onde é possível passar dados (valores), chamado de parâmetros (passagem dos parâmetros são opcionais).
 » Utilizamos métodos para **reutilizar** códigos (definir o código apenas uma vez e usa-lo diversas vezes).
 
-° **Tipos de métodos**
+## ° **Tipos de métodos**.
 
 ° Métodos com **retorno**
 » Retorna a informação digitada (Geralmente atribuída a alguma variável), e o programa principal continua. 
@@ -133,7 +147,7 @@ código do corpo
 }
  
 -------------------------------------------------------------------------------
-• **ENCAPSULAMENTO**.
+## • **ENCAPSULAMENTO**.
 
 ° Encapsulamento ou **data hidding** é mais um dos conceitos da programação orientada a objetos. Trata-se de um mecanismo que possibilita restringir o acesso a atributos e métodos. Esses conteúdos encapsulados (privados) podem ser acessados pelo **get** e **set**.
 
@@ -142,7 +156,7 @@ código do corpo
 ° Seu objetivo: Obter (ler) o valor de atributo privado.
 » Exemplo: e você tem um atributo `nome`, o método `getNome()` vai retornar o valor dele.
 
-```
+```js
 public class Pessoa {
     private String nome;
 
@@ -157,7 +171,7 @@ public class Pessoa {
 ° Seu objetivo: Definir (alterar) o valor de um atributo privado.
 » Exemplo: Se quiser mudar o valor de `nome`, você usa `setNome("Novo Nome")`.
 
-```
+```js
 public class Pessoa {
     private String nome;
 
@@ -171,7 +185,7 @@ public class Pessoa {
 
 » Visualização de ambos no código:
 
-```
+```js
 public void setNomeDoAtributo (tipo_do_atributo nomeDoAtributo) {
 	this.nomeDoAtributo = nomeDoAtributo;
 
@@ -181,7 +195,8 @@ public tipo_do_atributo getNomeDoAtributo (){
 
 }
 ```
-• **OPERADORES RELACIONAIS E LÓGICOS**.
+
+## • **OPERADORES RELACIONAIS E LÓGICOS**.
 
 » Os operadores relacionais em Java permitem a comparação entre dois valores ou expressões, retornando um resultado logico (verdadeiro ou falso).
 
@@ -204,15 +219,15 @@ Operadores Lógicos:
 ° Negação lógico ou NOT (!)
 ```
 
-• **ESTRUTURA DE DECISÃO**
+## • **ESTRUTURA DE DECISÃO**
 
 ° Em Java podemos utilizar a estrutura de decisão **if - else/else if (sem elif como python)** para permitir o programa analisar uma certa condição e escolher  a linha de código que será executada com base no resultado da condição 
 
 ° O comando **if - else** funciona da seguinte forma: o programa analisa a condição (parênteses do comando if) e se esta retorna verdadeiro ele executará o bloco de comandos logo abaixo. Caso a condição retorne valor falso, o bloco de comandos a ser executado é o que fica logo abaixo do comando else.
 
-° Sintaxe:
+**° Sintaxe:**
 
-```
+```js
 if (condicao) {
     // código se a condição for verdadeira
 } else if (outraCondicao) {
@@ -224,7 +239,7 @@ if (condicao) {
 
 ° Exemplo com valores:
 
-```
+```js
 int idade = 18;
 
 if (idade < 18) {
@@ -236,7 +251,7 @@ if (idade < 18) {
 }
 ```
 
-° **PONTOS IMPORTANTES DO IF-ELSE:**
+## ° **PONTOS IMPORTANTES DO IF-ELSE:**
 
 » As condições vão entre **parênteses `( )`**.
 
@@ -246,7 +261,7 @@ if (idade < 18) {
 
 » Para condições compostas, dá pra usar `&&` (E) e `||` (OU). (Operadores Lógicos)
 
-• **TRY - CATCH**
+## • **TRY - CATCH**
 
 ° Quando executamos códigos em Java, diversos erros podem acontecer: erros de codificação por parte do programador, erros devidos a entrada de valores incorretos entre outras possibilidades. Quando erros ocorrem o Java normalmente irá interromper a execução do programa e exibir alguma mensagem de erro. O termo técnico para isso é: o Java irá “jogar uma exceção” (throw an exception).
 
@@ -258,7 +273,7 @@ if (idade < 18) {
 
 » Sintaxe:
 
-```
+```js
 try {
     // código que pode lançar uma exceção
 } catch (TipoDaExcecao nomeVariavel) {
@@ -268,7 +283,7 @@ try {
 
 ° Exemplo com valores:
 
-```
+```js
 public class ExemploTryCatch {
     public static void main(String[] args) {
         try {
@@ -293,7 +308,7 @@ public class ExemploTryCatch {
 
 -------------------------------------------------------------------------------------------------------------
 
-• **Manipulação de Strings**
+## • **Manipulação de Strings**
 
 ° Métodos com String:
 
@@ -313,7 +328,8 @@ public class ExemploTryCatch {
 
 » Observação do funcionamento desses métodos:
 
-```public class ManipulaString {
+```js
+public class ManipulaString {
     public static void main(String[] args) {
         String frase = "O rato roeu a roupa do rei de Roma";
         JOptionPane.showMessageDialog(null, frase);
@@ -341,7 +357,7 @@ public class ExemploTryCatch {
 }
 ```
 
-• **Comparacao de Strings**
+## • **Comparacao de Strings**
 
 ° Para comparar uma **string** com outra podemos utilizar os métodos:
 
@@ -353,7 +369,8 @@ public class ExemploTryCatch {
 
 » Observação do funcionamento desses métodos:
 
-```public class ComparaString {
+```js
+public class ComparaString {
     public static void main(String[] args) {
         String senha;
         senha = JOptionPane.showInputDialog("Digite sua senha");
@@ -375,7 +392,7 @@ public class ExemploTryCatch {
 }
 ```
 
-• **Manipulação de Datas**
+## • **Manipulação de Datas**
 
 ° A classe **Period** pode ser usada para obter um período de tempo entre das fornecidas a partir desses métodos: 
 
@@ -432,7 +449,7 @@ yyyy → Ano
 Observação: Ideal para exibir **datas completas** com o dia da semana.
 ```
 
-» **Classes:**
+## • **Classes:**
 
 ° **LocalDate** permite trabalhar com datas (ano-mês-dia).
 
@@ -456,7 +473,8 @@ data específica.
 
 » Observação do funcionamento:
 
-```public static void main(String[] args) {
+```js
+public static void main(String[] args) {
     LocalDate dataAtual = LocalDate.now();
     LocalDate fimDosTempos = LocalDate.parse("2012-12-21");
 

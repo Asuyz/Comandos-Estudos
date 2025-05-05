@@ -1,12 +1,10 @@
-• **Logica de programação em JAVA (lembretes, bons modos e explicação de funcionalidades de código).
+## • **Logica de programação em JAVA (lembretes, bons modos e explicação de funcionalidades de código).
 
-
-° **Criação de classes
+## ° **Criação de classes
 
 » **Primeiro criamos os atributos (por exemplo: volume e estação):**
 
-
-```
+```js
 package br.com.fiap;  
   
 public class Radio {  
@@ -30,7 +28,7 @@ public class Radio {
 
 » **Criação do objeto para testes (No caso objeto RADIO)**:
 
-```
+```js
 package br.com.fiap;  
   
 public class TesteRadio {  
@@ -52,13 +50,13 @@ public class TesteRadio {
 }
 ```
 
-° **Scanner**
+## ° **Scanner**
 
 » A classe `Scanner` permite capturar entradas de texto, números inteiros, números de ponto flutuante, entre outros. Segue exemplos:
 
 » Primeiro criamos a classe com os atributos e métodos:
 
-```
+```js
 package br.com.fiap.bean;  //Separamos os pacotes das classes entre bean e main
   
 public class FolhaDePagamento {  
@@ -88,7 +86,7 @@ public class FolhaDePagamento {
 
 » Depois criamos o método main para testar (rodar) a classe criada:
 
-```
+```js
 package br.com.fiap.main;  
   
 import br.com.fiap.bean.FolhaDePagamento; // O import acontece quando declaramos o objeto 
@@ -118,7 +116,7 @@ public class FolhaDePagamentoMain {
 
 » Agora para a classe scanner:
 
-```
+```js
 package br.com.fiap.main;  
   
 import br.com.fiap.bean.FolhaDePagamento; 
@@ -159,7 +157,7 @@ public class MainScanner {
 
 ° Embora seja possível colocar os atributos diretamente no código `main`, a abordagem correta seria tratá-los através de métodos `setter` e `getter` (Aprendizagem futura), seguindo os princípios de **encapsulamento** da programação orientada a objetos. Isso torna o código mais modular, reutilizável e fácil de manter.
 
-```
+```js
 package br.com.fiap.main;  
   
 import br.com.fiap.bean.FolhaDePagamento;  
@@ -176,7 +174,7 @@ public class MainScanner {
         double valorPlanoDeSaude;
 ```
 
-**° JOptionPane:**
+## **° JOptionPane:**
 
 » A função **`JOptionPane.showInputDialog`** é usada para capturar as entradas do usuário. Cada vez que o programa pede um valor, ele exibe uma caixa de diálogo onde o usuário pode digitar o valor.
 
@@ -190,7 +188,7 @@ public class MainScanner {
 
 » Se o usuário inserir dados inválidos (como texto quando é esperado um número), o programa mostra uma mensagem de erro.
 
-```
+```js
 import br.com.fiap.bean.FolhaDePagamento;
 import javax.swing.*;
 
@@ -234,7 +232,7 @@ public class MainJOptionPane {
 }
 ```
 
-°**Javax.swing:**
+## ° **Javax.swing:**
 
 » **`import javax.swing.*;`** importa **todas** as classes e interfaces do pacote **`javax.swing`**, permitindo que você use os componentes gráficos que essa biblioteca oferece, sem precisar importar cada classe individualmente.
 
@@ -273,9 +271,11 @@ Exemplos de componentes Swing mais usados:
 
 ----------------------------------------------------------------
 
+## ° **Encadeamento de Métodos: Uso de um Método Dentro de Outro:**
+
 ° **Exemplo de Utilização de um Método dentro de outro Método**:
 
-```
+```js
 package br.com.fiap.bean;  
   
 public class DespesaFamiliar {  
@@ -311,7 +311,7 @@ public class DespesaFamiliar {
 
 » **Execução do Objeto**:
 
-```
+```js
 package br.com.fiap.main;  
   
 import br.com.fiap.bean.DespesaFamiliar;  
@@ -364,7 +364,7 @@ public class DespesaFamiliarMain {
 
 ° **Exemplo do mesmo código criando variáveis e passar o valor da variável ao objeto: **
 
-```
+```js
 package br.com.fiap.main;  
   
 import br.com.fiap.bean.DespesaFamiliar;  

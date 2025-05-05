@@ -1,5 +1,5 @@
 
-**• Introdução do Figma**
+**•  Introdução do Figma**
 
 » Figma é uma plataforma para construção de interfaces e protótipos. Com essa ferramenta podemos construir o design de produtos digitais (sites e aplicativos de dispositivos móveis) ou até para pequenas telas.
 
