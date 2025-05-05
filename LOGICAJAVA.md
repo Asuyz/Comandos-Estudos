@@ -1,4 +1,4 @@
-## • **Logica de programação em JAVA (lembretes, bons modos e explicação de funcionalidades de código).
+## • **Logica de programação em JAVA (lembretes, bons modos e explicação de funcionalidades de código).**
 
 ## ° **Criação de classes
 

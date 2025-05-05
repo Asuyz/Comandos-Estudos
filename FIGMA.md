@@ -1,13 +1,13 @@
 
-#### •  **Introdução do Figma**
+## •  **Introdução do Figma**
 
 » Figma é uma plataforma para construção de interfaces e protótipos. Com essa ferramenta podemos construir o design de produtos digitais (sites e aplicativos de dispositivos móveis) ou até para pequenas telas.
 
 » Trabalhamos com Frame Works (que são resoluções do dispositivo(s) que queremos trabalhar).
 
-#### ° **Sobre os botões do software:**
+## ° **Sobre os botões do software:**
 
-##### **° Barra Superior:**
+#### **° Barra Superior:**
 
 » Menu Principal (Figma logo): Acesso a arquivos, configurações, preferências e plugins.
 
@@ -15,7 +15,7 @@
 
 » Botões de Compartilhar, Apresentar e Comentários: À direita, facilitam colaboração.
 
-##### ° **Painel Lateral Esquerdo:**
+#### ° **Painel Lateral Esquerdo:**
 
 » Camadas (Layers): Lista todos os elementos visuais da sua tela.
 
@@ -23,13 +23,13 @@
 
 » Páginas: Organização do seu projeto em múltiplas páginas.
 
-##### ° **Tela de Trabalho (Canvas)**:
+#### ° **Tela de Trabalho (Canvas)**:
 
 » Área principal onde você desenha e organiza seus frames (telas, artboards).
 
 » Suporta múltiplos frames e protótipos lado a lado.
 
-##### ° **Painel Lateral Direito**
+#### ° **Painel Lateral Direito**
 
 » Design: Ajustes visuais como cores, tipografia, tamanhos, sombras, bordas.
 
@@ -37,7 +37,7 @@
 
 » Inspect: Informações para desenvolvedores (códigos CSS, medidas, cores).
 
-##### ° **Barra de Ferramentas (Topo da Tela de Trabalho)**
+#### ° **Barra de Ferramentas (Topo da Tela de Trabalho)**
 
 » Ferramentas básicas de desenho e manipulação:
 
@@ -55,7 +55,7 @@
 
 -------------------------------------------------------------------------------
 
-##### • **Formas geométricas no Figma:** 
+#### • **Formas geométricas no Figma:** 
 
 ° **Retângulo**: Pode ter bordas arredondadas ajustadas no painel de design.
 
@@ -71,7 +71,7 @@
 
 -----------------------------------------------
 
-##### ° **Alinhamento do Texto**
+#### ° **Alinhamento do Texto**
 
 ° Selecione a caixa de texto e, na barra lateral direita (painel de propriedades):
 
@@ -95,7 +95,7 @@
 
 ° Ctrl + Shift + X para tachado
 
-##### ° **Espaçamento de Texto**
+#### ° **Espaçamento de Texto**
 
 ° Letter spacing (Espaçamento entre caracteres):
 
@@ -109,7 +109,7 @@
 
 ° Clique no ícone “…” (Mais opções) dentro da seção de texto para ativar espaçamento entre parágrafos.
 
-##### ° **Listas Numeradas e Marcadores**
+#### ° **Listas Numeradas e Marcadores**
 
 ° O Figma não possui listas automáticas, mas você pode criar manualmente:
 
