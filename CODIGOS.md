@@ -1,4 +1,4 @@
-### 📁 Anotações de códigos do Git Bash
+## • **Anotações de códigos do Git Bash**
 
 #### » Ciclo de Vida/Estado dos Arquivos:
 
@@ -11,17 +11,16 @@
 
 ---
 
-#### » Comandos para Modificação de Estágios:
+#### » **Comandos para Modificação de Estágios:**
 
 |Comando|Transição|Descrição|
 |---|---|---|
 |`git add`|Untracked → Staged|Começa a rastrear arquivos.|
 |`git commit`|Staged → Unmodified|Salva o estado atual no log (commit).|
 |`git commit -am "msg"`|Modified → Commit direto|Adiciona e comita de uma vez, apenas para arquivos já rastreados.|
+ > **Nota: Sempre tenha em mente em manter os commits com mensagens simples e de fácil entendimento.
 
----
-
-#### » Comandos Git Bash:
+#### » **Comandos Git Bash:**
 
 |Comando|Descrição|
 |---|---|
@@ -51,7 +50,7 @@
 
 ---
 
-####  » Resets:
+####  » **Resets:**
 
 |Comando|Efeito|
 |---|---|
