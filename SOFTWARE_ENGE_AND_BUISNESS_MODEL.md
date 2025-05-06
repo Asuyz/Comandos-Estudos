@@ -38,7 +38,7 @@
 ° Toda ideia vale » Técnicas {Brainstorm, Todos tem direito a fala (Ideias), Toda Ideia tem valor}
 ° Montagem de Lista de ideias (Para etapa 4)
 
-• **4 - Definição de resolução e protótipo
+• **4 - Definição de resolução e protótipo**
 
 » Lista de Ideias » Escolher uma ideia e desenvolver um **protótipo**
 
@@ -204,7 +204,7 @@
 
 ## • Etapas de um Projeto:
 
-» **Etapa 1**: Justificativa: **Por Que? Quem? Onde quero chegar? (Objetivos - Resultados - Atividades).
+» **Etapa 1**: Justificativa: **Por Que? Quem? Onde quero chegar?** (Objetivos - Resultados - Atividades).
 
 » **Etapa 2:** Definição da entrega:
 
@@ -228,7 +228,7 @@
 
 » **Back Log:** Atividades pendentes para um projeto.
 
-»**MVP**: Produto mínimo viável. 
+» **MVP**: Produto mínimo viável. 
 
 » **Squad:** Times separados com liderança situacional.
 

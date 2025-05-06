@@ -1,6 +1,6 @@
 ## • **Logica de programação em JAVA (lembretes, bons modos e explicação de funcionalidades de código).**
 
-## ° **Criação de classes
+## ° **Criação de classes**
 
 » **Primeiro criamos os atributos (por exemplo: volume e estação):**
 
@@ -263,11 +263,11 @@ Exemplos de componentes Swing mais usados:
 
 » **Swing** é amplamente utilizado em Java para criar aplicações desktop com interfaces gráficas.
 
-° **PrintF e PrintLn
+### ° **PrintF e PrintLn**:
  
-» **PrintF** é necessário passar dois paramentos nesse print.
+» **`PrintF`** é necessário passar dois paramentos nesse print.
 
-» **PrintLn** é necessário apenas um parametro (vai printar uma nova linha de texto no console).
+» **`PrintLn`** é necessário apenas um parâmetro (vai printar uma nova linha de texto no console).
 
 ----------------------------------------------------------------
 
@@ -362,7 +362,7 @@ public class DespesaFamiliarMain {
 
 ```
 
-° **Exemplo do mesmo código criando variáveis e passar o valor da variável ao objeto: **
+° **Exemplo do mesmo código criando variáveis e passar o valor da variável ao objeto:**
 
 ```js
 package br.com.fiap.main;  

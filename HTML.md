@@ -35,7 +35,7 @@ inserem algo no documento.
 
 » **< body >** : Define o corpo da página, onde ficam os elementos visíveis pelo usuário, como textos, imagens e botões
 
-#### • **EXEMPLO DE COMO FICARIA A ESTRUTURA BÁSICA DO DOCUMENTO HTML:
+### • **EXEMPLO DE COMO FICARIA A ESTRUTURA BÁSICA DO DOCUMENTO HTML:**
 
 ```html
 < !DOCTYPE html >
@@ -65,11 +65,11 @@ inserem algo no documento.
 
 ° As tags essenciais do HTML são as tags mais utilizadas no desenvolvimento de um documento
 
-» **Cabeçalhos** ( < h1 > a < h6 >).
+### » **Cabeçalhos** ( < h1 > a < h6 >).
 
 ° Os cabeçalhos < h1 > a < h6 >) são usados para estruturar o conteúdo de uma página. (< h1 >) é o mais importante e geralmente representa o título principal da página. Os demais são usados para subdividir o conteúdo hierarquicamente.
 
-**° Ex: 
+**° Ex: **
 
 ```html
 <h1> titulo </h1>
@@ -77,17 +77,17 @@ inserem algo no documento.
 <h2> Subtitulo </h2>
 ```
 
-#### » **Tag (< hr >):
+### » **Tag (< hr >):**
 
 ° A tag **hr** cria uma linha divisória no site **(Arquivo html)** 
 
-**° Ex: 
+**° Ex:**
 
 ```html
 <hr>
 ```
 
-» **Parágrafos** (< p >).
+### » **Parágrafos** (< p >).
 
 ° A tag < p > é usada para definir parágrafos de texto. É uma das tags mais comuns para organizar informações escritas em um site.
 
@@ -97,22 +97,22 @@ inserem algo no documento.
 <p> eu gosto muito de morangos </p>
 ```
 
-#### » **Âncoras**
+### » **Âncoras**
 ° A tag < a > criar links para outras páginas, arquivos ou seções dentro da mesma página. O atributo href define o destino do link. (**UMA DAS PRINCIPAIS TAGS PARA A ORGANIZAÇÃO DO SITE**).
 
 ° **Ex:**
 
 ```html
-**< a href="https://www.exemplo.com">Visite o Exemplo </a >**
+< a href="https://www.exemplo.com">Visite o Exemplo </a >
 ```
 
 ou para arquivos dentro do documento:
 
 ```html
-**< a href=" ./assets/sobre/sobre.html> Sobre </a >**
+< a href=" ./assets/sobre/sobre.html> Sobre </a >
 ```
 
-#### » **Observação:**
+### » **Observação:**
 
 ° Para navegar entre as pastas utilizamos o (../), a quantidade de vezes que utilizamos os dois pontos e a barra depende de onde queremos navegar.
 
@@ -125,7 +125,7 @@ ou para arquivos dentro do documento:
 **< img src=“./img/imagem.png“ alt=“Descrição da imagem.” >**
 ```
 
-#### » **Listas (< ol >, < li >, < ul >)**
+### » **Listas (< ol >, < li >, < ul >)**
 
 ° As tags de listas podem ser ordenadas (< ol >, com número) ou não ordenadas (< ul >,com marcadores). Os item da lista são definidos pela tag **< li  >**.
 
@@ -135,18 +135,18 @@ ou para arquivos dentro do documento:
 
 < li > item não ordenado 2< /li >
 
-**< /ul >**
+< /ul >
 
-**< ol >**
+< ol >
 
 < li > item ordenado 1< /li >
 
 < li > item ordenado 2< /li >
 
-**< /ol >**
+< /ol >
 ```
 
-#### » **Tabelas** **(< table >, < tr >, < td >, < th >)**
+### » **Tabelas** **(< table >, < tr >, < td >, < th >)**
 
 ° A tag < table > cria tabelas. < tr > define uma linha, < th > representa células de cabeçalho e < td > define células de dados.
 
@@ -172,7 +172,7 @@ ou para arquivos dentro do documento:
 < /table >
 ```
 
-#### » **Formulários() **
+### » **Formulários()**
 
 ° A tag < form > define um formulário para entrada de dados. < input > permite inserir informações, < label >
 associa um rótulo ao campo, < textarea > cria uma área de texto e < button > envia o formulário.
@@ -195,7 +195,7 @@ associa um rótulo ao campo, < textarea > cria uma área de texto e < button > e
 < /form >
 ```
 
-#### • **Divisões e Semântica**
+### • **Divisões e Semântica**
 
 » Essas Tags organizam a estrutura da sua página:
 
@@ -231,7 +231,7 @@ associa um rótulo ao campo, < textarea > cria uma área de texto e < button > e
 <div class="container"></div>
 ```
 
-#### » **id:**
+### » **id:**
 
 ° Identificador único para o elemento na página. Usado para estilização específica no CSS e seleção direta no JavaScript.
 
@@ -239,7 +239,7 @@ associa um rótulo ao campo, < textarea > cria uma área de texto e < button > e
 < h1 id="titulo" >< / h1 >
 ```
 
-#### » **Estilização:**
+### » **Estilização:**
 
  » **style:**
 
@@ -249,7 +249,7 @@ associa um rótulo ao campo, < textarea > cria uma área de texto e < button > e
 < p style="color: red;" >< /p >
 ```
 
-#### » **Dados extras no html**
+### » **Dados extras no html**
 
 ° Atributo personalizado para armazenar dados extras no HTML, acessíveis via JavaScript.
 
@@ -257,17 +257,17 @@ associa um rótulo ao campo, < textarea > cria uma área de texto e < button > e
 < button data-user="JohnDue"> Clique </button >
 ```
 
-#### » **Meta Tags para SEO:**
+### » **Meta Tags para SEO:**
 
 » **< meta >**
 
-° Define metadados do documento, como descrição e palavras-chave, ajudando na indexação pelos motores de busca.
+° Define meta dados do documento, como descrição e palavras-chave, ajudando na indexação pelos motores de busca.
 
 ```html
 <meta name="description" content="Descrição breve da página">
 ```
 
-**< title >**
+» **< title >**
 
 ° Define o título da página exibido na aba do navegador e nos resultados de pesquisa. Deve ser curto e relevante.
 

@@ -134,7 +134,7 @@ janela_1.mainloop()
 ```
 
 -------------------------------------------------------------------------------
-## • **Execução com repetição
+## • **Execução com repetição**
 
 #### ° **While**:
 
@@ -157,7 +157,7 @@ print("Certo, tenho um bom dia. Encerrando.)
 ```
 
 #### ° **Calculadora com Menu**:
-``
+
 ```python
 em_execucao = True
 
