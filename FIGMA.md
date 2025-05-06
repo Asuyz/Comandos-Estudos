@@ -2,7 +2,7 @@
 
 ## ° **Sobre os botões do software:**
 
-### ° **Barra Superior:**
+### **° Barra Superior:**
 
 » Menu Principal (Figma logo): Acesso a arquivos, configurações, preferências e plugins.
 
@@ -136,11 +136,11 @@
 
 ------------------------------------------------------------------------------
  
- ## • **GRUPOS E FRAMES:**
+### » **GRUPOS E FRAMES:**
  
 » Os grupos no Figma servem para **organizar elementos juntos** em um único bloco. Quando você agrupa objetos (textos, formas, ícones), eles passam a se mover, redimensionar e alinhar como uma unidade.
 
-##### » **CRIAÇÃO DE GRUPOS:**
+### » **CRIAÇÃO DE GRUPOS:**
  
 ° Pressione `Ctrl + G` (Windows) ou `Cmd + G` (Mac). Ou clique com o botão direito e escolha 
 **"Group Selection"**.

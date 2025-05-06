@@ -26,38 +26,38 @@
 
 ° Variáveis ficam armazenadas na memória primaria (memória ram).
 
-⌞ Tipos de variáveis **primitivas:
+⌞ Tipos de variáveis **primitivas:**
 
-**─ Char = 16 Bits
+**─ Char = 16 Bits**
 
-**─ Byte = 8 Bits
+**─ Byte = 8 Bits**
 
-**─ Int = 32 Bits 
+**─ Int = 32 Bits**
 
-**─ Short = 16 Bits
+**─ Short = 16 Bits**
 
-**─ Long =  64 Bits
+**─ Long =  64 Bits**
 
-**─ Float = 32 Bits
+**─ Float = 32 Bits**
 
-**─ Double = 64 Bits
+**─ Double = 64 Bits**
 
 **─ Boolean = 8 Bits (True or False)**
 
 ⌞ Tipos de variaveis não **primitivas**
 
-─ String = **O número de bits dependera da sua extensão (Cadeira de caracteres use aspas dentro do parênteses) **.
+─ String = **O número de bits dependera da sua extensão (Cadeira de caracteres use aspas dentro do parênteses)**.
 
 ⌞ **As variáveis BYTE, INT, SHORT E LONG SÃO UTILIZADAS PARA NÚMEROS INTEIROS, SUA DISTINÇÃO ENTRE ELES É A SUA QUANTIDADE DE ARMAZENTAMENTO (QUANTO MAIS BITS MAIOR SUA CAPACIDADE).**
 
-⌞ As variáveis **FLOAT E DOUBLE SÃO UTILIZADAS PARA NÚMERO REAIS.
+⌞ As variáveis **FLOAT E DOUBLE SÃO UTILIZADAS PARA NÚMERO REAIS.**
 
-⌞ E a variável **BOOLEAN É UTILIZADA PARA VERDADEIRO OU FALSO (TIPO LÓGICO).
+⌞ E a variável **BOOLEAN É UTILIZADA PARA VERDADEIRO OU FALSO (TIPO LÓGICO).**
 
 » Toda Classe Primitiva tem uma Classe não primitiva **Oposta**.
 
 ° **Sequência de Escape (Caracteres  Especiais):**
-```
+```js
 \b » Backspace
 \f » Form Feed
 \n » Nova Linha
@@ -70,7 +70,7 @@
 
 **Funções matemáticas com java:**
 
-```
+```js
 Adição » +
 Subtração » - 
 Multiplicação » *
@@ -131,21 +131,19 @@ Decremento unitário » -- (x--)
 
 • **SINTAXE DE UM MÉTODOS**
 
-° **Com retorno**
-» **modificador** **tipo** nomeDoMetodo (lista-de-parâmetros (opcional)) { 
+° **Com retorno:**
+
+» **```modificador tip nomeDoMetodo (lista-de-parâmetros (opcional)) { 
 código do corpo
+return valor-de-retorno (tem que ser o mesmo valor do mesmo **TIPO**)
+}```**
 
-**return** valor-de-retorno (tem que ser o mesmo valor do mesmo **TIPO**)
+° **Sem retorno:**
 
-}
-
-° **Sem retorno**
-
-» **modificador** **void** nomeDoMetodo (lista-de-parâmetros) { 
-
+» **```modificador** **void** nomeDoMetodo (lista-de-parâmetros) { 
 código do corpo
-}
- 
+}```**
+
 -------------------------------------------------------------------------------
 ## • **ENCAPSULAMENTO**.
 
