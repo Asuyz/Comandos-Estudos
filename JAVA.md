@@ -57,7 +57,7 @@
 » Toda Classe Primitiva tem uma Classe não primitiva **Oposta**.
 
 ° **Sequência de Escape (Caracteres  Especiais):**
-```
+```js
 \b » Backspace
 \f » Form Feed
 \n » Nova Linha
@@ -70,7 +70,7 @@
 
 **Funções matemáticas com java:**
 
-```
+```js
 Adição » +
 Subtração » - 
 Multiplicação » *
@@ -131,20 +131,18 @@ Decremento unitário » -- (x--)
 
 • **SINTAXE DE UM MÉTODOS**
 
-° **Com retorno**
-» **modificador** **tipo** nomeDoMetodo (lista-de-parâmetros (opcional)) { 
-código do corpo
+° **Com retorno:**
 
+» **```modificador** **tipo** nomeDoMetodo (lista-de-parâmetros (opcional)) { 
+código do corpo
 **return** valor-de-retorno (tem que ser o mesmo valor do mesmo **TIPO**)
+}```
 
-}
+° **Sem retorno:**
 
-° **Sem retorno**
-
-» **modificador** **void** nomeDoMetodo (lista-de-parâmetros) { 
-
+» **```modificador** **void** nomeDoMetodo (lista-de-parâmetros) { 
 código do corpo
-}
+}```
  
 -------------------------------------------------------------------------------
 ## • **ENCAPSULAMENTO**.

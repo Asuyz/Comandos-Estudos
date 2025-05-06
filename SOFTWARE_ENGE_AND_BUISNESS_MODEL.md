@@ -177,3 +177,90 @@
 ° Whimsical - possui uma ferramenta de IA.
 
 ° Draw.io e Fork.
+
+----------------------------------------------------------------
+
+## • Gestão de Projetos
+
+° Todo **projeto** vem da necessidade do cliente e usuario.
+
+° **Projetos** seguem sempre um **começo-meio e fim**. O **meio** de um projeto é onde decidimos seguir a melhor rota (abordagem). O **fim** de um projeto tem que resultar em um processo continuo (que se mantenha a longo prazo). 
+
+### • Pessoas que participam de um projeto:
+
+° **Cliente**: quem demanda (Pode ser um cliente **Externo ou Interno**).
+
+° **Usuário**: quem vai utilizar o projeto final (pronto).
+
+°  **Stakeholder**: Pessoas envolvidas, patrocinadores ou interessados no projeto.
+
+° **PMO**: líder do projeto, é o responsável por garantir (controlar) a organização da documentação das etapas e feedbacks do projeto.
+
+### • Tipos de abordagens em um projeto:
+
+• **Abordagem Predativa:** Nesta abordagem o projeto é apenas entregue no final (de uma vez só), assim sem ter a proximidade do cliente para qualquer feedback, assim qualquer mudança vai custa caro.
+
+•**Abordagem Ágil**: Nesta abordagem utilizamos de entregas parciais junto com a coleta de feedback, assim fazendo as alterações necessárias assim que são solicitadas evitando o retrabalho.
+
+## • Etapas de um Projeto:
+
+» **Etapa 1**: Justificativa: **Por Que? Quem? Onde quero chegar? (Objetivos - Resultados - Atividades).
+
+» **Etapa 2:** Definição da entrega:
+
+°  Usar o design thinking para estipular um prazo de entrega. (Quando o cliente não é claro na sua ideia).
+
+» **Etapa 3:** Abertura oficial do projeto.
+
+° **Kickoff**: comunicar todos os integrantes a inicialização do projeto.
+
+° **Canvas**: Organização de atividades necessárias.
+
+» **Etapa 4**: Controle de administração do projeto.
+
+» **Etapa 5**: Encerramento do projeto e aguardo do feedback final. 
+
+### • Nomenclaturas importantes.
+
+» **Sprint**: Entregas (Semanais, Quinzenais e Mensais). Se refere ao tiro/acelero para a entrega do projeto.
+
+» **Dead Line**: Prazo final de entrega do projeto.
+
+» **Back Log:** Atividades pendentes para um projeto.
+
+»**MVP**: Produto mínimo viável. 
+
+» **Squad:** Times separados com liderança situacional.
+
+----------------------------------------------------------------
+## • Back Log
+
+° É uma lista ordenada de tudo que deve ser necessário no produto, e é uma origem única dos requisitos para qualquer mudança que deve ser feita no produto. Essa lista pode ou não mudar, dependendo do que for solicitado.
+
+° A forma que documentamos **sempre** vem da necessidade do cliente (Quero-Posso-Preciso). com isso criamos **histórias**.
+
+» Usamos a **ação** para responder a necessidade do cliente:
+
+» **Ação**: o que pode ser feito, o que quero que seja feito.
+
+» **Justificativa**: O motivo para se fazer isso.
+
+» **Sprint:** Reuniões periódicas na metodologia de projeto ágil (Junto com entregas parciais). 
+
+° Todo produto (Estórias) deve responder o **I-N-V-E-S-T.** (Estória é tudo o que se caracteriza o produto)
+
+» **Independentes:** Uma estória é independente da outra, conseguindo gerar mais facilmente os **sprints** e os **MVPS**
+
+» **Negociáveis:** Como a metodologia do ágil, deve ser mais flexível a negociação de acordo com os entregáveis, sendo possível começar outra estória sem terminar a outra.
+
+» **Valorosa:** Demonstrar o quanto ela contribui para o objetivo final do projeto
+
+» **Estimável:** A estória tem que ser clara ao ponto de poder ser mensurada sem esforço para a entrega
+
+» **Small:** Small é a capacidade é resumir de forma objetiva
+
+» **Testável:** Além de ser small é necessário poder ser testada para permitir o feedback. 
+
+
+
+
