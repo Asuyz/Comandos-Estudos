@@ -490,8 +490,152 @@ public static void main(String[] args) {
 ```
 
 -------------------------------------------------------------------------------
+## • **Polimorfismo**
+
+
+» Polimorfismo na programação orientada a objetos permite que **um mesmo método ou objeto se comporte de maneiras diferentes**, dependendo da sua intenção. 
+
+» Existem **dois** tipos de *Polimorfismo*: **Sobrecarga**(**Overload**) e **Override**.
+
+### ° **Sobrecarga**
+
+» Métodos com o mesmo nome, na mesma classe com assinaturas diferentes.
+
+» Assinatura é o nome do método e a lista de parâmetros, não inclui o tipo do retorno, modificadores de acesso ou nome das variáveis dos parâmetros.
+
+
+```js
+// Assinatura: soma(int, int)
+public int soma(int a, int b) {
+    return a + b;
+}
+
+// Assinatura: soma(double, double)
+public double soma(double a, double b) {
+    return a + b;
+}
+
+
+// Exemplo com sobrecarga (overload):
+public class Calculadora {
+
+    public int calcular(int a, int b) {  // assinatura: calcular(int, int)
+        return a + b;
+    }
+
+    public double calcular(double a, double b) { // assinatura: calcular(double, double)
+        return a * b;
+    }
+}
+
+```
+
+### ° **Java Switch-Case**
+
+» Usamos `switch case` em estruturas de decisão, permite usar diferentes blocos de código dependendo do valor de uma variável.
+
+```js
+switch (variavel) {
+    case valor1:
+        // código se variavel == valor1
+        break;
+    case valor2:
+        // código se variavel == valor2
+        break;
+    default:
+        // código se nenhum dos casos for atendido
+}
+```
+
+» `break` Impede o comando de cair no próximo case, é uma **MÁ** pratica de programação utilizar o break ao vento, utilize-o caso necessário. 
+
+## • **Estruturas de repetição**
+
+» Java oferece três principais estruturas de repetição: `for`, `while` e `do-while`, quem em uma determinada condição irá manter o programa funcionando em **loop**. 
+### ° **For**
+
+» Se sabemos a quantidade de vezes que desejamos repetir um bloco de comandos normalmente utilizamos o comando for.
+
+#### ° **Sintaxe:**
+
+```js
+for (parte 1 ; parte 2 ; parte 3){
+//bloco de comandos a ser repetido
+}
+```
+
+» Parte 1 - Executado apenas uma vez antes da execução do bloco de comandos.
+
+» Parte 2 - Define a condição para executar o bloco de comandos.
+
+» Parte 3 - Executa (todas as vezes) após a execução do bloco de comandos.
+
+##### » **Exemplo:**
+
+```js
+for (int i = 0; i <5 ; i++){
+System.out.println(i);
+}
+```
+
+» Parte 1 - Define o valor inicial da variável antes de iniciar as repetições.
+
+» Parte 2 - Define a condição para repetir (i < 5). Se a condição verdadeira, nova repetição acontece. Quando a condição for falsa, o comando se encerra.
+
+» Parte 3 - Incrementa o valor da variável após a repetição.
+
+### ° **While**
+
+» Quando temos um numero exato de repetições, mas uma condição de repetição podemos usar o **while**, que se repete enquanto a condição for verdadeira.
+
+### ° **Sintaxe:**
+
+```js
+while (condição) {
+    // Bloco de código executado enquanto a condição for verdadeira
+}
+```
+### ° **Exemplo:**
+
+```js
+int i = 0;
+while (i < 5){
+	system.out.println(i);
+	i++;
+}
+```
+
+### ° **Do-While**
+
+° Uma variação do comando de repetição por condição, o comando **do-while**executa o bloco de comandos pelo menos uma vez e se repete enquanto a condição for verdadeira.
+
+### ° **Sintaxe:**
+
+```js
+do {
+    // Bloco de código a ser executado
+} while (condição);
+```
+
+### ° **Exemplo:**
+
+```js
+int i = 0
+do {
+	System.out.println(i);
+	i++;
+}
+while (i < 5)
+```
+
+° Se a condição for falsa logo de cara o do-while ele não vai exibir nada, enquanto o while ira repetir uma vez por conta que ele ira testar pelo menos 1 vez 
+
+> **while** testa depois, **do-while** testa primeiro. 
+
 
 
 •°»
+
+
 
 

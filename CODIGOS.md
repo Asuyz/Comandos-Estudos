@@ -52,11 +52,11 @@
 
 ####  » **Resets:**
 
-|Comando|Efeito|
-|---|---|
-|`git reset`|Retira arquivos da área de stage (volta ao estado modified)|
-|`git reset --soft <hash>`|Volta para commit anterior, mantendo arquivos na área de stage|
-|`git reset --mixed <hash>`|Volta para commit anterior, removendo arquivos da área de stage|
-|`git reset --hard <hash>`|Volta para commit anterior e descarta todas as modificações|
+| Comando                    | Efeito                                                          |
+| -------------------------- | --------------------------------------------------------------- |
+| `git reset`                | Retira arquivos da área de stage (volta ao estado modified)     |
+| `git reset --soft <hash>`  | Volta para commit anterior, mantendo arquivos na área de stage  |
+| `git reset --mixed <hash>` | Volta para commit anterior, removendo arquivos da área de stage |
+| `git reset --hard <hash>`  | Volta para commit anterior e descarta todas as modificações     |
 
 > **Nota:** _hash_ refere-se ao identificador único do commit que se deseja voltar.
