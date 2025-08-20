@@ -632,6 +632,54 @@ while (i < 5)
 
 > **while** testa depois, **do-while** testa primeiro. 
 
+-------------------------------------------------
+
+## ° **SEMESTRE 2**
+
+
+## • **Vetores
+
+° Objeto onde é possível guardar vários valores diferentes, pois possui diversas posições (um gaveteiro), onde acessamos através do **índice** que tem 4 espaços (começa do 0 até o 3).
+
+° O vetor não é flexível, devemos declarar o seu tamanho que **não pode** ser alterado.
+
+```js
+public static void main(String[] args) {  
+        //instaciar e declarar um vetor (passando valores)  
+        String[] carros ={"Volvo","BMW","Ford","Mazda"}; //array  
+        //Para mostrar o tamanho do vetor 
+        System.out.println(carros.length); 
+        //para mostrar o indice desejado 
+        System.out.println(carros[2]);  
+        // Como instanciar e declarar sem passar valor  
+        int[] numeros = new int[3];  
+        //valores:
+        numeros[0] = 17;  
+        numeros[1] = 27;  
+        numeros[2] = 11;  
+  
+      //System.out.println(String.format("%d %d %d", numeros[0], numeros[1], numeros[2])); 
+
+
+        // Como navegar de forma simplificada pelo vetor  
+        for (int i = 0; i < numeros.length ; i++) {  
+            System.out.println(numeros[i]);  
+  
+        }  
+        //for-each //A variavel precisa do mesmo tipo do vetor que iremos navegar  
+        for (String i: carros){  
+            System.out.println(i);  
+        }  
+  
+    }}
+
+
+```
+
+
+
+
+
 
 
 •°»

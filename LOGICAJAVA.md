@@ -412,8 +412,18 @@ public class Main {
 }
 ```
 
+## ° **Estrutura de repetição fixa**
 
-
+```js
+do{  
+    try{  
+                  
+          
+    }catch (Exception e){  
+        JOptionPane.showMessageDialog(null, e.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE);  
+    }}while (JOptionPane.showConfirmDialog(null, "Deseja continuar?","Atencao", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE) ==0 );  
+JOptionPane.showMessageDialog(null, "Ate Logo","Adeus",JOptionPane.WARNING_MESSAGE);
+```
 
 
 
