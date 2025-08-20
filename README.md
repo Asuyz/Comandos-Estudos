@@ -14,7 +14,9 @@
 | ⊳ Html (**HyperText Markup Language**)    | HTML.md                      |
 | ⊳ Css (**Cascading Style Sheet**)         | CSS.md                       |
 | ⊳ Figma (**Alura**)                       | FIGMA.md                     |
-|                                           |                              |
+| ⊳ JavaScript                              | JAVASCRIPT.md                |
+| ⊳ React (**NodeJS**)                      | REACT.md                     |
+| ⊳ Vite (**NodeJS**)                       | VITE.md                      |
 
 » **Os arquivos terão anotações e alguns exercícios/códigos de exemplo para estudos**.
 
