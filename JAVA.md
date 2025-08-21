@@ -636,7 +636,7 @@ while (i < 5)
 
 ## ° **SEMESTRE 2**
 
-## • **Vetores
+## • **Vetores**
 
 ° Objeto onde é possível guardar vários valores diferentes, pois possui diversas posições (um gaveteiro), onde acessamos através do **índice** que tem 4 espaços (começa do 0 até o 3).
 
