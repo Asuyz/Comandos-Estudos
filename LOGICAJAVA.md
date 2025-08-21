@@ -4,7 +4,7 @@
 
 » **Primeiro criamos os atributos (por exemplo: volume e estação):**
 
-```js
+```java
 package br.com.fiap;  
   
 public class Radio {  
@@ -28,7 +28,7 @@ public class Radio {
 
 » **Criação do objeto para testes (No caso objeto RADIO)**:
 
-```js
+```java
 package br.com.fiap;  
   
 public class TesteRadio {  
@@ -56,7 +56,7 @@ public class TesteRadio {
 
 » Primeiro criamos a classe com os atributos e métodos:
 
-```js
+```java
 package br.com.fiap.bean;  //Separamos os pacotes das classes entre bean e main
   
 public class FolhaDePagamento {  
@@ -86,7 +86,7 @@ public class FolhaDePagamento {
 
 » Depois criamos o método main para testar (rodar) a classe criada:
 
-```js
+```java
 package br.com.fiap.main;  
   
 import br.com.fiap.bean.FolhaDePagamento; // O import acontece quando declaramos o objeto 
@@ -116,7 +116,7 @@ public class FolhaDePagamentoMain {
 
 » Agora para a classe scanner:
 
-```js
+```java
 package br.com.fiap.main;  
   
 import br.com.fiap.bean.FolhaDePagamento; 
@@ -157,7 +157,7 @@ public class MainScanner {
 
 ° Embora seja possível colocar os atributos diretamente no código `main`, a abordagem correta seria tratá-los através de métodos `setter` e `getter` (Aprendizagem futura), seguindo os princípios de **encapsulamento** da programação orientada a objetos. Isso torna o código mais modular, reutilizável e fácil de manter.
 
-```js
+```java
 package br.com.fiap.main;  
   
 import br.com.fiap.bean.FolhaDePagamento;  
@@ -188,7 +188,7 @@ public class MainScanner {
 
 » Se o usuário inserir dados inválidos (como texto quando é esperado um número), o programa mostra uma mensagem de erro.
 
-```js
+```java
 import br.com.fiap.bean.FolhaDePagamento;
 import javax.swing.*;
 
@@ -275,7 +275,7 @@ Exemplos de componentes Swing mais usados:
 
 ° **Exemplo de Utilização de um Método dentro de outro Método**:
 
-```js
+```java
 package br.com.fiap.bean;  
   
 public class DespesaFamiliar {  
@@ -311,7 +311,7 @@ public class DespesaFamiliar {
 
 » **Execução do Objeto**:
 
-```js
+```java
 package br.com.fiap.main;  
   
 import br.com.fiap.bean.DespesaFamiliar;  
@@ -364,7 +364,7 @@ public class DespesaFamiliarMain {
 
 ° **Exemplo do mesmo código criando variáveis e passar o valor da variável ao objeto:**
 
-```js
+```java
 package br.com.fiap.main;  
   
 import br.com.fiap.bean.DespesaFamiliar;  
@@ -414,7 +414,7 @@ public class Main {
 
 ## ° **Estrutura de repetição fixa**
 
-```js
+```java
 do{  
     try{  
                   

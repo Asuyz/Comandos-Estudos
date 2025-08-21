@@ -57,7 +57,7 @@
 » Toda Classe Primitiva tem uma Classe não primitiva **Oposta**.
 
 ° **Sequência de Escape (Caracteres  Especiais):**
-```js
+```java
 \b » Backspace
 \f » Form Feed
 \n » Nova Linha
@@ -70,7 +70,7 @@
 
 **Funções matemáticas com java:**
 
-```js
+```java
 Adição » +
 Subtração » - 
 Multiplicação » *
@@ -154,7 +154,7 @@ código do corpo
 ° Seu objetivo: Obter (ler) o valor de atributo privado.
 » Exemplo: e você tem um atributo `nome`, o método `getNome()` vai retornar o valor dele.
 
-```js
+```java
 public class Pessoa {
     private String nome;
 
@@ -169,7 +169,7 @@ public class Pessoa {
 ° Seu objetivo: Definir (alterar) o valor de um atributo privado.
 » Exemplo: Se quiser mudar o valor de `nome`, você usa `setNome("Novo Nome")`.
 
-```js
+```java
 public class Pessoa {
     private String nome;
 
@@ -183,7 +183,7 @@ public class Pessoa {
 
 » Visualização de ambos no código:
 
-```js
+```java
 public void setNomeDoAtributo (tipo_do_atributo nomeDoAtributo) {
 	this.nomeDoAtributo = nomeDoAtributo;
 
@@ -225,7 +225,7 @@ Operadores Lógicos:
 
 **° Sintaxe:**
 
-```js
+```java
 if (condicao) {
     // código se a condição for verdadeira
 } else if (outraCondicao) {
@@ -237,7 +237,7 @@ if (condicao) {
 
 ° Exemplo com valores:
 
-```js
+```java
 int idade = 18;
 
 if (idade < 18) {
@@ -271,7 +271,7 @@ if (idade < 18) {
 
 » Sintaxe:
 
-```js
+```java
 try {
     // código que pode lançar uma exceção
 } catch (TipoDaExcecao nomeVariavel) {
@@ -281,7 +281,7 @@ try {
 
 ° Exemplo com valores:
 
-```js
+```java
 public class ExemploTryCatch {
     public static void main(String[] args) {
         try {
@@ -326,7 +326,7 @@ public class ExemploTryCatch {
 
 » Observação do funcionamento desses métodos:
 
-```js
+```java
 public class ManipulaString {
     public static void main(String[] args) {
         String frase = "O rato roeu a roupa do rei de Roma";
@@ -367,7 +367,7 @@ public class ManipulaString {
 
 » Observação do funcionamento desses métodos:
 
-```js
+```java
 public class ComparaString {
     public static void main(String[] args) {
         String senha;
@@ -471,7 +471,7 @@ data específica.
 
 » Observação do funcionamento:
 
-```js
+```java
 public static void main(String[] args) {
     LocalDate dataAtual = LocalDate.now();
     LocalDate fimDosTempos = LocalDate.parse("2012-12-21");
@@ -504,7 +504,7 @@ public static void main(String[] args) {
 » Assinatura é o nome do método e a lista de parâmetros, não inclui o tipo do retorno, modificadores de acesso ou nome das variáveis dos parâmetros.
 
 
-```js
+```java
 // Assinatura: soma(int, int)
 public int soma(int a, int b) {
     return a + b;
@@ -534,7 +534,7 @@ public class Calculadora {
 
 » Usamos `switch case` em estruturas de decisão, permite usar diferentes blocos de código dependendo do valor de uma variável.
 
-```js
+```java
 switch (variavel) {
     case valor1:
         // código se variavel == valor1
@@ -558,7 +558,7 @@ switch (variavel) {
 
 #### ° **Sintaxe:**
 
-```js
+```java
 for (parte 1 ; parte 2 ; parte 3){
 //bloco de comandos a ser repetido
 }
@@ -572,7 +572,7 @@ for (parte 1 ; parte 2 ; parte 3){
 
 ##### » **Exemplo:**
 
-```js
+```java
 for (int i = 0; i <5 ; i++){
 System.out.println(i);
 }
@@ -590,14 +590,14 @@ System.out.println(i);
 
 ### ° **Sintaxe:**
 
-```js
+```java
 while (condição) {
     // Bloco de código executado enquanto a condição for verdadeira
 }
 ```
 ### ° **Exemplo:**
 
-```js
+```java
 int i = 0;
 while (i < 5){
 	system.out.println(i);
@@ -611,7 +611,7 @@ while (i < 5){
 
 ### ° **Sintaxe:**
 
-```js
+```java
 do {
     // Bloco de código a ser executado
 } while (condição);
@@ -619,7 +619,7 @@ do {
 
 ### ° **Exemplo:**
 
-```js
+```java
 int i = 0
 do {
 	System.out.println(i);
@@ -636,14 +636,15 @@ while (i < 5)
 
 ## ° **SEMESTRE 2**
 
-
 ## • **Vetores
 
 ° Objeto onde é possível guardar vários valores diferentes, pois possui diversas posições (um gaveteiro), onde acessamos através do **índice** que tem 4 espaços (começa do 0 até o 3).
 
 ° O vetor não é flexível, devemos declarar o seu tamanho que **não pode** ser alterado.
 
-```js
+###  ° **Exemplo:**
+
+```java
 public static void main(String[] args) {  
         //instaciar e declarar um vetor (passando valores)  
         String[] carros ={"Volvo","BMW","Ford","Mazda"}; //array  
@@ -677,8 +678,82 @@ public static void main(String[] args) {
 ```
 
 
+-----------------------------------------------------------------------
 
+## • **ArrayList**
 
+» A Classe **ArrayList** permite o trabalho com arrays redimensionáveis ( para utilizarmos essas classe devemos importa-la do pacote **java.util** ).
+
+» Sua declaração e instanciação é diferente é levemente diferente.
+
+### ° **Exemplos:**
+
+```java
+
+ArrayList<String> cars = new ArrayList<String>();
+
+ArrayList<Interger> num = new ArrayList<Interger>();
+
+ArrayList<Float> salarios = new ArrayList<Float>()ç
+
+```
+
+-----------------------------------------------------------------------------
+
+#### ° **ArrayList**
+
+» Para inserir valores dentro de um **ArrayList** devemos utilizar o método **.add( )**
+
+```java
+cars.add("Volvo")
+cars.add("Audi")
+cars.add("BMW")
+```
+
+» Para obtermos um valor de um **ArrayList** devemos utilizar o método **.get( )**
+
+```java
+System.out.println(cars.get(1)); //Exibe o Audi (Começamos pelo indíce 0)
+```
+
+» Para atribuirmos um novo valor em uma posição já preenchida utilizamos o método **.set(índice, novo valor)**.
+```java
+cars.set(1,"Bugatti") //troca o audi por bugatti
+```
+
+» Para remover um valor utilizamos o método **.remove( )**.
+» Para remover **todos os valores** utilizamos **.clear( ).**
+
+```java
+cars.remove(1); //remove o Bugatti do array
+cars.clear(); //remove todos os valores inseridos
+```
+
+» Para obtermos o tamanho do **ArrayList** utilizamos o método **.size( )**
+
+```java
+cars.add("Volvo") //0 
+cars.add("Audi")
+cars.add("BMW") // 2
+System.out.println(cars.size()); //Exibe os 3 valores (0-1-2)
+```
+
+» Para exibirmos cada elemento utilizamos o comando **for**.
+
+```java
+cars.add("Volvo") //0 
+cars.add("Audi")
+cars.add("BMW") // 2
+for (int i = 0; i < cars.size(); i++) {
+System.out.println(cars.get(i));
+}
+
+//Resultado: (no console)
+
+// Volvo
+// Audi
+// BMW
+```
 
 
 

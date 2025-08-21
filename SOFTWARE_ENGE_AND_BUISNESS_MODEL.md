@@ -261,6 +261,31 @@
 
 » **Testável:** Além de ser small é necessário poder ser testada para permitir o feedback. 
 
+## • 10 Leis de Hilsen 
+
+» **Visibilidade**
+
+» **Compatibilidade**
+
+» **Controle e Liberdade**
+
+» **Consciência e Padrão**
+
+» **Prevenção de erros**
+
+» **Reconhecimento**
+
+» **Flexibilidade**
+
+» **Estética**
+
+» **Documentação**
+
+» **Correção de erros**
+
+------------------------------------------------------------
+
+
 
 
 
