@@ -261,6 +261,7 @@
 
 » **Testável:** Além de ser small é necessário poder ser testada para permitir o feedback. 
 
+-----------------------------------------------------------------------
 ## • 10 Leis de Hilsen 
 
 » **Visibilidade**
@@ -287,7 +288,23 @@
 
 ------------------------------------------------------------
 
+## • Empreendedorismo Digital
 
+» Para um bom empreendedorismo digital devemos saber as necessidades do mercado e suas tendencias para decidir o tipo da venda » (**Solução/Serviço/Produto**).
+
+» Podemos dividir a venda do produto das categorias:
+
+° **App/Software as service**
+
+° **E-commerce**
+
+° **Serviço/Prestação de serviço**
+
+° **Assinatura**
+
+» Vale reparar que a maioria das aplicações no mercado são um misto dessas categorias. 
+
+» O UX acaba sendo extremamente importante para a **fidelização** dos clientes dependendo de como você irá vender o seu serviço.
 
 
 
