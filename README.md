@@ -19,7 +19,7 @@
 
 ---
 
-## » 🧰 **Ferramentas | Frameworks | Matérias **
+## » 🧰 **Ferramentas | Frameworks | Matérias**
 
 | Ícone | Ferramenta / Framework | Arquivo(s) |
 |:------:|-------------------------|------------|
