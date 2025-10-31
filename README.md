@@ -4,19 +4,33 @@
 
 ## **📚 AS ANOTAÇÕES ESTARÃO LOCALIZADAS DE FORMA SEPARADA ENTRE 📁**: 
 
-| Matéria(s)                                | Arquivo(s)                   |
-| ----------------------------------------- | ---------------------------- |
-| ⊳ GitBash                                 | Codigos.md                   |
-| ⊳ Java                                    | Java.md \| LogicaJava.md     |
-| ⊳ Python                                  | Python.md \| LogicaPython.md |
-| ⊳ Oracle                                  | Database.md                  |
-| ⊳ Software Engeneering and Business Model | SEABM.md                     |
-| ⊳ Html (**HyperText Markup Language**)    | HTML.md                      |
-| ⊳ Css (**Cascading Style Sheet**)         | CSS.md                       |
-| ⊳ Figma (**Alura**)                       | FIGMA.md                     |
-| ⊳ JavaScript                              | JAVASCRIPT.md                |
-| ⊳ React (**NodeJS**)                      | REACT.md                     |
-| ⊳ Vite (**NodeJS**)                       | VITE.md                      |
+---
+
+## » **📚 Linguagens e Lógicas de Programação**
+
+| Ícone | Matéria(s)                             | Arquivo(s)                       |
+| :---: | -------------------------------------- | -------------------------------- |
+|   ☕   | **Java**                               | `Java.md` \| `LogicaJava.md`     |
+|  🐍   | **Python**                             | `Python.md` \| `LogicaPython.md` |
+|  🦀   | **Rust**                               | `RUST.md`                        |
+|  🌐   | **HTML** *(HyperText Markup Language)* | `HTML.md`                        |
+|  🎨   | **CSS** *(Cascading Style Sheet)*      | `CSS.md`                         |
+|  📜   | **JavaScript**                         | `JAVASCRIPT.md`                  |
+
+---
+
+## » 🧰 **Ferramentas | Frameworks | Matérias **
+
+| Ícone | Ferramenta / Framework | Arquivo(s) |
+|:------:|-------------------------|------------|
+| 🧱 | **GitBash** | `Codigos.md` |
+| 🗄️ | **Oracle** | `Database.md` |
+| ⚛️ | **React** *(NodeJS)* | `REACT.md` |
+| ⚡ | **Vite** *(NodeJS)* | `VITE.md` |
+| 🎨 | **Figma** *(Alura)* | `FIGMA.md` |
+| 🧩 | **Software Engineering and Business Model** | `SEABM.md` |
+
+---
 
 » **Os arquivos terão anotações e alguns exercícios/códigos de exemplo para estudos**.
 
