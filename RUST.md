@@ -96,8 +96,38 @@ fn main(){
 
 ------------------------------------------------------------
 
-## ° **Recursos Específicos**
+## ° **Recursos Específicos e Gerais**
 
+» **Escopo** -> Valores fora do bloco de código não existem em outro.
+
+» No rust é possivelmente redeclarar variáveis de forma fácil.
+Exemplo:
+
+```Rust
+//
+Let Var:F32 = 2.5 // Esse valor é descartado
+Let Var:F32 = 2.6 // Esse valor é o novo valor da variavel
+
+// Quando compilarmos o código o valor de 2.6 será exibido.
+```
+
+° Um escopo dentro do outro **herda** o valor do escopo externo, esse conceito se chama **shadowing**
+
+## ° **Funções**
+
+» Se não especificamos o retorno de uma **FN** ela não retorna nada, não é possível **omitir** o seu retorno
+
+° **Exemplo de FN com retorno:**
+
+```Rust
+
+Fn soma (a:i32,b:i32) -> i32 // a arrow function (->) é o nosso retorno
+```
+
+» Quando queremos **retornar** algo no Rust a nossa expressão **não terá o ponto e virgula em seu final (;)**, esse conceito se chama de **supressed (supressão)**.
+
+
+## ° **Expressão if**
 
 
 •°»
