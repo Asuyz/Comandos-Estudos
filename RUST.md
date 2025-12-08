@@ -129,5 +129,19 @@ Fn soma (a:i32,b:i32) -> i32 // a arrow function (->) é o nosso retorno
 
 ## ° **Expressão if**
 
+» O comportamento funciona da mesma forma das outras linguagens (**if -> if/else -> else**).
+
+» O Rust pode ler valores como expressão então no lugar de **if/else** podemos usar:
+
+```Rust
+let condicao = if idade >18{maior}else{menor};
+// depois do = o valor dentro vira a condição do if/else
+
+```
+
+» O valor de diferente em Rust é representando dessa maneira: **!=**
+
+## ° **Loops**
+
 
 •°»
