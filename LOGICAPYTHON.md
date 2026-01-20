@@ -246,5 +246,23 @@ while em_execucao == True:
 
 » A atualização da variável no fim do código garante deixar a logica do mesmo mais simples e limpa.
 
+## ° **Import em Python (OOP)**
 
+```python
+
+#Para importar objetos em python:
+from nome_do_objeto import nome_da_func
+
+#como consumir esse import (exemplo)
+
+from contador import contar_palavras
+
+frase = input("Digite uma frase").strip()
+..
+	..
+resultado = contar_palavas(frase)
+
+##estamos colocando os valores na variavel frase e associando eles a funcao contar_palavras
+
+```
 °»
