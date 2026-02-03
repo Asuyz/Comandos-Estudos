@@ -120,7 +120,6 @@ Let Var:F32 = 2.6 // Esse valor é o novo valor da variavel
 ° **Exemplo de FN com retorno:**
 
 ```Rust
-
 Fn soma (a:i32,b:i32) -> i32 // a arrow function (->) é o nosso retorno
 ```
 
@@ -136,12 +135,43 @@ Fn soma (a:i32,b:i32) -> i32 // a arrow function (->) é o nosso retorno
 ```Rust
 let condicao = if idade >18{maior}else{menor};
 // depois do = o valor dentro vira a condição do if/else
-
 ```
 
 » O valor de diferente em Rust é representando dessa maneira: **!=**
 
 ## ° **Loops**
+
+» Laços de repetição (loops) funcionam quase da mesma forma de qualquer outra linguagem.
+
+» **While**: Lê a condição no **inicio**.
+
+» **Do While (em Rust)**: Lê ao final (loop com instrução **break**).
+
+» **Continue** faz seu loop ler outro bloco antes de voltar ao principal.
+
+» **Range e for** no Rust percorrem em intervalos:
+
+```Rust
+For i in 1..11 
+For i in 1.. =10
+
+```
+
+» No primeiro exemplo do **for i** o índice não percorre até o final ele sempre ira parar 1 valor antes do determinado (igual o segundo exemplo, porém a forma de escrita fica mais clara).
+
+## ° **Match Statement**
+
+» Se trata de uma estrutura de **controle** presente no Rust (não sendo comum em outras linguagens), onde o fluxo de execução é determinado por correspondência de padrões (_pattern matching_), permitindo tratar múltiplos casos de forma segura, expressiva e exaustiva.
+
+° **Exemplo:**
+
+```Rust
+Let result = match numero{
+1=>"um"
+2=>"dois"
+_=>"outro"}
+```
+
 
 
 •°»
