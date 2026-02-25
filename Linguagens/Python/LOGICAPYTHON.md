@@ -265,4 +265,9 @@ resultado = contar_palavas(frase)
 ##estamos colocando os valores na variavel frase e associando eles a funcao contar_palavras
 
 ```
+
+
+
+
+
 °»
