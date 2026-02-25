@@ -172,6 +172,8 @@ Let result = match numero{
 _=>"outro"}
 ```
 
+## ° **Stack** (Pilha)
 
+»
 
 •°»
