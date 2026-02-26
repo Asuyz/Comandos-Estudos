@@ -60,3 +60,16 @@
 | `git reset --hard <hash>`  | Volta para commit anterior e descarta todas as modificações     |
 
 > **Nota:** _hash_ refere-se ao identificador único do commit que se deseja voltar.
+
+#### » **Stash:**
+
+> O **Stash** funciona como uma gaveta temporária de armazenamento de arquivos sem precisar realizar um commit, útil para situações onde temos que receber um pull porém já temos alterações no arquivo em forma local e na forma da nuvem. 
+
+| Comando           | Efeito                                                                                |
+| ----------------- | ------------------------------------------------------------------------------------- |
+| `git stash`       | Cria um commit especial interno (armazena na "gaveta).                                |
+| `git stash push`  | Realiza a mesma função do **git stash** porém podemos adicionar mensagens com **-m**. |
+| `git stash list`  | Lista todos os stashs salvos.                                                         |
+| `git stash pop`   | Aplica (as alterações feitas) e remove a stash.                                       |
+| `git stash drop`  | Remove um stash em especifico da lista.                                               |
+| `git stash clear` | Apaga **TODOS** os stashs salvos.                                                     |
