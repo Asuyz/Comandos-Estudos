@@ -240,7 +240,7 @@ while True:
 
 --------------------------------------
 
-## » **Funções**
+## • **Funções**
 
 ° Funções são blocos de código que executam tarefas especificas. As funções ajudam a **organizar, reutilizar e evitar repetição no código**. Em Python podemos utilizar funções já prontas (como `print()` e `len()`) ou criar com a palavra chave ```def.```
 
@@ -280,7 +280,7 @@ boas_vindas(Lara) ##Bem-vindo, Lara!
 
 -----------------------------------
 
-## ° **Listas e Sequências**
+## • **Listas e Sequências**
 
 ° Listas são **estruturas que armazenam coleções de dados**. São usadas quando você precisa guardar vários valores em uma única variável, como uma lista de nomes, números ou itens.
 
@@ -430,10 +430,29 @@ Lista.reverse()
 
 ```
 
+° Para acessarmos os elementos pelo índice inverso utilizamos o negativo.
+
+↪ [0,1,2] o inverso: [-3,-2,-1]
 
 --------------------------------
 ## • **Funções**
 
+° Funções permitem o reaproveitamento do código de forma eficiente, assim permitindo modularidade do código e a separação de tarefas do código
+
+° **Classe vs Função** quando usar um ou outro:
+
+↪ Usamos **função** quando: não precisamos de um objeto, não há estado (**self**) e é apenas uma ação.
+
+↪ Usamos **classe** quando: existe um estado (**atributos**), existe um comportamento ligado ao estado e quando faz sentindo criar múltiplas instâncias desse estado.
+
+° Para criarmos funções utilizamos o comando **def** onde a estrutura básica de uma consiste em: 
+
+```python
+def nome_function (paramentros):
+	#codigo
+	
+	return #caso seja necessario
+```
 
 
 
