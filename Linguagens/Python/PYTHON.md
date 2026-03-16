@@ -2,10 +2,14 @@
 
 ° Python é uma **linguagem de programação de alto nível**, criada por **Guido van Rossum** e lançada em 1991. Seu nome é uma homenagem ao grupo de comédia britânico **Monty Python**, e não à cobra — apesar do mascote!
 
-Ela foi projetada com uma filosofia clara: **código deve ser legível, simples e expressivo**. Hoje é uma das linguagens mais populares do mundo, usada em áreas como ciência de dados, automação, desenvolvimento web, inteligência artificial e muito mais.
+° Ela foi projetada com uma filosofia clara: **código deve ser legível, simples e expressivo**. Hoje é uma das linguagens mais populares do mundo, usada em áreas como ciência de dados, automação, desenvolvimento web, inteligência artificial e muito mais.
 
 --------------------------------------------------------------------------------
+## • **Iteration (Iteração)**
 
+° **Iteração** é o processo de **percorrer uma sequência de elementos um por um**, executando alguma ação a cada passo.
+
+° Toda vez que passamos por cada **elemento** de uma **lista,dicionário,string ou qualquer sequência**, estamos iterando sobre ela. Um objeto que permite isso é chamado de **iterável** (_iterable_), e cada passagem individual é uma **iteração**.
 ## • **Variáveis e Tipos de Dados**
 
 » Variáveis são palavras (caixas) onde guardamos dados para utilizar no código, em Python a tipagem do dado é feita de forma **automática** pelo Python (tipagem dinâmica), mas para um código limpo e legível é importante saber seus tipos. 
@@ -411,6 +415,47 @@ print(exemplo [0],[2])
 
 ↪ **sum** retorna a soma dos **valores** dentro da lista escolhida
 
+----------------------------------
+
+• **Soma de listas (somando os valores dentro dos índices)**
+
+° Para a soma dos valores dentro de uma lista poder utilizar o **zip().**
+
+```python
+a = [1, 2, 3]
+b = [1, 2, 3]
+
+resultado = [x + y for x, y in zip(a, b)]
+print(resultado)  # [2, 4, 6]
+```
+
+° Podemos usar também **map()** com o operador **.add**.
+
+```python
+from operator import add
+
+resultado = list(map(add, a, b))
+print(resultado)  # [2, 4, 6]
+```
+
+° O **NumPy** é ideal para listas grandes.
+
+```python
+import numpy as np
+
+resultado = list(np.array(a) + np.array(b))
+print(resultado)  # [2, 4, 6]
+```
+
+° E por último podemos aplicar um loop manual com **range()**
+
+```python
+resultado = []
+for i in range(len(a)):
+    resultado.append(a[i] + b[i])
+print(resultado)  # [2, 4, 6]
+```
+
 ----------------------------------------------
 
 • **Inversão de Lista**
@@ -434,6 +479,39 @@ Lista.reverse()
 
 ↪ [0,1,2] o inverso: [-3,-2,-1]
 
+--------------------------------------
+
+• **Conversão de lista para string (print)**
+
+↪ Para transformarmos uma lista ([8,0,7]) em uma string (807)
+podemos utilizar:
+
+° **join()** com compressão de lista.
+
+```python
+lista = [8, 0, 7]
+print("".join(str(n) for n in lista))
+```
+
+↪ O `join` sozinho não funciona com inteiros, por isso é necessário converter cada número para string antes com `str()` ou `map(str, ...)`.
+
+° Converter para **string** e concatenar.
+
+```python
+resultado = ""
+for n in lista:
+    resultado += str(n)
+print(resultado)  # 807
+
+```
+
+° Usando **join() e map()**.
+
+```python
+print("".join(map(str, lista)))
+```
+
+
 --------------------------------
 ## • **Funções**
 
@@ -453,7 +531,6 @@ def nome_function (paramentros):
 	
 	return #caso seja necessario
 ```
-
 
 
 
