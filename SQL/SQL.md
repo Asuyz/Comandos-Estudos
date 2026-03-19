@@ -2,7 +2,7 @@
 
 » SQL é uma linguagem de programação feita para armazenar e processar informações dentro de uma data-base relacional.
 
-## ° **Linguagens do SQL:**
+ • **Linguagens do SQL:**
 
 | Tipo                               | Função                                                          |
 | ---------------------------------- | --------------------------------------------------------------- |
@@ -12,7 +12,7 @@
 | DCL (Data Control Language)        | Permissões -> (**GRANT, REVOKE**)                               |
 | TCL (Transaction Control Language) | "Checkpoints" -> (**COMMIT, ROLLBACK**)                         |
 
-## • **1FN | 2FN | 3FN** (Formas Normais)
+• **1FN | 2FN | 3FN** (Formas Normais)
 
 » **1FN** -> A primeira forma normal é um conceito fundamental no processo de normalização de banco de dados, tem objetivo de evitar redundâncias e organizar os dados. A **1FN** exige:
 
@@ -30,7 +30,7 @@
 
 ° **Dependência transitiva:** Ocorre quando uma coluna **não-chave** depende de outra coluna **não-chave** e essa segunda coluna depende da chave primária.
 
-## • **Exemplos DDL (Data Definition Language)** 
+ • **Exemplos DDL (Data Definition Language)** 
 
 ```sql
 
@@ -66,7 +66,7 @@ DROP TABLE clientes;
 
 ```
 
-## • **Exemplos DML (Data Manipulation Language)**
+ • **Exemplos DML (Data Manipulation Language)**
 
 ```sql
 
@@ -99,7 +99,7 @@ TRUNCATE TABLE clientes;
 
 ```
 
-## • **Exemplos DQL (Data Query Language)**
+ • **Exemplos DQL (Data Query Language)**
 
 ```sql
 
@@ -113,6 +113,8 @@ FROM clientes;
 SELECT * FROM clientes;
 ```
 
+-------------------------------
+
 ## • **Filtros para WHERE:**
 
 » Operadores comuns:
@@ -124,7 +126,7 @@ SELECT * FROM clientes;
 - `IN`
 - `IS NULL / IS NOT NULL`
 
-## ° **Exemplos dos filtros de WHERE:**
+• **Exemplos dos filtros de WHERE:**
 
 ```sql
 
@@ -149,6 +151,8 @@ SELECT * FROM clientes LIMIT 10;
 
 ```
 
+---------------
+
 ## • **Funções de agregação**
 
 | Função     | Descrição    |
@@ -159,7 +163,7 @@ SELECT * FROM clientes LIMIT 10;
 | MIN()      | Mínimo       |
 | MAX()      | Mínimo       |
 | GROUP BY() | Agrupamento  |
-## • **Exemplos das funções:**
+ • **Exemplos das funções:**
 
 ```sql
 
@@ -178,34 +182,50 @@ HAVING COUNT(*) > 5;
 
 ```
 
+------------------
+
 ## • **Relacionamentos e JOINs
 
-» Para uma manipulação correta de tabelas:
+» - **INNER JOIN**  
+    Retorna apenas os registros que existem **em ambas as tabelas** (interseção).
+    
+- **FULL JOIN (FULL OUTER JOIN)**  
+    Retorna **todos os registros das duas tabelas**, combinando quando há correspondência e preenchendo com `NULL` quando não há.
+    
+- **LEFT JOIN (LEFT OUTER JOIN)**  
+    Retorna **todos os registros da tabela da esquerda**, e apenas os correspondentes da direita (ou `NULL` se não houver).
+    
+- **RIGHT JOIN (RIGHT OUTER JOIN)**  
+    Retorna **todos os registros da tabela da direita**, e apenas os correspondentes da esquerda (ou `NULL` se não houver).
+    
+- **CROSS JOIN**  
+    Retorna o **produto cartesiano**, ou seja, **todas as combinações possíveis entre as linhas das duas tabelas**, sem necessidade de condição (`ON`).
 
 ```sql
 
--- Inner join (retorna apenas registros que existem em ambas as tabelas)
-
+-- Inner join 
 SELECT clientes.nome, pedidos.valor
 FROM clientes
 INNER JOIN pedidos
     ON clientes.id = pedidos.cliente_id;
-
--- Left Join (traz todos os clientes, mesmo se não tiver pedidos)
-
+-- Left Join 
 SELECT clientes.nome, pedidos.valor
 FROM clientes
 LEFT JOIN pedidos
-    ON clientes.id = pedidos.cliente_id;
-    
-
--- Right Join | Pouco Utilizado, oposto do LEFT
+  ON clientes.id = pedidos.cliente_id;
+  
+-- Right Join | oposto do LEFT
 
 -- Full Join | Traz tudo dos dois lados (dependendo do banco) 
 
 -- Cross Join | Produto Cartesiano
+--> Ex: Table1 - 3 Linhas
+--> Table2 - 4 linhas, seu cross join tera 12 linhas (3x4)
+--> Apenas combina tudo com tudo
 
 ```
+
+---------------------
 
 ## • **Exemplo de subconsultas (Subqueries)**:
 
@@ -230,6 +250,8 @@ FROM clientes;
 
 ```
 
+------------------------
+
 ## • **Exemplo de TCL (Transaction Control Language)**:
 
 » Para um controle das ações que irá realizar: 
@@ -249,3 +271,175 @@ COMMIT;   -- aplica
 •°»
 
 --------------------------------------------------------------
+
+## • **PL/SQL**
+
+» PL/SQL significa Procedural Language / Structured Query Language. 
+
+» O nome justifica-se, pois a linguagem integra construções procedurais com o acesso ao banco de dados por meio da linguagem SQL.
+
+» Sua característica principal é a sua estrutura em bloco com: **Declare** (Opcional), **Begin**, **Exception** (Opcional) e **End**.
+
+```plsql
+/*
+DECLARE
+/* Declaração de variáveis de memória – opcional
+
+BEGIN
+/* Instruções de funcionamento – processamento, ifs
+
+EXCEPTION
+/* Tratamento de exceções
+opcional
+
+END
+/* Finalização do bloco
+```
+
+• **Recursos de Linguagem**
+
+| Categoria 1            | Categoria 2   | Categoria 3 |
+| ---------------------- | ------------- | ----------- |
+| Tratamento de erros    | Cursores      | Pacotes     |
+| Tipos e variáveis      | Procedimentos | Coleções    |
+| Estrutura de decisão   | Funções       |             |
+| Estrutura de repetição | Gatilhos      |             |
+» - **Categoria 1 (estrutura básica do código)**  
+    Reúne elementos essenciais para construir qualquer programa:
+    
+    - Tipos e variáveis → armazenar dados
+        
+    - Estruturas de decisão → tomar decisões (`IF`, `CASE`)
+        
+    - Estruturas de repetição → criar loops (`FOR`, `WHILE`)
+        
+    - Tratamento de erros → lidar com exceções
+        
+- **Categoria 2 (lógica e modularização)**  
+    Foca em como organizar e executar operações:
+    
+    - Procedimentos e funções → reutilizar código
+        
+    - Cursores → manipular resultados de consultas
+        
+    - Gatilhos (triggers) → automatizar ações no banco
+        
+- **Categoria 3 (organização avançada e estrutura de dados)**  
+    Voltada para arquitetura e estruturas mais complexas:
+    
+    - Pacotes → agrupar e organizar código
+        
+    - Coleções → trabalhar com conjuntos de dados em memória
+
+-----------------------------------------------
+## • **Bloco Anônimo**
+
+» Um **bloco anônimo** é um código PL/SQL que:
+
+- **não tem nome**
+    
+- **não fica salvo no banco**
+    
+- é executado **na hora e descartado depois**
+
+• **Exemplo simples**
+
+```plsql
+BEGIN
+   DBMS_OUTPUT.PUT_LINE('Olá, mundo!');
+END;
+/
+
+```
+
+» ` DBMS_OUTPUT.PUT_LINE()` é o **print** da linguagem.
+
+• **Exemplo com variável**
+
+```plsql
+DECLARE
+   v_nome VARCHAR2(50) := 'André';
+BEGIN
+   DBMS_OUTPUT.PUT_LINE('Nome: ' || v_nome);
+END;
+/
+
+```
+
+» O **operador** || (**Double Pipe**) utilizado no exemplo acima é a concatenação de strings ou texto + **variáveis**
+
+-----------------------------------------------
+
+## • **Sintaxe de variáveis**
+
+» As **variáveis** sempre estarão na seção de **DECLARE** em PL/SQL.
+
+» Sua sintaxe **PADRÃO:**
+
+```plsql
+nome_variavel TIPO [:= valor_inicial];
+```
+
+» - `:=` → atribuição
+
+------------------------------------------
+
+## • **Sintaxe usada em PL/SQL**
+
+» Exemplos de lógica dentro do **PL/SQL** e como são escritas na linguagem abordada.
+
+» Diferente do **SQL** em **PL/SQL** precisamos de **INTO** ao invés de **FROM** no **SELECT**.
+
+```plsql
+SELECT nome INTO v_nome FROM clientes WHERE id = 1;
+```
+
+
+• **Estrutura de Decisão**
+
+```plsql
+IF condição THEN
+   ...
+ELSIF condição THEN
+   ...
+ELSE
+   ...
+END IF;
+```
+
+• **Loops**
+
+» **FOR**
+
+```plsql
+FOR i IN 1..10 LOOP
+   ...
+END LOOP;
+```
+
+» **WHILE**
+
+```plsql
+WHILE condição LOOP
+   ...
+END LOOP;
+```
+
+» **LOOP SIMPLES**
+
+```plsql
+LOOP
+   EXIT WHEN condição;
+END LOOP;
+```
+
+• **Exceções**
+
+```plsql
+EXCEPTION
+   WHEN ZERO_DIVIDE THEN ...
+   WHEN NO_DATA_FOUND THEN ...
+   WHEN OTHERS THEN ...
+```
+
+» **OTHERS pega qualquer outro erro da exceção**.
