@@ -31,6 +31,7 @@
 | **cp (-r)**    | Copia arquivos ou pastas                                   | cp foto.jpg ~/backup/         |
 | **mv**         | Move ou renomeia                                           | mv notas.txt notas_old.txt    |
 | **rm (-r -f)** | Remove(recursivo,forçado)                                  | rm -rf tmp/                   |
+
 ↪ No uso de **echo**: ***>*** (Cria um novo arquivo - sobreposição) e ***>>*** (Adiciona o conteúdo ao arquivo).
 
 
@@ -51,5 +52,6 @@
 | **df**        | Monitorar o espaço disponível no sistema | df -Th                                    |
 | **ps**        | Lista processos no sistema               | ps -aux \| grep (< processo a procurar >) |
 | **top**       | Monitora o Sistema em Tempo Real         | top -u admlnx                             |
+
 ↪ em **find** o ponto significa o diretório corrente no Linux.
 
