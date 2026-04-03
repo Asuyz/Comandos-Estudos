@@ -10,8 +10,22 @@
 
 ---------------
 
+• **Principais Métodos dos Dicionários**
 
-° **Formas de Criar Dicionários:**
+| Método / Função   | Descrição                                   |
+| ----------------- | ------------------------------------------- |
+| **.keys()**       | Retorna todas as chaves como uma view       |
+| **.update()**     | Mescla outro dicionário no atual            |
+| **.clear()**      | Remove todos os itens                       |
+| **.values()**     | Retorna todos os valores como uma view      |
+| **.setdefault()** | Insere uma chave como padrão se não existir |
+| **len()**         | Número de pares chave-valor                 |
+| **.items()**      | Retorna pares (chave, valor) como tuplas    |
+| **.copy()**       | Cópia rasa do dicionário                    |
+
+--------------------------
+
+• **Formas de Criar Dicionários:**
 
 ```python
 #1. Chaves literais
@@ -46,7 +60,7 @@ vazio2 = dict()
 
 ---------------------------------------
 
- ° **Diferença entre [] e .get()**
+ • **Diferença entre d[] e .get()**
 
 ↪ **d["chave"]**
 
@@ -71,21 +85,3 @@ bio = perfil.get("bio", "Sem descrição")
 ```
 
 ------------------
-
-° **Principais Métodos dos Dicionários**
-
-» **.keys()** -> Retorna todas as chaves como uma view.
-
-» **.update()** -> Mescla outro dicionário no atual.
-
-» **.clear()** -> Remove todos os itens.
-
-» **.values()** -> Retorna todos os valores como uma view.
-
-» **.setdefault()** -> Insere uma chave como padrão se não existir.
-
-» **len()** Número de pares chave-valor.
-
-» **.itens()** Retorna pares (chave,valor) como tuplas.
-
-» **.copy()** Cópia rasa do dicionário.
