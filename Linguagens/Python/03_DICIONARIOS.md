@@ -8,20 +8,24 @@
 
 ↪ *cada objeto é divido entre: chave e valor igual descrito acima* 
 
+° A representação de um dicionário vem do uso de: **{}**
+
 ---------------
 
 • **Principais Métodos dos Dicionários**
 
-| Método / Função   | Descrição                                   |
-| ----------------- | ------------------------------------------- |
-| **.keys()**       | Retorna todas as chaves como uma view       |
-| **.update()**     | Mescla outro dicionário no atual            |
-| **.clear()**      | Remove todos os itens                       |
-| **.values()**     | Retorna todos os valores como uma view      |
-| **.setdefault()** | Insere uma chave como padrão se não existir |
-| **len()**         | Número de pares chave-valor                 |
-| **.items()**      | Retorna pares (chave, valor) como tuplas    |
-| **.copy()**       | Cópia rasa do dicionário                    |
+| Método / Função   | Descrição                                                                                                               |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| **.keys()**       | Retorna todas as chaves como uma view                                                                                   |
+| **.update()**     | Mescla outro dicionário no atual                                                                                        |
+| **.clear()**      | Remove todos os itens                                                                                                   |
+| **.values()**     | Retorna todos os valores como uma view                                                                                  |
+| **.setdefault()** | Insere uma chave como padrão se não existir                                                                             |
+| **len()**         | Número de pares chave-valor                                                                                             |
+| **.items()**      | Retorna pares (chave, valor) como tuplas                                                                                |
+| **.copy()**       | Cópia rasa do dicionário                                                                                                |
+| **.has_keys()**   | Permite a Resposta se a chave existe ou não dentro do dicionário respectivo e retorna 1(True) ou 0(False)               |
+| **.popitem()**    | Permite a execução de elementos de forma aleatória, individual e que logo após serão excluídos do dicionário em questão |
 
 --------------------------
 
@@ -51,12 +55,12 @@ vazio2 = dict()
 
 ↪ Na número 1 (Chaves Literais) podemos utilizar valores **imutáveis** como:
 
-| Valores Permitidos |
-| ------------------ |
-| str                |
-| int                |
-| float              |
-| tuple              |
+| *Valores Permitidos:* |
+| --------------------- |
+| **str (string)**      |
+| **int (inteiro)**     |
+| **float**             |
+| **tuple (tupla)**     |
 
 ---------------------------------------
 

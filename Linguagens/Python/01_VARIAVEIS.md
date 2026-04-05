@@ -3,7 +3,7 @@
 ° Uma variável é um **nome** que aponta para um valor armazenado na memória. Pensa assim: é como uma etiqueta que você cola num objeto — e você pode mover essa etiqueta para outro objeto quando quiser.
 
 -----------------------------------------------
-### • **Criando variáveis**
+ • **Criando variáveis**
 
 ° Em Python, você cria uma variável simplesmente atribuindo um valor a um nome. Não precisa declarar o tipo antes (diferente de Java):
 
@@ -18,7 +18,7 @@ ativo = True         # booleano (bool)
 
 ---------------------------------------------------
 
-### • **Modificando variáveis**
+ • **Modificando variáveis**
 
 Modificar é só atribuir um novo valor ao mesmo nome. A etiqueta sai do valor antigo e cola no novo:
 

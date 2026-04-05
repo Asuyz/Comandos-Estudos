@@ -13,6 +13,7 @@
 
 ° Vale lembrar que a leitura da lista começa com **ZERO**. 
 
+° A representação do uso da listas vem de: **[]**
 #### ° **Exemplos:**
 
 ```python
