@@ -1,4 +1,4 @@
-gi## • **Tuplas**
+## • **Tuplas**
 
 ° Tuplas assim como as **listas, dicionários e variáveis** são estruturas para dados voláteis.
 
