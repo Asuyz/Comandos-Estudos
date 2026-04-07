@@ -136,7 +136,7 @@ Objeto Python/Java  →  JSON (Formato usado)  →  Cliente
 
 ---------------------------------------------------
 
-• **Visualização e Testes de API's
+• **Visualização e Testes de API's**
 
 ° Para visualizar, testar e depurar APIs sem precisar escrever código, utilizamos ferramentas client como **Insomnia** e **Postman**.
 
