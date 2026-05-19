@@ -12,7 +12,7 @@
 
 » **A máquina virtual não é nada mais que o inverso dos conceitos introduzidos (um único sistema operacional instalado sob uma única camada de virtualização) que compreende diversos computadores abaixo dela (o cluster)**.
 
-° Ela enxerga todo o hardware dos clusters como um só, permitindo uma flexibilidade no aumento desses recursos para a máquina virtual, sempre que existe uma necessida a mais de poder computacional (processamento, memória ram ou de vídeo) e sempre que a infraestrutura física for insuficiente novos computadores são adicionados nesse cluster.
+° Ela enxerga todo o hardware dos clusters como um só, permitindo uma flexibilidade no aumento desses recursos para a máquina virtual, sempre que existe uma necessida a mais de poder computacional (processamento e memória) e sempre que a infraestrutura física for insuficiente novos computadores são adicionados nesse cluster.
 
 ------------------------------------------------------------
 
@@ -60,8 +60,83 @@
 
 ↪ Uma VM não nada mais que um computador simulado, possuindo processador, memoria, armazenamento, rede, interfaces e periféricos emulados, com todas as capacidades e funções de um computador físico.
 
-° (parei fig 5)
+° A virtualização muda fundamentalmente a maneira da computação consolidando as pools. (Pools de virtualização, ou _resource pools_, ==agrupam recursos físicos (CPU, memória, armazenamento) de múltiplos servidores em um único pool lógico==. Essa técnica maximiza a eficiência, permite o compartilhamento de recursos e facilita a movimentação dinâmica de máquinas virtuais (VMs) entre hosts para reduzir o tempo de inatividade.)
+
+° Isso permite a execução de varias máquinas virtuais em uma máquina física assim como vários sistemas Operacionais, além de compartilhar os recursos desse computador único (CPU, memória, dispositivo de rede, armazenamento entre outros), esse software permite criar e executar máquinas é chamado de **hypervisor**.
+
+° Com a ==Virtualização== podemos fornecer uma versão virtual de diversas tecnologias essenciais na computação, as principais são: **Hardware, Armazenamento e Redes**.
+
+↪ **Hardware**: Um sistema operacional pode ser instalado sobre outro tipo de sistema, com seus recursos de *hardware* sendo representados via *software*.
+
+↪ **Armazenamento**: ==SDS== (Software Defined Storage - Armazenamento Definido por Software). É uma camada de software criada sobre os discos físicos, onde os dispositivos acessam esses discos, tornando o acesso mais flexível, gerenciável e personalizável.
+
+↪ **Redes**: ==SDN==(Software Defined Networking - Rede Definida por Software). É possível criar um tipo de infraestrutura (software) de redes sobre uma determinada rede física, permitindo o detalhamento de acordo com as necessidades do ambiente.
+
+° Com todos os dispositivos físicos podendo ser representados em forma de softwares: servidores e estações se tornam **VM's**, com a rede e armazenamento se tornando **SND e SDS** construímos o **SDDC** (**Data Center Definido por Software**).
+
+» ==***Termos (Para entendimento geral)***==
+
+| Termo                              | Definição                                                                                                                                                                                 |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Hospedeiro (_host_)**            | Trata-se da infraestrutura real, local da qual as VMs ficaram hospedadas; ele pode ter seu próprio sistema operacional (instalado diretamente no hardware, de forma convencional) ou não. |
+| **Hypervisor**                     | É uma camada de _software_ localizada entre a camada de _hardware_ e o sistema operacional.                                                                                               |
+| **Convidado ou hóspede (_guest_)** | É a máquina (VM) instalada sob o _hardware_ emulado.                                                                                                                                      |
+
+-----------------------------------------
+
+• **Tipos de Virtualização**
+
+↪ **Virtualização de Aplicativos**: Fornece um aplicado hospedado em uma única máquina para um grande número de usuários. O usuário final não precisa de um *hardware* de alta qualidade para executar o aplicativo.(parei no segundo paragrafo.)
+
+↪ **Sistema Virtualizado por Máquina Virtual (H-Based)**: **H-based (Hypervisor Based)** é o modelo mais comum de virtualização, onde cada VM exige um SO completo, com kernel, binários e bibliotecas próprios — o que gera alto consumo de espaço e custo de manutenção. Múltiplas VMs rodam sobre a mesma infraestrutura física, cada uma com seu **SO convidado** (guest OS) independente, enquanto o SO que roda diretamente no hardware é chamado de **SO hospedeiro** (host OS).
+
+» O gerenciamento dessas VMs é feito pelo **Hypervisor**, camada responsável por simular o hardware e permitir que diferentes sistemas operacionais sejam executados sobre um único servidor físico. Existem dois tipos: o **Tipo 1** (bare-metal), que roda diretamente no hardware sem depender de um SO hospedeiro, e o **Tipo 2** (hosted), que roda sobre um SO hospedeiro — sendo o VirtualBox um exemplo desse segundo tipo.
+
+↪ **Sistema Virtualizado por Container (OS-Based)**: A virtualização por OS based passou a ser difundida após o surgimento do **Docker**. A virtualização por contêiner possibilita, por exemplo, portar a sua aplicação direto de um notebook para o servidor de produção ou por uma instância virtual em uma nuvem pública.
+
+-----------------------------------------------------------------
+
+• **VM ou Contaier**
+
+° A grande diferença entre esses tipos de virtualização são que os containers são executados como um processo isolado dentro do host e compartilham o mesmo *Kernel (SO)*, enquanto a *VM* possui um *OS* completo para cada máquina virtual
+
+| **Virtual machine**                   | **Container**                           |
+| ------------------------------------- | --------------------------------------- |
+| Desempenho limitado                   | Desempenho nativo                       |
+| Virtualização em nível de hardware    | Virtualização de SO                     |
+| Aloca memória necessária              | Requer menos espaço de memória          |
+| Cada VM é executada em seu próprio SO | Todos os containers compartilham o SO   |
+| Tempo de inicialização em minutos     | Tempo de inicialização em milissegundos |
+
+» **VM**: É a melhor opção quando se tem uma grande variedade de instâncias de SOs (OS) para gerenciar ou quando precisamos executar vários aplicativos em diversos servidores.
+
+» **Container** é a melhor opção quando sua prioridade é executar o maior número de aplicativos em um menor número de servidores.
+
+° Comparando a virtualização por container com máquinas virtuais (**H-Based**) é possível afirmar que a **OS-Based** possui mais vulnerabilidades em quesitos de isolamento de segurança, mas apresentam maior flexibilidade em seu uso.
+
+° A utilização das duas formas em um mesmo ambiente de trabalho é totalmente normal e é utilizada para obter a funcionalidade máxima do ambiente.
+
+------------------------------------------------------------
+
+• **Mais sobre o Hypervisor**
+
+° O hypervisor veio como uma forma de ultrapassar as possíveis limitações da arquitetura e custos altos na utilização de servidores, como citado acima eles podem ser executados no **hardware físico** (chamados de *bare-metal*) ou via sistema operacial (*hosted*). Os **hypervisores** são categorizados pelo modelo de implantação, se são do tipo monolíticos ou microkernelizados.
+
+↪ **Hypervisor Monolítico**:
+
+↪ **Hypervisor Microkernelizado**:
+
+↪ **Virtualização Total**:
+
+↪ **Para-Virtualização**:
 
 
-»°•
 
+
+
+
+
+
+
+
+»°•↪
