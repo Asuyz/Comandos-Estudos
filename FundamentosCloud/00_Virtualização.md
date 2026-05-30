@@ -96,7 +96,7 @@
 
 -----------------------------------------------------------------
 
-• **VM ou Contaier**
+• **VM ou Container?**
 
 ° A grande diferença entre esses tipos de virtualização são que os containers são executados como um processo isolado dentro do host e compartilham o mesmo *Kernel (SO)*, enquanto a *VM* possui um *OS* completo para cada máquina virtual
 
@@ -122,21 +122,53 @@
 
 ° O hypervisor veio como uma forma de ultrapassar as possíveis limitações da arquitetura e custos altos na utilização de servidores, como citado acima eles podem ser executados no **hardware físico** (chamados de *bare-metal*) ou via sistema operacial (*hosted*). Os **hypervisores** são categorizados pelo modelo de implantação, se são do tipo monolíticos ou microkernelizados.
 
-↪ **Hypervisor Monolítico**:
+↪ **Hypervisor Monolítico**: As máquinas virtuais são gerenciadas pelo *hypervisor* e os drivers são hospedados e isso trás benefícios no uso. Um dos benefícios é que geralmente não precisaremos de um controle na partição principal ou no sistema operacional, pois os sistemas operacionais *visitantes* interagem direto com o hardware utilizado via *hypervisor*, o único empecilho é a quantidade de modelos de hardware diferentes dificultando o desenvolvimento específico do *hypervisor*.
 
-↪ **Hypervisor Microkernelizado**:
+↪ **Hypervisor Microkernelizado**: Nesse modelo o *hypervisor* possui um tipo de S.O (Systems Operation) atuando na raiz (root) ou na partição principal, com isso não é necessário drivers desenvolvidos especificamente para o *hypervisor*. Essa partição fornece o necessário para o acesso direto do hardware do **host**. Os drivers dos hardwares físicos são instalados no sistema operacional em execução na partição principal, não sendo necessário a instalação dos drivers nos sistemas operacionais **visitantes** (**guests**), dessa forma o sistema visitante acessa o hardware físico se comunicando direto com a partição principal.
 
-↪ **Virtualização Total**:
+↪ **Virtualização Total**: Nesse modelo o sistema *visitante* (**guest**) não é capaz de entender se está sendo executado em um ambiente virtual. Portanto, se comporta como estivesse sendo executado em um ambiente real. Com isso podemos instalar um *OS* na máquina virtual sem precisar de nenhum tipo de modificação ou configuração para seu funcionamento, todos os recursos são entregues pelo hypervisor na maior parte das vezes, essa técnica é mais utilizado em sistemas como *Windows e MacOs*, pois o código fechad não permitem mudanças para reconhecerem que estão em um ambiente virtual.
 
-↪ **Para-Virtualização**:
+» A principal vantagem desse meio é a quantidade minima de restrições para o que pode ser virtualizado, como consequência temos uma perca de desempenho, pois não há trabalho mútuo entre o *guest* e o *hypervisor*.  
 
+↪ **Para-Virtualização**: Nesse modelo o sistema *guest* entende que está sendo virtualizado, e com isso as instruções privilegiadas são executadas de forma diferente, diretamente no hardware sem a necessidade de um software como o *hypervisor*. A grande maioria dos recursos não são interpretados como recursos pelo *hypervisor*, resultando em um ganho de performance (especialmente em instruções I/Os de rede e disco).
 
+|                        |                                                         |
+| ---------------------- | ------------------------------------------------------- |
+| Benefícios da técnica  | Melhor utilização de recursos ao oferecer virtualização |
+| Relação com desempenho | Desempenho superior à virtualização total               |
 
+» Nesse modelo exige a necessidade de alteração do *kernel*, sendo somente disponíveis em sistemas onde o código fonte pode ser alterado
 
+---------------------------------------------------------
 
+• **Tipos de configuração de rede**
 
+» Para lidar com uma rede de máquinas virtuais é necessário o entendimento de configurações de rede que são oferecidas, as mais comuns são:
 
+↪ **HOST-ONLY**: Cria uma *LAN* privada compartilhada entre o *host* e suas máquinas virtuais. As Máquinas virtuais nessa rede não podem se comunicar com computadores externos.
 
+↪ **NAT/SHARED**: As máquinas virtuais podem acessar outros computadores na *LAN* ou internet, mas as conexões serão vindos do *host do IP*. Os outros computadores não podem iniciar conexões com as máquinas virtuais a menos que seja configurado o redirecionamento de portas (*post-forwarding*) no computador *host*.
 
+↪ **BRIDGED**: As Máquinas virtuais compartilham o adaptador de Internet físico do host, mas possuem os próprios endereços *IPs* e *MACs*. Elas Aparecem na mesma sub-rede do *host*. Essa é a unica configuração que permite que outros computadores inciem conexões de entrada na máquina virtual, também é a unica configuração que permite outras máquinas externas (*roteador ou firewall*), distingam o tráfego das máquinas virtuais.
 
-»°•↪
+| **Configuração**                      | Host-Only | NAT | Bridge |
+| ------------------------------------- | --------- | --- | ------ |
+| VMs podem acessar outras VMs          | Sim       | Sim | Sim    |
+| VMs podem acessar o hospedeiro        | Sim       | Sim | Sim    |
+| VMs podem acessar outros computadores | Não       | Sim | Sim    |
+| O hospedeiro pode acessar VMs         | Sim       | Sim | Sim    |
+| Outros computadores podem acessar VMs | Não       | Não | Sim    |
+
+----------------------------------------------------------
+
+• **Considerações Extras**
+
+↪ **Recursos Adicionais das VMs**: Os softwares VMWare e o VirtualBox oferecem a opção de instalar recursos adicionais na máquina virtual, que facilitam com que o sistema *host* interage com a VM, especialmente o compartilhamento de arquivos entre os dois. Esses softwares permitem, entre outras possibilidades a instalação de um driver para a placa de vídeo virtual, permitindo a emulação de um desktop em "tela cheia".
+
+↪ **Pastas Compartilhadas**: Esse é um recurso que possibilita a troca de informações entre o *host* e a VM, assim possibilitando arquivos estarem disponíveis nos dois sistemas. É recomendado utilizar esse recurso marcando a pasta em questão como **somente-leitura**.
+
+↪ **Snapshots**: Snapshots em máquinas virtuais (VMs) funcionam como pontos de restauração que salvam o estado da máquina em um momento específico. Eles podem armazenar informações como o disco virtual, configurações da VM e até mesmo a memória RAM, dependendo do hypervisor utilizado. Isso permite retornar rapidamente ao estado anterior caso alguma atualização, instalação ou configuração cause problemas. É uma técnica muito utilizada em laboratórios, homelabs, ambientes de teste e manutenção de servidores virtuais.
+
+------------------------------------------------------------
+
+ 
