@@ -60,21 +60,21 @@
 
 ↪ Uma VM não nada mais que um computador simulado, possuindo processador, memoria, armazenamento, rede, interfaces e periféricos emulados, com todas as capacidades e funções de um computador físico.
 
-° A virtualização muda fundamentalmente a maneira da computação consolidando as pools. (Pools de virtualização, ou _resource pools_, ==agrupam recursos físicos (CPU, memória, armazenamento) de múltiplos servidores em um único pool lógico==. Essa técnica maximiza a eficiência, permite o compartilhamento de recursos e facilita a movimentação dinâmica de máquinas virtuais (VMs) entre hosts para reduzir o tempo de inatividade.)
+° A virtualização muda fundamentalmente a maneira da computação consolidando as pools. (Pools de virtualização, ou _resource pools_, *agrupam recursos físicos (CPU, memória, armazenamento) de múltiplos servidores em um único pool lógico*. Essa técnica maximiza a eficiência, permite o compartilhamento de recursos e facilita a movimentação dinâmica de máquinas virtuais (VMs) entre hosts para reduzir o tempo de inatividade.)
 
 ° Isso permite a execução de varias máquinas virtuais em uma máquina física assim como vários sistemas Operacionais, além de compartilhar os recursos desse computador único (CPU, memória, dispositivo de rede, armazenamento entre outros), esse software permite criar e executar máquinas é chamado de **hypervisor**.
 
-° Com a ==Virtualização== podemos fornecer uma versão virtual de diversas tecnologias essenciais na computação, as principais são: **Hardware, Armazenamento e Redes**.
+° Com a **Virtualização** podemos fornecer uma versão virtual de diversas tecnologias essenciais na computação, as principais são: **Hardware, Armazenamento e Redes**.
 
 ↪ **Hardware**: Um sistema operacional pode ser instalado sobre outro tipo de sistema, com seus recursos de *hardware* sendo representados via *software*.
 
-↪ **Armazenamento**: ==SDS== (Software Defined Storage - Armazenamento Definido por Software). É uma camada de software criada sobre os discos físicos, onde os dispositivos acessam esses discos, tornando o acesso mais flexível, gerenciável e personalizável.
+↪ **Armazenamento**: *SDS* (Software Defined Storage - Armazenamento Definido por Software). É uma camada de software criada sobre os discos físicos, onde os dispositivos acessam esses discos, tornando o acesso mais flexível, gerenciável e personalizável.
 
-↪ **Redes**: ==SDN==(Software Defined Networking - Rede Definida por Software). É possível criar um tipo de infraestrutura (software) de redes sobre uma determinada rede física, permitindo o detalhamento de acordo com as necessidades do ambiente.
+↪ **Redes**: *SDN* (Software Defined Networking - Rede Definida por Software). É possível criar um tipo de infraestrutura (software) de redes sobre uma determinada rede física, permitindo o detalhamento de acordo com as necessidades do ambiente.
 
 ° Com todos os dispositivos físicos podendo ser representados em forma de softwares: servidores e estações se tornam **VM's**, com a rede e armazenamento se tornando **SND e SDS** construímos o **SDDC** (**Data Center Definido por Software**).
 
-» ==***Termos (Para entendimento geral)***==
+» ***Termos (Para entendimento geral)***
 
 | Termo                              | Definição                                                                                                                                                                                 |
 | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
