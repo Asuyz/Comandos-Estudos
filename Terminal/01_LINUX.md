@@ -1,5 +1,5 @@
 
-» Diretórios essenciais
+### » **Diretórios essenciais**
 
 | ***Diretório*** | ***Função***                                               | ***Exemplo***        |
 | --------------- | ---------------------------------------------------------- | -------------------- |
@@ -11,7 +11,7 @@
 | **/usr**        | Programas de usuário, manuais e bibliotecas compartilhadas | /usr/bin/grep        |
 | **/tmp**        | Arquivos temporários limpos em reinicialização             | /tmp/socket          |
 
-» Deslocamento pelo Sistema
+### » **Deslocamento pelo Sistema**
 
 | ***Comando***     | ***Desc***                                        | ***Exemplo*** |
 | ----------------- | ------------------------------------------------- | ------------- |
@@ -21,7 +21,7 @@
 | **exit**          | Fecha o terminal                                  | --            |
 | **clear**         | Limpa o terminal                                  | --            |
 
-» Criação, Cópia e Remoção  
+### » **Criação, Cópia e Remoção**  
 
 | ***Comando***  | ***Ação***                                                 | ***Exemplo***                 |
 | -------------- | ---------------------------------------------------------- | ----------------------------- |
@@ -35,7 +35,7 @@
 ↪ No uso de **echo**: ***>*** (Cria um novo arquivo - sobreposição) e ***>>*** (Adiciona o conteúdo ao arquivo).
 
 
-» Visualização de Conteúdo
+### » **Visualização de Conteúdo**
 
 | ***Comando***    | ***Desc***                                  | ***Exemplo***        |
 | ---------------- | ------------------------------------------- | -------------------- |
@@ -43,7 +43,7 @@
 | **less**         | Rolagem interativa, ideal para logs grandes | less install.log     |
 | **head/tail -n** | Primeiras ou últimas linhas                 | tail -10 install.log |
 
-» Administração do Sistema
+### » **Administração do Sistema**
 
 | ***Comando*** | ***Desc***                               | ***Exemplo***                             |
 | ------------- | ---------------------------------------- | ----------------------------------------- |
@@ -54,4 +54,6 @@
 | **top**       | Monitora o Sistema em Tempo Real         | top -u admlnx                             |
 
 ↪ em **find** o ponto significa o diretório corrente no Linux.
+
+----------------------------------------------------------------
 
