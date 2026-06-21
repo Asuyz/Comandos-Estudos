@@ -41,59 +41,6 @@
 | **f128** *(experimental)* | Ponto flutuante de 128 bits.              | 16                 | *(não estável)*                             |
 | **never (`!`)**           | Tipo que nunca retorna.                   | 0                  | `fn erro() -> ! { panic!("erro!"); }`       |
 
-### ° **Tipos e variáveis** 
-
-° Para declaramos uma variável no Rust utilizamos a palavra **let + (nome da variável)**. 
-
-° Por padrão as variáveis serão sempre **imutáveis** (não confundir com constantes) e para podermos modificar seus valores utilizamos: **mut**.
-
-### » **Exemplos**:
-
-```Rust
-
-Let variavel : i8 = 127
-//I8 = Inteiro de 8 bits (Intervalo de -128 ate 127)
-//Depois dos : definimos o tipo (bool, array, etc;)
-
-Let mut variavel 2 : u8 = 255
-//U8 = unsigned de 8 bits (bytes) (intervalo de 0 ate 255)
-//mut permite que modifiquemos o valor da variavel no futuro.
-
-//Exemplo de print:
-
-println!("variavel = {}", variavel)
-//No print é necessário passar o parâmetro no fim para exibir o valor)
-
-```
-
-------------------------------------------------------------
-
-## ° **Constantes**
-
-° A diferença entre **constantes e variáveis** é:
-
-» Variável tem um endereço de memória alocado onde um valor foi adicionado.
-
-» **Constantes** não armazenam valor em memória e são executadas em tempo de **compilação (rustc) e não em tempo de execução**.
-
-° São declaradas com **const** e **não podem ser mutáveis**.
-
-° Precisamos indicar sempre o tipo (não é subentendido igual nas variáveis onde é possível em alguns casos omitir).
-
-° As constantes podem ser utilizadas em qualquer lugar do código, inclusive fora da função **main**.
-
-### » **Exemplo**:
-
-```Rust
-
-Const PI: f64 = 3.14159;
-// f64 = Ponto flutuante de 64 bits
-fn main(){
-	println!("O valor de PI é: {}", PI);
-}
-
-```
-
 ------------------------------------------------------------
 
 ## ° **Recursos Específicos e Gerais**
@@ -113,65 +60,7 @@ Let Var:F32 = 2.6 // Esse valor é o novo valor da variavel
 
 ° Um escopo dentro do outro **herda** o valor do escopo externo, esse conceito se chama **shadowing**
 
-## ° **Funções**
-
-» Se não especificamos o retorno de uma **FN** ela não retorna nada, não é possível **omitir** o seu retorno
-
-° **Exemplo de FN com retorno:**
-
-```Rust
-Fn soma (a:i32,b:i32) -> i32 // a arrow function (->) é o nosso retorno
-```
-
-» Quando queremos **retornar** algo no Rust a nossa expressão **não terá o ponto e virgula em seu final (;)**, esse conceito se chama de **supressed (supressão)**.
-
-
-## ° **Expressão if**
-
-» O comportamento funciona da mesma forma das outras linguagens (**if -> if/else -> else**).
-
-» O Rust pode ler valores como expressão então no lugar de **if/else** podemos usar:
-
-```Rust
-let condicao = if idade >18{maior}else{menor};
-// depois do = o valor dentro vira a condição do if/else
-```
-
-» O valor de diferente em Rust é representando dessa maneira: **!=**
-
-## ° **Loops**
-
-» Laços de repetição (loops) funcionam quase da mesma forma de qualquer outra linguagem.
-
-» **While**: Lê a condição no **inicio**.
-
-» **Do While (em Rust)**: Lê ao final (loop com instrução **break**).
-
-» **Continue** faz seu loop ler outro bloco antes de voltar ao principal.
-
-» **Range e for** no Rust percorrem em intervalos:
-
-```Rust
-For i in 1..11 
-For i in 1.. =10
-
-```
-
-» No primeiro exemplo do **for i** o índice não percorre até o final ele sempre ira parar 1 valor antes do determinado (igual o segundo exemplo, porém a forma de escrita fica mais clara).
-
-## ° **Match Statement**
-
-» Se trata de uma estrutura de **controle** presente no Rust (não sendo comum em outras linguagens), onde o fluxo de execução é determinado por correspondência de padrões (_pattern matching_), permitindo tratar múltiplos casos de forma segura, expressiva e exaustiva.
-
-° **Exemplo:**
-
-```Rust
-Let result = match numero{
-1=>"um"
-2=>"dois"
-_=>"outro"}
-```
-
+----------------------------------------------------------------
 ## ° **Stack** (Pilha)
 
 »
