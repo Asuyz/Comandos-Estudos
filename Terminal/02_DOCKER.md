@@ -1,8 +1,8 @@
-# Referência Completa de Comandos do Docker CLI
+# » **Referência Completa de Comandos do Docker CLI**
 
 > Baseado na documentação oficial (docs.docker.com), versão atual do Docker CLI.
 
-## Containers (`docker container`)
+### » **Containers (`docker container`)**
 
 | Comando | Atalho | Descrição |
 |---|---|---|
@@ -32,7 +32,7 @@
 | `docker container wait` | — | Bloqueia até que o container pare, e retorna o código de saída |
 | `docker container prune` | — | Remove todos os containers parados |
 
-## Imagens (`docker image`)
+### » **Imagens (`docker image`)**
 
 | Comando | Atalho | Descrição |
 |---|---|---|
@@ -49,7 +49,7 @@
 | `docker image import` | — | Importa o conteúdo de um tarball como uma imagem |
 | `docker image prune` | — | Remove imagens não utilizadas (dangling ou todas) |
 
-## Build avançado (`docker buildx` / `docker builder`)
+### » **Build avançado (`docker buildx` / `docker builder`)**
 
 | Comando | Descrição |
 |---|---|
@@ -69,7 +69,7 @@
 | `docker buildx debug build` | Build com depuração interativa |
 | `docker builder prune` | Remove cache de build (comando legado) |
 
-## Rede (`docker network`)
+### » **Rede (`docker network`)**
 
 | Comando | Descrição |
 |---|---|
@@ -81,7 +81,7 @@
 | `docker network disconnect` | Desconecta um container de uma rede |
 | `docker network prune` | Remove redes não utilizadas |
 
-## Volumes (`docker volume`)
+### » **Volumes (`docker volume`)**
 
 | Comando | Descrição |
 |---|---|
@@ -92,7 +92,7 @@
 | `docker volume update` | Atualiza configuração de um volume |
 | `docker volume prune` | Remove volumes não utilizados |
 
-## Docker Compose (`docker compose`)
+### » **Docker Compose (`docker compose`)**
 
 | Comando | Descrição |
 |---|---|
@@ -127,7 +127,7 @@
 | `docker compose bridge convert` | Converte compose file para manifests do Kubernetes |
 | `docker compose alpha *` | Comandos experimentais (`dry-run`, `scale`, `watch`) |
 
-## Swarm e orquestração
+### » **Swarm e orquestração**
 
 **`docker swarm`**: `init`, `join`, `join-token`, `leave`, `unlock`, `unlock-key`, `update`, `ca`
 
@@ -137,7 +137,7 @@
 
 **`docker stack`**: `deploy`, `ls`, `ps`, `rm`, `services`, `config`
 
-## Sistema (`docker system`)
+### » **Sistema (`docker system`)**
 
 | Comando | Descrição |
 |---|---|
@@ -146,13 +146,13 @@
 | `docker system events` | Transmite eventos em tempo real do daemon |
 | `docker system prune` | Remove dados não utilizados (containers, redes, imagens, cache) |
 
-## Comandos de topo de nível (atalhos diretos)
+### » **Comandos de topo de nível (atalhos diretos)**
 
 Esses são atalhos para os comandos de gerenciamento acima, e funcionam diretamente em `docker <comando>`:
 
 `run`, `ps`, `pull`, `push`, `images`, `exec`, `build`, `login`, `logout`, `search`, `info`, `version`, `inspect`, `init`
 
-## Segurança e confiança
+### » **Segurança e confiança**
 
 **`docker trust`**: `inspect`, `sign`, `revoke`, `key generate`, `key load`, `signer add`, `signer remove`
 
@@ -166,7 +166,7 @@ Esses são atalhos para os comandos de gerenciamento acima, e funcionam diretame
 
 **`docker scout`**: análise de vulnerabilidades e SBOM — `cves`, `quickview`, `compare`, `recommendations`, `sbom`, `policy`, `environment`, `repo enable/disable/list`, `attestation add/get/list`, `cache df/prune`, `watch`, `stream`, `vex get`, `integration configure/list/delete`, `enroll`, `config`
 
-## Contextos e plugins
+### » **Contextos e plugins**
 
 **`docker context`**: `create`, `use`, `ls`, `inspect`, `rm`, `update`, `show`, `export`, `import`
 
@@ -174,11 +174,11 @@ Esses são atalhos para os comandos de gerenciamento acima, e funcionam diretame
 
 **`docker checkpoint`**: `create`, `ls`, `rm` (snapshots de estado de containers, recurso experimental)
 
-## Docker Desktop
+### » **Docker Desktop**
 
 **`docker desktop`**: `start`, `stop`, `restart`, `status`, `update`, `logs`, `diagnose`, `version`, `enable`/`disable model-runner`, `engine ls/use`, `kubernetes images`
 
-## IA e MCP (recursos mais recentes)
+### » **IA e MCP (recursos mais recentes)**
 
 **`docker model`** (Docker Model Runner — execução local de LLMs): `run`, `pull`, `push`, `list`, `rm`, `inspect`, `ps`, `logs`, `status`, `bench`, `df`, `package`, `tag`, `search`, `show`, `skills`, `requests`, `unload`, `purge`, `gateway`, `context create/inspect/ls/rm/use`, `*-runner` (install, start, stop, restart, reinstall, uninstall)
 
@@ -192,7 +192,7 @@ Esses são atalhos para os comandos de gerenciamento acima, e funcionam diretame
 
 **`docker debug`**: shell de depuração para qualquer container ou imagem, alternativa ao `docker exec`
 
-## Outros
+### » **Outros**
 
 | Comando | Descrição |
 |---|---|
