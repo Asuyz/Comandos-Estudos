@@ -52,6 +52,26 @@
 
 ------------------------------------------------------------------
 
+• **Cloud Computing**
 
+° Cloud computing é um modelo que permite o acesso à um pool compartilhado de recursos de computação, como redes, servidores, armazenamentos, aplicativos e serviços que podem ser facilmente fornecidos com pouco esforço de gerenciamento ou interação com o provedor desses serviços.
+
+° Esses recursos são acessados por meio de uma rede ou de uma intranet.
+
+° Os serviços fornecidos por via do *cloud computing* facilitam a obtenção de recursos por empresas menores assim diminuindo os custos das operações da mesma.
+
+» **Características Essenciais:**
+
+↪ **Autoatendimento sob demanda**
+
+↪ **Amplo acesso à Rede**
+
+↪ **Agrupamento de recursos**
+
+↪ **Elasticidade Rápida**
+
+↪ **Serviço mensurável**
+
+---------------------------------------------------------------
 
 »°•↪
