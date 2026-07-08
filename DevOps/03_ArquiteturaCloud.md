@@ -23,7 +23,6 @@
 
 ↪ Uma cloud híbrida é uma infraestrutura composta de dois ou mais modelos de cloud, onde cada uma delas pode ser privada ou pública. Isso resulta em cada cloud tendo propriedades diferentes nos parâmetros de desempenho, custo, segurança entre outros e isso pode mudar conforme as clouds se juntam ou se separam.
 
-
 » Junto de **quatro** modelos de serviço:
 
 - **IaaS** - Infraestrutura como serviço
@@ -43,6 +42,8 @@
 ↪ É usado como um termo genérico para abranger **Saas, PaaS e IaaS**.
 
 - Seguraça e responsabilidade do usuario (resumo dos videos)
+
+---------------------------------------------------------------
 
 • **Multicloud**
 
