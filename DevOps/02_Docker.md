@@ -68,10 +68,19 @@
 
 • **Como funciona o Docker**
 
-» 
+» O container compartilha do kernel do sistema operacional do *host*. É um pacote isolado que contém somente o necessário para a aplicação rodar (código, bibliotecas, dependências e configurações), sem um sistema operacional completo.
 
+» Cada container carrega de forma isolada as dependências da aplicação, sendo possível rodar várias instâncias de container no mesmo *host*, com versões diferentes de bibliotecas ou linguagens sem conflito.
 
+» O isolamento é feito através de recursos do kernel do *Linux* sendo os principais:
 
+↪ **namespaces**: Fazem cada container "pensar" que está sozinho no sistema, o mesmo enxerga seus próprios processos de forma isolada de outros containers. 
+
+↪ **cgroups**: Limitam o quanto de CPU, mémoria e outros recursos cada container pode consumir, evitando o uso indevido dos mesmos.
+
+↪ **chroot**: Restringe a visão do sistema de arquivos, fazendo que o container possa apenas enxergar o seu próprio diretório raiz isolado, sem acesso aos arquivos do *host*.
+
+» O **Docker Registry** é uma nuvem de armazenamento das imagens de container, onde podemos subir (push), baixar (pull), pesquisar e compartilhar imagens por lá, sendo o registro público mais famoso, mas também existem registros privados.
 
 
 
