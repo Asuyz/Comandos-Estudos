@@ -82,18 +82,61 @@
 
 » O **Docker Registry** é uma nuvem de armazenamento das imagens de container, onde podemos subir (push), baixar (pull), pesquisar e compartilhar imagens por lá, sendo o registro público mais famoso, mas também existem registros privados.
 
+------------------------------------
 
+• **Ressalvas no uso do Docker**
 
+» Para o melhor uso das vantagens e benefícios do Docker devemos seguri boas práticas como: 
 
+↪ Um container deve é apenas um **serviço** e não deve ser tratado como máquina virtual.
 
+↪ Por ser um processo do *host* não deve ter uma vida longa, precisa ser iniciado e finalizado.
 
+↪ Não se deve armazenar dados dentro do container. Para o armazenamento de dados dinâmicos, faça o uso do recurso de criar e montar um container como um volume de dados.
 
+↪ Para acesso aos containers Docker, o *host* deve prover recursos de segurança essenciais.
 
+-------------------------------------
 
+• **Automação e implantação em containers Docker**
 
+» A Plataforma Docker possibilita o uso de ferramentas no ambiente de aplicativos que tem como objetivo reduzir o atrito, acelerar a taxa de mudança e melhorar eficiências.
 
+» Devido a caracteristica de suportar implantação CI/CD, adotar um metodo de trabalho de "Container as a Service", possibilita ao time DevOps do desenvolvimento de código de forma colaborativa através do sistema de compartilhamento de imagens.
 
+» Com um *pipeline* unificado, softwares e dependências podem ser facilmente compartilhados e com ambientes de produção, minimizando os conflitos entre os diferentes ambientes, garatindo uma segurança em cadeia para o conteúdo. Isso facilita a construção/testes/implantar e simplifica a implantação de diferentes infraestruturas.
 
+------------------------------------
+
+• **Segurança dos Containers**
+
+» A virtualização por container tem como base propriedades semelhantes às máquinas virtuais, porém a adoção dessa tecnologia no ambiente de trabalho tem como maior obstaculo a segurança. Quando se trata em compartilhamento de recursos por meio de uma mesmo núcleo (container), vêm à tona questões sobres os riscos e vulnerabilidades.
+
+» Para garatir que apenas o container comprometido seja impactado em uma situação de ataque, o ideal é que seja implementado uma camada de separação e isolamento.
+
+» É possível restringir o acesso a alguns recursos específicos para um determinado usuário/grupo de usuários, enquanto outros podem ter acesso após o login no sistema. A aplicação desse sistema pode vir de tecnicas como: **DAC ou MAC**
+
+↪ **Controle de Acesso Discricionário (DAC):**
+
+» Ideia central: **o dono do recurso decide quem pode acessá-lo**.
+
+- Cada arquivo/recurso tem um dono
+- Esse dono pode conceder ou revogar permissões para outros usuários.
+- É Baseado em ACLs (Acess Control Lists)
+- **Desvantagem**: se um usuário tem acesso ao recurso/arquivo ele pode repassar esse acesso a diante (se não for restringido para tal), o controle é "solto" e depende do bom senso do dono de cada recurso.
+
+↪ **Controle de Acesso Obrigatório (MAC):**
+
+» Ideia Central: **um sistema (ou uma política central) decide.** 
+
+- Existe uma política de segurança, definida centralmente (por um administrador ou pelo próprio sistema operacional) que **não pode ser sobrescrito**, nem o dono do arquivo
+- Geralmente é utilizado rótulos de segurança (labels) nos usuários e recursos.
+- O acesso só é possível se o rótulo do usuário for compativel com o rótulo do recurso (de acordo com a politica do sistema) 
+- Diferente do **DAC** o **MAC** é um sistema muito mais rígido e seguro contra o erro humano, ou vazamento indevido, pois nem o dono do arquivo pode liberar o acesso para outros.
+
+--------------------------------------
+
+• **Docker Container e microserviços**
 
 
 
