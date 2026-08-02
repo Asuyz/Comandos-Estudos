@@ -138,6 +138,33 @@
 
 • **Docker Container e microserviços**
 
+° Os containers são áreas definidas pelo Docker no servidor, onde uma estrutura de microsserviços pode ser implementada compartilhando o mesmo sistema operacional. Desse forma um microsserviço pode ser implementado de forma modular e de acordo com as necessidades de funcionamento do mesmo, onde cada microsserviço pode executar um processo único e se comunicar com outros.
+
+° As características do Docker que possibilitaram o surgimento desses microsserviços que compõem uma determinada aplicação. Também considerando a possibilidade de desenvolver e realizar o deploy desses aplicativos de forma acelerada e a gestão independente de cada microsserviços.
+
+------------------------------------------------------------------
+
+• **Container Docker X Monolíticos e Microsserviços**
+
+° Monolíticos são uma arquitetura tradicional que devido ao seu funcionamento possui um difícil escalamento, pois o aplicativo com essa estrutura se apresenta inteiro e uma unica unidade (serviços, biblotecas etc) apresentando essa dificuldade em se manter atualizado, porém com o beneficio de serem menos complexos para o gerenciamento de transações e segurança, pois possuem apenas uma entrada para a aplicação.
+
+° Em contrapartida temos a arquitetura de microsserviços e aplicativos baseadas em container. Nessa arquitetura cada componente da aplicação realiza uma única função e a executa de forma independente. Essa arquitetura baseada em container abriga microsserviços, facilitando a implantação do aplicativo que ocorre de forma modular e individual, causando o minimo impacto possível na disponibilidade geral do sistema.
+
+• **Exemplo comportamental de cada tipo nos containers**:
+
+↪ **Arquitetura Monolítica**:
+
+» Dentro de um container Docker, o aplicativo node.js de uma arquitetura monolítica se comporta como um único bloco para implantação e é executado como um único serviço, compartilhando os recursos disponíveis para todos os demais containers. Em uma situação de pico de demanda, seria preciso escalar toda a estrutura, pois o monolítico não permite o dimensionamento de partes individuais do aplicativo. A função principal do node.js é distribuir o tráfego para os operadores que compõem o aplicativo monolítico.
+
+↪ **Arquitetura de Microsserviços**:
+
+» O aplicativo node.js de uma arquitetura de microsserviços em um container Docker é composto por recursos individuais que rodam como serviço independente dentro do seu próprio container. Cada recurso pode ser atualizado e escalada separadamente. No cluster principal do node.js, um microsserviço se comunica com os outros por meio de uma API.
+
+------------------------------------------------------------------
+
+• **Armazenamento no Docker e persistência de dados**
+
+
 
 
 
