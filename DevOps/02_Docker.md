@@ -164,7 +164,26 @@
 
 • **Armazenamento no Docker e persistência de dados**
 
+» O Docker gerencia seu sistema de arquivos nas imagens e nos containers em execução, sendo totalmente baseado no conceito de layers (camadas).
 
+» Uma imagem do Docker é composta por diversas camadas. Cada camada representa auma instrução no Dockerfile da imagem. As camadas são empilhadas umas sobre as outras, quando criamos um novo container, adicionamos uma nova camada *writable* sobre as camadas subjacentes.
+
+» Para que seja possível o gerenciamento das interações e os conteúdos das camadas de imagem e das camadas do container *writable*, é necessário fazer o uso de drivers de armazenamento ( *storage drivers* ). Os Drivers de armazenamento é responsável por escrever na camada *writable* de um container. Cada driver de armazenamento trata a implementação de forma diferente, podendo ser por **volume**, por **montagem de ligação** ou por **montagem tmpfs** (Caso esteja no Linux). Todas essas formas usam a tecnologia de cópia na gravação ( **CoW - Copy-on-Write** ) e camadas de imagens empilháveis.
+
+↪ **Em resumo**:
+
+» O Docker organiza tudo em **camadas (layers)**:
+
+- Uma **imagem** é formada por várias camadas empilhadas, cada uma correspondendo a uma instrução do Dockerfile.
+- Ao rodar um **container**, é adicionada uma nova camada **writable** (gravável) sobre as camadas da imagem (que são somente leitura).
+- Os **storage drivers** gerenciam como essas camadas interagem e são escritas — cada driver implementa isso de um jeito diferente (volume, bind mount ou tmpfs no Linux).
+- Todos eles usam **Copy-on-Write (CoW)**: em vez de duplicar dados, o sistema só copia e modifica um arquivo quando ele precisa ser alterado, economizando espaço e tornando os containers leves.
+
+• **Maneiras que a persistência de dados é realizada**:
+
+↪ **Montagens de ligação** ( Bind Mounts ):
+
+» 
 
 
 
