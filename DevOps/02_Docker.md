@@ -183,11 +183,47 @@
 
 ↪ **Montagens de ligação** ( Bind Mounts ):
 
-» 
+» Estão em qualquer lugar do host, mas podem ser modificadas por outros aplicativos. As montagens de ligação são vindas diretamente do Docker e são muito eficientes, mas dependentes do sistema de arquivos da máquina **host** que possui uma estrutura de diretórios especifica. Um arquivo ou diretório precisa existir da máquina *host* do container Docker.
+
+↪ **Montagens tmpfs** ( Temporary Filesystem Mounts ):
+
+» Estão no espaço da memória do host e nunca são gravados no sistema de arquivos da máquina *host*. 
+
+» Considere o uso dessa montagem no caso de o container gerar dados de estado não persistentes. Esse tipo de armazenamento evita gravadas dados na camada gravável do container e aumenta seu desempenho.
+
+• **Persistindo Dados no Ambiente Docker**
+
+» Os volumes são considerados a **melhor forma de resolver a persistência de dados em um container**, pois o conteúdo do volume fica fora do ciclo de vida do container, sendo essa também a melhor forma de evitar problemas de desempenho, por conta que os volumes não aumentam o tamanho dos containers que o utilizam.
+
+» Os volumes são gerenciados pelo próprio Docker, por isso, é o mecanismo preferido de persistência utilizado pelos containers Docker.
+
+------------------------------------------------------------------
+
+• **Docker Compose**
+
+» Docker Compose é um gerenciador de containers tendo a principal função de executar vários containers como um único serviço. Se por exemplo existe a necessidade de subir dois containers com função diferentes podemos criar um único arquivo que inicia os dois containers como serviço, sem a necessidade de iniciar cada um de forma separada, tudo isso sendo possível com esse arquivo de configuração.
+
+» O docker-compose.yml ou (.yaml) é semelhante ao Dockerfile, escrito em **YAML**. Dentro desse arquivo podemos definir cada container como serviço e configurar todos os parâmetros necessários, como: **Serviços, Redes, Volumes, Configurações entre outros**.
+
+» A principal vantagem do Docker compose é diminuir a responsabilidade de desenvolvedor ou do *sysadmin* no gerenciamento do *deploy*, pois o compose encapsula os comandos e todas as dependências que a sua aplicaçãoi necessita para executar em qualquer ambiente.
+
+» **Exemplo de um docker-compose**:
 
 
+```
+version: "3.9"
+services:
+  exemplo-web:
+    build:
+      context: ./dir
+      dockerfile: Dockerfile-alternate
+      args:
+        versao: 1
+    ports:
+      - "5432:5432"
 
+```
 
-
+------------------------------------------------------------------
 
 ↪»°•
