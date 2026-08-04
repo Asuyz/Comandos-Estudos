@@ -74,4 +74,29 @@
 
 ---------------------------------------------------------------
 
+• **Serveless Computing**
+
+» **Serveless computing** ou **Serveless Framework** é uma extensão natural do **conceito de nuvem**, no qual é possível criar softwares e executar aplicativos sem a necessidade de investir recursos para a administração de máquinas virtuais. Esse é um modelo de serviço de **cloud computing**, mas não é um serviço na nuvem. Se trata de uma ferramento de linha de comando de **node.js** quer simplifica o uso e o gerenciamento dos recursos que estão na nuvem.
+
+» A computação sem servidor incorpora serviços **BaaS** (Back-end as a Service) de terceiros e também pode adotar uma arquitetura **FaaS** (Functions as a Service), para executar código personalizado em **containers** personalizados gerenciados, fazendo o uso de provedores **SaaS**
+
+» Os benefícios que essa arquitetura trazem são:
+
+- Redução dos recursos computacionais
+- Redução de custos com gestão de operações de infraestrutura
+- Escalabilidade
+- Alta disponibilidade
+- Tolerância a falhas.
+
+» A implementação do *serveless* em empresas conta como fornecedores especializados que proveem esse tipo de serviço.
+
+-----------------------------------------------------------------
+
+• **CDN**
+
+» A rede de Distribuição de Conteúdo (CDN- Content Delivery Network) se refere a um grupo de servidores distruídos geograficamente que trabalham juntos para fornecer uma entrega rápida de conteúdo na Internet. Hoje, a maioria do tráfego da web é atendida via CDNs, incluindo tráfego de sites como: Facebook, Netflix e Amazon.
+
+------------------------------------------------------------------
+
+
 »°•↪
