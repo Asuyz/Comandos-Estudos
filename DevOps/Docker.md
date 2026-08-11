@@ -226,4 +226,10 @@ services:
 
 ------------------------------------------------------------------
 
-↪»°•
+° **Links Obsidian**
+
+[[Virtualização]]
+[[ComandosDocker]]
+[[Kubernetes]]
+[[!DevOps]]
+

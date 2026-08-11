@@ -1,5 +1,6 @@
-#DevOps
+# Tags para Obsidian
 
+#DevOps 
 
 [[Virtualização]]
 [[CloudComputing]]
@@ -9,6 +10,8 @@
 [[AWS]]  [[Azure]]
 [[Kubernetes]]
 
+# Caracteres especiais usados:
 
+↪»°•
 
 

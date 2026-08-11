@@ -55,4 +55,6 @@
 
 » A estratégia de multicloud permite a seleção de fornecedores melhores otimizados para realizar tarefas específicas. 
 
+------------------------------------------------------------------
+
 
