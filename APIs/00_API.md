@@ -1,3 +1,4 @@
+
 • **O que é uma API**
 
 ° API's são aplicações que permitem a integração de dados, serviços ou recursos de outras aplicações ao invés do desenvolvimento do zero da mesma.
