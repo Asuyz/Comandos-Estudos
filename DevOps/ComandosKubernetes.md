@@ -1,0 +1,10 @@
+
+
+----------------------------------
+
+° **Links Obsidian**
+
+[[Kubernetes]]
+[[!Terminal]]
+
+
