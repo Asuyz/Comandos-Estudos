@@ -73,3 +73,9 @@
 | `git stash pop`   | Aplica (as alterações feitas) e remove a stash.                                       |
 | `git stash drop`  | Remove um stash em especifico da lista.                                               |
 | `git stash clear` | Apaga **TODOS** os stashs salvos.                                                     |
+
+--------------------------
+
+° **Links Obsidian**
+
+[[!Terminal]]
