@@ -1,38 +1,76 @@
-## **» SOBRE📚 :**
 
-» **Esse repositório se propõe a ser uma anotação de todos os meus e conhecimentos que estou adquirindo na FIAP e também como vivencia no mundo da programação**. ☁  
+# ==Archive==
 
-## **📚 AS ANOTAÇÕES ESTARÃO LOCALIZADAS DE FORMA SEPARADA ENTRE 📁**: 
+Este repositório tem o proposito de servir como uma **biblioteca pessoal**, servindo como uma forma de marcar meu progresso e conhecimento adquirido em assuntos estudados.
 
----
+A melhor forma de consumir este repositório é através do **Obsidian**.
 
-## » **📚 Linguagens e Lógicas de Programação**
+Project Tree atual:
 
-| Ícone | Matéria(s)                             | Arquivo(s)                       | Local                  |
-| :---: | -------------------------------------- | -------------------------------- | ---------------------- |
-|   ☕   | **Java**                               | `Java.md` \| `LogicaJava.md`     | **Pasta »** Linguagens |
-|  🐍   | **Python**                             | `Python.md` \| `LogicaPython.md` | **Pasta »** Linguagens |
-|  🦀   | **Rust**                               | `RUST.md`                        | **Pasta »** Linguagens |
-|  🌐   | **HTML** *(HyperText Markup Language)* | `HTML.md`                        | **Pasta »** FrontEnd   |
-|  🎨   | **CSS** *(Cascading Style Sheet)*      | `CSS.md`                         | **Pasta »** FrontEnd   |
-|  📜   | **JavaScript**                         | `JAVASCRIPT.md`                  | **Pasta »** FrontEnd   |
+```
+Archive
+├─ APIs
+│  ├─ 00_API.md
+│  ├─ 01_ENDPOINTS.md
+│  ├─ 02_TIPOS_API.md
+│  └─ API.md
+├─ FrontEnd
+│  ├─ CSS.md
+│  ├─ FIGMA.md
+│  ├─ HTML.md
+│  ├─ JAVASCRIPT.md
+│  ├─ REACT.md
+│  └─ VITE.md
+├─ Infra
+│  ├─ DevOps
+│  │  ├─ !DevOps.md
+│  │  ├─ AWS.md
+│  │  ├─ ArquiteturaCloud.md
+│  │  ├─ Azure.md
+│  │  ├─ CloudComputing.md
+│  │  ├─ ComandosDocker.md
+│  │  ├─ ComandosKubernetes.md
+│  │  ├─ Docker.md
+│  │  ├─ Kubernetes.md
+│  │  └─ Virtualização.md
+│  └─ Terminal
+│     ├─ !Terminal.md
+│     ├─ Git.md
+│     └─ Linux.md
+├─ Linguagens
+│  ├─ Java
+│  │  ├─ JAVA.md
+│  │  └─ LOGICAJAVA.md
+│  ├─ Python
+│  │  ├─ 00_PYTHON.md
+│  │  ├─ 01_VARIAVEIS.md
+│  │  ├─ 02_LISTAS.md
+│  │  ├─ 03_DICIONARIOS.md
+│  │  ├─ 04_FUNCOES.md
+│  │  ├─ 05_EXEC_WHILE.md
+│  │  ├─ 06_FOR_LOOPS_RANGE.md
+│  │  ├─ 07_TUPLAS_SETS.md
+│  │  ├─ 08_TRATAMENTO_DE_ERROS.md
+│  │  ├─ 09_LEITURA_DE_ARQUIVOS.md
+│  │  ├─ 10_MODULOS_IMPORTS.md
+│  │  ├─ 11_LIST_DICT_COMPREHENSION.md
+│  │  └─ LOGICAPYTHON.md
+│  └─ Rust
+│     ├─ 00_RUST.md
+│     ├─ 01_VARIAVEIS_CONSTANTES.md
+│     ├─ 02_FUNCOES.md
+│     ├─ 03_IF_ELSE_LOOPS.md
+│     └─ 04_MATCH_STATEMENT.md
+├─ README.md
+├─ SQL
+│  ├─ DATABASE.md
+│  ├─ Relational-NonRelational-Database.md
+│  └─ SQL.md
+└─ UX_QA
+   ├─ QUALITY_ASSURANCE.md
+   └─ SOFTWARE_ENGE_AND_BUISNESS_MODEL.md
 
----
+```
 
-## » 🧰 **Ferramentas | Frameworks | Matérias**
 
-| Ícone | Ferramenta / Framework                      | Arquivo(s)             | Local                    |
-| :---: | ------------------------------------------- | ---------------------- | ------------------------ |
-|  🧱   | **GitBash**                                 | `Codigos.md`           | **Pasta »** Git_Terminal |
-|  🗄️  | **Oracle**                                  | `Database.md`          | **Pasta »** SQL          |
-|  ⚛️   | **React** *(NodeJS)*                        | `REACT.md`             | **Pasta »** FrontEnd     |
-|   ⚡   | **Vite** *(NodeJS)*                         | `VITE.md`              | **Pasta »** FrontEnd     |
-|  🎨   | **Figma** *(Alura)*                         | `FIGMA.md`             | **Pasta »** FrontEnd     |
-|  🧩   | **Software Engineering and Business Model** | `SEABM.md`             | **Pasta »** UX_QA        |
-|  ⚙️   | **Compliance Quality Assurance e Tests**    | `QUALITY_ASSURANCE.md` | **Pasta »** UX_QA        |
-
----
-
-» **Os arquivos terão anotações e alguns exercícios/códigos de exemplo para estudos**.
-
-» **Por: Asuyz (Andreygdio). Muito obrigado por acessar**.
+Feito por: Asuyz 
