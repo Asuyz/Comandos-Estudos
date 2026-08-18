@@ -4,6 +4,6 @@
 
 ° **Links Obsidian**
 
-[[ArquiteturaCloud]]
-[[CloudComputing]]
+[[Arquitetura_Cloud]]
+[[Cloud_Computing]]
 [[!DevOps]]

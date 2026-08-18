@@ -16,8 +16,8 @@ ACI
 
 ° **Links Obsidian**
 
-[[ArquiteturaCloud]]
+[[Arquitetura_Cloud]]
 [[Docker]]
 [[Kubernetes]]
-[[CloudComputing]]
+[[Cloud_Computing]]
 [[!DevOps]]

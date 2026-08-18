@@ -87,10 +87,10 @@
 ° **Links Obsidian**
 
 [[Docker]]
-[[ArquiteturaCloud]]
+[[Arquitetura_Cloud]]
 [[AWS]]
 [[Azure]]
-[[OpenShift]]
+[[Open_Shift]]
 [[!DevOps]]
 
 

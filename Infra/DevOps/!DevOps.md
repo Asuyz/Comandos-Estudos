@@ -3,9 +3,9 @@
 #DevOps 
 
 [[Virtualização]]
-[[CloudComputing]]
+[[Cloud_Computing]]
 [[Docker]]
-[[ArquiteturaCloud]]
+[[Arquitetura_Cloud]]
 [[AWS]]  [[Azure]]
 [[Kubernetes]]
 
