@@ -81,8 +81,50 @@
 
 ------------------------------------------------------------------
 
+• **Kubernetes e Docker**
+
+» O **Kubernetes** e o **Docker Swarm** são ambos ferramentas de orquestração de *clusters*
+e são comparados por conta disso. 
+
+» Porém o Papel do Kubernetes é utilizar o Docker para criar containers nos nós do *clusters* e tem como responsabilidade controlar, gerenciar e monitorar o estado dos containers Docker ao longo do cluster.
+
+» O **Docker swarm** é nativo do **Docker** e desempenha as mesmas funcionalidades do **Kubernetes** apresentando variações técnicas e funcionais como:
+
+- Funcionalidade limitada.
+- Tolerância a falhas limitada.
+- Os serviços podem ser dimensionados manualmente.
+
+» Com essas diferenças o Kubernetes é mais confiável no mercado de tecnologia, contando com recursos de dimensionamento automático e politícas de alta disponibilidade.
+
+---------------------------------------------------------------------
+
+• **Kubernetes e Microsserviços**
+
+» Os recrusos oferecidos pelo Kuberntes são essenciais para o contexto de microsserviços. Por conta disso o uso do **Kubernetes gerenciando um container Docker** se tornou uma prática extremamente poderosa para a implantação dos microsserviços, especialmente os de grande porte.
 
 -----------------------------------------------------------------
+
+• **Kubernetes | Open Shift | Open Stack**
+
+» A comparação entre **Kubernetes**, **Open Shift e Open Stack** não pode ser realizada por conta das suas tecnologias independentes e diferentes na sua essência, usados separadamente um dos outros.
+
+» Segue uma breve descrição dessas três tecnologias.
+
+↪ **Kubernetes**:
+
+» Desempenha o papel de sistema operacional no nível de containers com a responsabilidade de execução da orquestração de containers.
+
+↪ **Open Shift** 
+
+» Incorporou o **Kubernetes** para oferecer funcionalidades além do gerenciamento de containers e foi otimizado para rodar em infraestruturas de *cloud* públicas ou privadas.
+
+
+↪ **Open Stack**
+
+» Responsável por gerenciar grandes quantidades de recursos computacionais que envolvem processamento, armazenamento e rede. Oferecendo uma plataforma para o gerenciamento da infraestrutura responsável por executar seus servidores.
+
+-------------------------------------------------------------------
+
 
 ° **Links Obsidian**
 
