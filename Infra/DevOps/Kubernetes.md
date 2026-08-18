@@ -145,8 +145,9 @@ Cluster (Kubernetes, gerenciado pelo OpenShift)
 
 ↪ **Management/Replication** garante que esse estado se mantenha, corrigindo automaticamente se algo sair do esperando ( ex: um **pod** cair ).
 
+• **Funcionamento do Openshift**
 
-
+» 
 
 
 
