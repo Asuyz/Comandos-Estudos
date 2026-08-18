@@ -102,6 +102,6 @@
 
 [[Virtualização]]
 [[Arquitetura_Cloud]]
-[[!DevOps]]
+[[!Infra]]
 
 

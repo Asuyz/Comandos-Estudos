@@ -133,7 +133,7 @@ e são comparados por conta disso.
 [[AWS]]
 [[Azure]]
 [[Open_Shift]]
-[[!DevOps]]
+[[!Infra]]
 
 
 

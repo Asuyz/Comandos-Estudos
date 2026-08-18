@@ -6,4 +6,4 @@
 
 [[Arquitetura_Cloud]]
 [[Cloud_Computing]]
-[[!DevOps]]
+[[!Infra]]
