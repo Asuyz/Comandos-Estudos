@@ -3,7 +3,7 @@
 # Tags para Obsidian
 
 [[Git]]
-[[Linux]]
+[[Comandos_Linux]]
 
 # Caracteres especiais usados:
 
