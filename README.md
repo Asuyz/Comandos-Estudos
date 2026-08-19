@@ -10,10 +10,10 @@ Project Tree atual:
 ```
 Archive
 ├─ APIs
-│  ├─ 00_API.md
-│  ├─ 01_ENDPOINTS.md
-│  ├─ 02_TIPOS_API.md
-│  └─ API.md
+│  ├─ !APIs.md
+│  ├─ Api.md
+│  ├─ Endpoints.md
+│  └─ Tipos_Api.md
 ├─ FrontEnd
 │  ├─ CSS.md
 │  ├─ FIGMA.md
@@ -23,20 +23,20 @@ Archive
 │  └─ VITE.md
 ├─ Infra
 │  ├─ DevOps
-│  │  ├─ !DevOps.md
 │  │  ├─ AWS.md
-│  │  ├─ ArquiteturaCloud.md
+│  │  ├─ Arquitetura_Cloud.md
 │  │  ├─ Azure.md
-│  │  ├─ CloudComputing.md
-│  │  ├─ ComandosDocker.md
-│  │  ├─ ComandosKubernetes.md
+│  │  ├─ Cloud_Computing.md
+│  │  ├─ Comandos_Docker.md
+│  │  ├─ Comandos_Kubernetes.md
 │  │  ├─ Docker.md
 │  │  ├─ Kubernetes.md
+│  │  ├─ Open_Shift.md
 │  │  └─ Virtualização.md
-│  └─ Terminal
-│     ├─ !Terminal.md
-│     ├─ Git.md
-│     └─ Linux.md
+│  ├─ Terminal
+│  │  ├─ Comandos_Git.md
+│  │  └─ Comandos_Linux.md
+│  └─ !Infra.md
 ├─ Linguagens
 │  ├─ Java
 │  │  ├─ JAVA.md
@@ -61,6 +61,9 @@ Archive
 │     ├─ 02_FUNCOES.md
 │     ├─ 03_IF_ELSE_LOOPS.md
 │     └─ 04_MATCH_STATEMENT.md
+├─ Práticas
+│  └─ DevOps
+│     └─ ACR_ACI.md
 ├─ README.md
 ├─ SQL
 │  ├─ DATABASE.md
@@ -69,7 +72,6 @@ Archive
 └─ UX_QA
    ├─ QUALITY_ASSURANCE.md
    └─ SOFTWARE_ENGE_AND_BUISNESS_MODEL.md
-
 ```
 
 
