@@ -64,13 +64,14 @@ Archive
 ├─ Práticas
 │  └─ DevOps
 │     └─ ACR_ACI.md
+├─ QA
+│  └─ QUALITY_ASSURANCE.md
 ├─ README.md
 ├─ SQL
 │  ├─ DATABASE.md
 │  ├─ Relational-NonRelational-Database.md
 │  └─ SQL.md
-└─ UX_QA
-   ├─ QUALITY_ASSURANCE.md
+└─ UX
    └─ SOFTWARE_ENGE_AND_BUISNESS_MODEL.md
 ```
 
