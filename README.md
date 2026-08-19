@@ -22,7 +22,9 @@ Archive
 │  ├─ REACT.md
 │  └─ VITE.md
 ├─ Infra
+│  ├─ (Infra).md
 │  ├─ DevOps
+│  │  ├─ (DevOps).md
 │  │  ├─ AWS.md
 │  │  ├─ Arquitetura_Cloud.md
 │  │  ├─ Azure.md
@@ -35,11 +37,12 @@ Archive
 │  │  ├─ Open_Shift.md
 │  │  └─ Virtualização.md
 │  ├─ SistemaOperacional
+│  │  ├─ (OS).md
 │  │  └─ Linux.md
-│  ├─ Terminal
-│  │  ├─ Comandos_Git.md
-│  │  └─ Comandos_Linux.md
-│  └─ !Infra.md
+│  └─ Terminal
+│     ├─ (Terminal).md
+│     ├─ Comandos_Git.md
+│     └─ Comandos_Linux.md
 ├─ Linguagens
 │  ├─ Java
 │  │  ├─ JAVA.md

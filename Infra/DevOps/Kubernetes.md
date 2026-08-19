@@ -1,6 +1,6 @@
 
 **Tags**: [infra/containers/k8s]
-↩ [[!Infra]]
+↩ [[(DevOps)]]
 
 ° Pré-requisitos - [[Docker]]: conceito de imagem, container, registry
 

@@ -1,6 +1,6 @@
 
 **Tags**: [infra/terminal/linux]
-↩ [[!Infra]]
+↩ [[(Terminal)]]
 
 ### » **Diretórios essenciais**
 

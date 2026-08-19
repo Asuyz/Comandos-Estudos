@@ -1,6 +1,6 @@
 
 **Tags**: [infra/cloud/azure]
-↩ [[!Infra]]
+↩ [[(DevOps)]]
 
 (Rascunho)
 ACR
@@ -18,4 +18,4 @@ ACI
 ------------------------------------------------------------------
 
 ° **Relacionados**
-- [[CloudComputing]]
+- [[Cloud_Computing]]

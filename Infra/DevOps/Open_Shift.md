@@ -1,6 +1,6 @@
 
 **Tags**: [infra/containers/openshift]
-↩ [[!Infra]]
+↩ [[(DevOps)]]
 
 ° Pré-requisitos - [[Kubernetes]]: orquestração base e conceitos de cluster/pods
 

@@ -1,6 +1,6 @@
 
 **Tags**: [devops/cloud]
-↩ [[!Infra]]
+↩ [[(DevOps)]]
 
 -----------------------
 

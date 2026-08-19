@@ -1,10 +1,10 @@
 
 **Tags**: [infra/cloud/aws]
-↩ [[!Infra]]
+↩ [[(DevOps)]]
 
 ------------------------------------------------------------------
 
 ° **Relacionados**
-- [[CloudComputing]] 
+- [[Cloud_Computing]] 
 - [[Azure]] 
 

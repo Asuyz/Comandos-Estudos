@@ -1,6 +1,6 @@
 
 **Tags**: [infra/virtualizacao]
-↩ [[!Infra]]
+↩ [[(DevOps)]]
 
 -------
 

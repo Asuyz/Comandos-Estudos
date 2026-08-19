@@ -1,6 +1,6 @@
 
 **Tags**: [infra/cloud]
-↩ [[!Infra]]
+↩ [[(DevOps)]]
 
 
 • **Implantação em Cloud e Modelos de serviços**
@@ -62,6 +62,6 @@
 ------------------------------------------------------------------
 
 ° **Relacionados**
-- [[CloudComputing]] — conceitos base de cloud
+- [[Cloud_Computing]] — conceitos base de cloud
 
 

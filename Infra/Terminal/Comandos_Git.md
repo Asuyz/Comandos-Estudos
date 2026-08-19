@@ -1,5 +1,5 @@
 **Tags**: [infra/terminal/git]
-↩ [[!Infra]]
+↩ [[(Terminal)]]
 
 ## • **Anotações de códigos do Git Bash**
 

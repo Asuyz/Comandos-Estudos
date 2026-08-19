@@ -1,6 +1,6 @@
 
 **Tags**: [infra/containers/comandos]
-↩ [[!Infra]] · [[Docker]]
+↩ [[(DevOps)]] · [[Docker]]
 
 # » **Referência Completa de Comandos do Docker CLI**
 
@@ -219,6 +219,6 @@ Fonte: [docs.docker.com/reference/cli/docker](https://docs.docker.com/reference/
 ----------------------------------------------------------------
 
 ° **Links Obsidian**
-
-[[Docker]]
-[[!Terminal]]
+ 
+- [[Docker]]
+- [[(Terminal)]]
