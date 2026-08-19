@@ -1,5 +1,5 @@
-
-
+**Tags**: [infra/terminal/git]
+↩ [[!Infra]]
 
 ## • **Anotações de códigos do Git Bash**
 
@@ -80,5 +80,4 @@
 --------------------------
 
 ° **Links Obsidian**
-
-[[!Terminal]]
+- [[Git]]

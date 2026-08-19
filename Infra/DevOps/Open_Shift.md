@@ -1,3 +1,10 @@
+**Tags**: [infra/containers/openshift]
+↩ [[!Infra]]
+
+° Pré-requisitos - [[Kubernetes]]: orquestração base e conceitos de cluster/pods
+
+---
+
 • **OpenShift**
 
 » O OpenShift tem grande adesão no mundo corporativo por oferecer componentes além do Kubernetes, ofertando os mesmos como projeto encapsulado. Ele surgiu da necessidade de trabalho com mecanismos de controle e processos mais burocráticos, que são deficientes no Kubernetes.
@@ -65,3 +72,9 @@ Cluster (Kubernetes, gerenciado pelo OpenShift)
 • **Funcionamento do Openshift**
 
 » 
+
+------------------------------------------------------------------
+
+° **Relacionados**
+- [[Kubernetes]]: base da arquitetura de orquestração
+- [[Docker]]: modelo de containerização utilizado

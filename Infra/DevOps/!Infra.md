@@ -19,12 +19,13 @@ tags: [infra/moc]
 - [[ComandosDocker]] — `#infra/containers/comandos`
 - [[Kubernetes]] — `#infra/containers/k8s`
 - [[ComandosKubernetes]] — `#infra/containers/k8s/comandos`
+- [[Open_Shift]] — `#infra/containers/openshift`
 
 ## Virtualização
 - [[Virtualização]] — `#infra/virtualizacao`
 
 ## Terminal
-- [[Git]] — `#infra/terminal/git`
+- [[Comandos_Git]] — `#infra/terminal/git`
 - [[Linux]] — `#infra/terminal/linux`
 
 ---
