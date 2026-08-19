@@ -29,10 +29,13 @@ Archive
 │  │  ├─ Cloud_Computing.md
 │  │  ├─ Comandos_Docker.md
 │  │  ├─ Comandos_Kubernetes.md
+│  │  ├─ DevOps.md
 │  │  ├─ Docker.md
 │  │  ├─ Kubernetes.md
 │  │  ├─ Open_Shift.md
 │  │  └─ Virtualização.md
+│  ├─ SistemaOperacional
+│  │  └─ Linux.md
 │  ├─ Terminal
 │  │  ├─ Comandos_Git.md
 │  │  └─ Comandos_Linux.md

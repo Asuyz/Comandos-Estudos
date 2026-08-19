@@ -26,7 +26,17 @@ tags: [infra/moc]
 
 ## Terminal
 - [[Comandos_Git]] — `#infra/terminal/git`
-- [[Comandos_Linux]] — `#infra/terminal/linux`
+- [[Comandos_Linux]] — `#infra/terminal/Comandos_linux`
+
+## Sistema Operacional
+
+- [[Linux]] — `#infra/OS/Linux`
+
+
+## Outros
+
+[[DevOps]] — `#infra/devops/devops`
+
 
 ---
 ### Convenção
