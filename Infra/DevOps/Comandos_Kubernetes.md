@@ -7,6 +7,5 @@
 ° **Links Obsidian**
 
 [[Kubernetes]]
-[[!Terminal]]
 
 

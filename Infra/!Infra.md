@@ -9,16 +9,16 @@ tags: [infra/moc]
 > Índice central da área de Infraestrutura. Notas filhas linkam apenas de volta pra cá — links diretos entre elas só quando há dependência conceitual real.
 
 ## Cloud & Arquitetura
-- [[CloudComputing]] — `#infra/cloud`
-- [[ArquiteturaCloud]] — `#infra/cloud`
+- [[Cloud_Computing]] — `#infra/cloud`
+- [[Arquitetura_Cloud]] — `#infra/cloud`
 - [[AWS]] — `#infra/cloud/aws`
 - [[Azure]] — `#infra/cloud/azure`
 
 ##  Containers & Orquestração
 - [[Docker]] — `#infra/containers`
-- [[ComandosDocker]] — `#infra/containers/comandos`
+- [[Comandos_Docker]] — `#infra/containers/comandos`
 - [[Kubernetes]] — `#infra/containers/k8s`
-- [[ComandosKubernetes]] — `#infra/containers/k8s/comandos`
+- [[Comandos_Kubernetes]] — `#infra/containers/k8s/comandos`
 - [[Open_Shift]] — `#infra/containers/openshift`
 
 ## Virtualização
@@ -26,7 +26,7 @@ tags: [infra/moc]
 
 ## Terminal
 - [[Comandos_Git]] — `#infra/terminal/git`
-- [[Linux]] — `#infra/terminal/linux`
+- [[Comandos_Linux]] — `#infra/terminal/linux`
 
 ---
 ### Convenção

@@ -132,7 +132,7 @@ e são comparados por conta disso.
 
 
 ° **Relacionados**
-- [[ComandosKubernetes]]
+- [[Comandos_Kubernetes]]
 
 
 
