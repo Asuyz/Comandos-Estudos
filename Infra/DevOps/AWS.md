@@ -1,9 +1,10 @@
 
+**Tags**: [infra/cloud/aws]
+↩ [[!Infra]]
 
 ------------------------------------------------------------------
 
-° **Links Obsidian**
+° **Relacionados**
+- [[CloudComputing]] 
+- [[Azure]] 
 
-[[Arquitetura_Cloud]]
-[[Cloud_Computing]]
-[[!Infra]]

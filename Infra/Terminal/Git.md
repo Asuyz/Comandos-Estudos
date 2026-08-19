@@ -1,3 +1,6 @@
+
+
+
 ## • **Anotações de códigos do Git Bash**
 
 #### » Ciclo de Vida/Estado dos Arquivos:

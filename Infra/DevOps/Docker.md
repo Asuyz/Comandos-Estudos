@@ -1,3 +1,7 @@
+
+**Tags**: [infra/containers]
+↩ [[!Infra]]
+
 • **Introdução:**
 
 ° A infraestrutura baseada em container ja é uma prática bastante adotada no segmento de tecnologia, essa mesma infraestrutura pode ser realizada na nuvem ou de forma local.
@@ -226,10 +230,8 @@ services:
 
 ------------------------------------------------------------------
 
-° **Links Obsidian**
+° **Relacionados**
 
-[[Virtualização]]
-[[Comandos_Docker]]
-[[Kubernetes]]
-[[!Infra]]
+- [[Kubernetes]] 
+- [[ComandosDocker]] 
 

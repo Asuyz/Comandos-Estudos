@@ -1,3 +1,7 @@
+
+**Tags**: [infra/containers/comandos]
+↩ [[!Infra]] · [[Docker]]
+
 # » **Referência Completa de Comandos do Docker CLI**
 
 > Baseado na documentação oficial (docs.docker.com), versão atual do Docker CLI.

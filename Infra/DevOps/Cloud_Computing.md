@@ -1,3 +1,9 @@
+
+**Tags**: [devops/cloud]
+↩ [[!Infra]]
+
+-----------------------
+
 • **Introdução:**
 
 ° A computação em nuvem surgiu com a intenção de proporcionar disponibilidade e acesso de recursos por meio da internet. Com isso Alterando a forma como plataformas de *hardware* e *software* são exploradas.
@@ -98,10 +104,9 @@
 
 ------------------------------------------------------------------
 
- ° **Links Obsidian**
+ ° **Relacionados**
+-  [[Arquitetura_Cloud]]
 
-[[Virtualização]]
-[[Arquitetura_Cloud]]
-[[!Infra]]
+
 
 

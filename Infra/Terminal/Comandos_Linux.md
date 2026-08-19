@@ -1,4 +1,7 @@
 
+**Tags**: [infra/terminal/linux]
+↩ [[!Infra]]
+
 ### » **Diretórios essenciais**
 
 | ***Diretório*** | ***Função***                                               | ***Exemplo***        |
@@ -58,5 +61,4 @@
 ----------------------------------------------------------------
 
 ° **Links Obsidian**
-
-[[!Terminal]]
+- [[Linux]]

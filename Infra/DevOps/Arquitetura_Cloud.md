@@ -1,4 +1,8 @@
 
+**Tags**: [infra/cloud]
+↩ [[!Infra]]
+
+
 • **Implantação em Cloud e Modelos de serviços**
 
 » A computação cloud se tornou um fator chave em qualquer estratégia de transformação digital, as organizações que adotam tal modelo tem mais chances de chegarem em seus objetivos de negócios e infraestrutura em comparação a organizações que não adotam a mesma.
@@ -56,5 +60,8 @@
 » A estratégia de multicloud permite a seleção de fornecedores melhores otimizados para realizar tarefas específicas. 
 
 ------------------------------------------------------------------
+
+° **Relacionados**
+- [[CloudComputing]] — conceitos base de cloud
 
 

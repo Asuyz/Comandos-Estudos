@@ -1,5 +1,8 @@
 
+**Tags**: [infra/cloud/azure]
+↩ [[!Infra]]
 
+(Rascunho)
 ACR
 
  Um serviço que armazena e distribui imagens de container e **artefatos** relacionados.
@@ -14,10 +17,5 @@ ACI
 
 ------------------------------------------------------------------
 
-° **Links Obsidian**
-
-[[Arquitetura_Cloud]]
-[[Docker]]
-[[Kubernetes]]
-[[Cloud_Computing]]
-[[!Infra]]
+° **Relacionados**
+- [[CloudComputing]]

@@ -1,4 +1,9 @@
 
+**Tags**: [infra/containers/k8s]
+↩ [[!Infra]]
+
+° Pré-requisitos - [[Docker]]: conceito de imagem, container, registry
+
 • **Introdução**
 
 » É uma plataforma open source para orquestração de containers, que automatiza o deployment, escalonamento, balanceamento de carga e gerenciamento de aplicações containerizadas em um cluster de máquinas, abstraindo essa infraestrutura como se fosse um único sistema. Suas principais **caracteristicas** são:
@@ -126,14 +131,9 @@ e são comparados por conta disso.
 -------------------------------------------------------------------
 
 
-° **Links Obsidian**
+° **Relacionados**
+- [[ComandosKubernetes]]
 
-[[Docker]]
-[[Arquitetura_Cloud]]
-[[AWS]]
-[[Azure]]
-[[Open_Shift]]
-[[!Infra]]
 
 
 

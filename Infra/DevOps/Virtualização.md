@@ -1,3 +1,9 @@
+
+**Tags**: [infra/virtualizacao]
+↩ [[!Infra]]
+
+-------
+
 • **Como Funciona**:
 
 ° A virtualização surgiu da necessidade para a divisão mais eficiente do hardware e do software, no padrão os softwares são instalados no sistema operacional, que está relacionado com o físico (hardware).
@@ -171,8 +177,6 @@
 
 ------------------------------------------------------------
 
- ° **Links Obsidian**
-
-[[Docker]]
-[[Cloud_Computing]]
-[[!Infra]]
+ ° **Relacionados**
+ - [[Docker]]: containers como evolução leve de virtualização tradicional.
+ 
